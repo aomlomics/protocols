@@ -1,4 +1,4 @@
-# NOAA AOML OMICS DNA Extraction Protocol for Sterivex Using KingFisher and Optional Use of Opentrons OT-2 Robot
+# NOAA AOML Omics DNA Extraction Protocol for Sterivex Using KingFisher Flex and Optional Use of Opentrons OT-2 Robot
 
 ## Minimum Information about an Omics Protocol (MIOP)
 
@@ -32,9 +32,9 @@ See https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml for lis
 
 | PREPARED BY All authors known to have contributed to the preparation of this protocol, including those who filled in the template.  | AFFILIATION | ORCID (visit https://orcid.org/ to register) | DATE |
 | ------------- | ------------- | ------------- | ------------- |
-| Luke Thompson  | NOAA AOML & MSU NGI  | Content Cell | yyyy-mm-dd |
-| Sean Anderson | NOAA AOML | Content Cell | yyyy-mm-dd |
-| Sammy Harding  | NOAA AOML & MSU NGI  | Content Cell | 2024-06-26 |
+| Luke Thompson | NOAA AOML & MSU NGI | 0000-0002-3911-1280 | 2024-07-09 |
+| Sean Anderson | NOAA AOML & MSU NGI | 0000-0003-3096-1120 | 2024-07-09 |
+| Sammy Harding | NOAA AOML & MSU NGI | Content Cell | 2024-07-09 |
 
 ## PROTOCOL REVISION RECORD
 
@@ -115,8 +115,9 @@ Extracting DNA from 94 sterivex samples takes about 5 hours (300 minutes) includ
 
 # EQUIPMENT
 
+| DESCRIPTION e.g. filter | PRODUCT NAME AND MODEL Provide the official name of the product | MANUFACTURER Provide the name of the manufacturer of the product. | QUANTITY Provide quantities necessary for one application of the standard operating procedure (e.g. number of filters). | REMARK For example, some of the consumable may need to be sterilized, some commercial solution may need to be diluted or shielded from light during the operating procedure. |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Durable equipment |
+| **Durable equipment**  |  |  |  |  |
 | Vortex | Vortex Genie | Scientific Industries | as many as possible | # of vortexes will affect run time of protocol |
 | Vortex Adapter Plate | Vortex Adapter for 6 x 5ml tubes| QIAGEN | depends on # of vortexes | # of vortex adapter plates will affect run time |
 | Centrifuge | Centrifuge 5425 R - Microcentrifuge | Eppendorf | 1 | Can be substituted with generic |
@@ -127,7 +128,7 @@ Extracting DNA from 94 sterivex samples takes about 5 hours (300 minutes) includ
 | 1 uL-10 mL Repeater Pipette | Repeater M4 Pipette, 1 uL-10 mL Dispensing Volume for use with Combitips Advanced Syringe Tips | Can be substituted with any accurate pipette, optional for filling KingFisher plates |
 | Tube Racks | 2 mL tube 96-well tube racks | Generic | 1 | Can be any brand, must fit 2 mL tubes |
 | Wash bottles | Safety wash bottles 500 mL for EtOH | Generic | 1 | Can be substituted with generic |
-| Consumable equipment |  |  |  |  |
+| **Consumable equipment** |  |  |  |  |
 | Sterivex Filter | Millipore Sterivex-GP Pressure Filter Unit, 0.22µm pore size | Millipore Sigma | 94 |  |
 | DNA/RNA Shield | Zymo DNA/RNA Shield | Zymo Research | 94 mL | only required if sterivex are not pre-loaded or for adding an extraction blank |
 | Zirconia Beads | Zymo ZR BashingBead Lysis Tubes (0.1 & 0.5 mm) | Zymo Research | 94 | only required if sterivex are not pre-loaded or for adding an extraction blank |
@@ -151,7 +152,7 @@ Extracting DNA from 94 sterivex samples takes about 5 hours (300 minutes) includ
 | 12-Well Reservoir, 15 mL | NEST 12-Well Reservoir, 15 mL | Opentrons | 1 | optional for KF plate prep on OT-2 Robot |
 | Deep Single-Well Reservoir, 300 mL | Nalgene Disposable Polypropylene Robotic Reservoirs | ThermoFisher | 2 | optional for KF plate prep on OT-2 Robot |
 | 200µL Filter Tips | OT-2 Filter Tips, 200µL | Opentrons | 1 box | optional for KF plate prep on OT-2 Robot |
-| Chemicals |  |  |  |  |
+| **Chemicals |  |  |  |  |
 | 70% EtOH | Molecular bio grade ethanol | Generic | 1 Wash Bottle | only used for cleaning lab surfaces |
 | ZymoBIOMICS 96 MagBead DNA Kit |  |  |  |  |
 | Lysis Solution | ZymoBIOMICS Lysis Solution | Zymo Research | 94 mL | can be used in place of DNA/RNA Shield, only required if sterivex are not pre-loaded or for adding an extraction blank |

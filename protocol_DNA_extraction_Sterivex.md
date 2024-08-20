@@ -34,7 +34,7 @@ See https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml for lis
 | ------------- | ------------- | ------------- | ------------- |
 | Luke Thompson | NOAA AOML & MSU NGI | 0000-0002-3911-1280 | 2024-07-09 |
 | Sean Anderson | NOAA AOML & MSU NGI | 0000-0003-3096-1120 | 2024-07-09 |
-| Sammy Harding | NOAA AOML & MSU NGI | Content Cell | 2024-07-09 |
+| Sammy Harding | NOAA AOML & MSU NGI | 0009-0008-8885-6140 | 2024-07-09 |
 
 ## PROTOCOL REVISION RECORD
 

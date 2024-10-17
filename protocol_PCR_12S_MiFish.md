@@ -156,8 +156,8 @@ Preparation
 - 1 ul Fwd primer (10  μM) - MiFish F V2
 - 1 ul Rev primer (10  μM) - MiFish R
 
-| PCR Primer Name | Direction | Sequence (5’ -> 3’) | Sequence (5’ -> 3’) with Fluidigm Adapters | Fluidigm Adapter |
-| ----- | ----- | ----- |
+| PCR Primer Name | Direction | Sequence (5’ -> 3’) | Sequence (5’ -> 3’) with Fluidigm Adapters | Fluidigm Adapter | 
+| ----- | ----- | ----- |----|----|
 | 12S MiFish F V2 | forward | GCCGGTAAAACTCGTGCCAGC | ACACTGACGACATGGTTCTACA xxx GCCGGTAAAACTCGTGCCAGC | CS1-TS-F |
 | 12S MiFish R | reverse | CATAGTGGGGTATCTAATCCCAGTTTG | TACGGTAGCAGAGACTTGGTCT xxx CATAGTGGGGTATCTAATCCCAGTTTG | CS2-TS-R |
 

@@ -4,65 +4,66 @@
 
 See https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml for list and definitions.
 
-| MIOP Term  | Value |
+| MIOP Term | Value |
 | ------------- | ------------- | 
-| methodology category  | sample collection |
-| project  | NOAA Atlantic Oceanographic and Meteorological Laboratory GO-SHIP |
-| purpose  | biodiversity assessment objective [OBI:0001969] |
-| analyses  | filtration [OBI:0302885], environmental material collection process [OBI:0600012]|
-| geographic location  | Atlantic Ocean [GAZ:00000344], Pacific Occean [GAZ:] |
-| broad-scale environmental context  | oceanic epipelagic zone biome [ENVO:01000035], marine biome [ENVO:00000447], marine photic zone [ENVO:00000209] |
-| local environmental context  | oceanic epipelagic zone biome [ENVO:01000035], marine biome [ENVO:00000447], marine photic zone [ENVO:00000209] |
-| environmental medium  | sea water [ENVO:00002149] |
-| target  | environmental DNA [NCIT:C169106] |
-| creator  | Sean Anderson, Luke Thompson, Alyse Larkin, Adam Martiny |
-| materials required  | filtration [OBI:0302885] |
-| skills required  | sterile technique, pipetting skills, and standard molecular technique, research vessel experience |
-| time required  | 120 |
-| personnel required  | 1 |
-| language  | en |
-| issued  | 2024-08-15 |
-| audience  | scientists |
-| publisher  | NOAA Atlantic Oceanographic and Meteorological Laboratory; University of Mississippi's Northern Gulf Institute |
-| hasVersion  |  |
-| license  |  |
-| maturity level  |  |
+| methodology category | sample collection |
+| project | NOAA Atlantic Oceanographic and Meteorological Laboratory GO-SHIP |
+| purpose | biodiversity assessment objective [OBI:0001969] |
+| analyses | filtration [OBI:0302885], environmental material collection process [OBI:0600012]|
+| geographic location | Atlantic Ocean [GAZ:00000344], Pacific Occean [GAZ:] |
+| broad-scale environmental context | oceanic epipelagic zone biome [ENVO:01000035], marine biome [ENVO:00000447], marine photic zone [ENVO:00000209] |
+| local environmental context | oceanic epipelagic zone biome [ENVO:01000035], marine biome [ENVO:00000447], marine photic zone [ENVO:00000209] |
+| environmental medium | sea water [ENVO:00002149] |
+| target | environmental DNA [NCIT:C169106] |
+| creator | Sean Anderson, Luke Thompson, Alyse Larkin, Adam Martiny |
+| materials required | filtration [OBI:0302885] |
+| skills required | sterile technique, pipetting skills, and standard molecular technique, research vessel experience |
+| time required | 120 |
+| personnel required | 1 |
+| language | en |
+| issued | 2024-08-15 |
+| audience | scientists |
+| publisher | NOAA Atlantic Oceanographic and Meteorological Laboratory; University of Mississippi's Northern Gulf Institute |
+| hasVersion | |
+| license | |
+| maturity level | |
 
 ## AUTHORS
 
-| PREPARED BY All authors known to have contributed to the preparation of this protocol, including those who filled in the template.  | AFFILIATION | ORCID (visit https://orcid.org/ to register) | DATE |
+| PREPARED BY All authors known to have contributed to the preparation of this protocol, including those who filled in the template. | AFFILIATION | ORCID (visit https://orcid.org/ to register) | DATE |
 | ------------- | ------------- | ------------- | ------------- |
-| Sean Anderson  | NOAA AOML  | Content Cell | 2023-11-27 |
-| Luke Thompson  | NOAA AOML & MSU NGI  | Content Cell | 2023-11-27 |
-| Alyse Larkin  | UCI  | Content Cell | 2023-11-27 |
-| Adam Martiny  | UCI  | Content Cell | 2023-11-27 |
-| Sammy Harding | NOAA AOML & MSU NGI | Content Cell | 2024-08-15 |
+| Sean Anderson | NOAA/AOML, MSU/NGI | https://orcid.org/0000-0003-3096-1120 | 2023-11-27 |
+| Luke Thompson | NOAA/AOML, MSU/NGI | https://orcid.org/0000-0002-3911-1280 | 2023-11-27 |
+| Sammy Harding | NOAA/AOML, MSU/NGI | https://orcid.org/0009-0008-8885-6140 | 2024-08-15 |
+| Alyse Larkin | UC-Irvine | https://orcid.org/0000-0003-4466-0791 | 2023-11-27 |
+| Adam Martiny | UC-Irvine | https://orcid.org/0000-0003-2829-4314 | 2023-11-27 |
 
 ## PROTOCOL REVISION RECORD
 
 Version numbers start at "1.0.0" when the protocol is first completed and will increase when changes that impact the outcome of the procedure are made (patches: 1.0.1; minor changes: 1.1.0; major changes: 2.0.0). Please store all versions in the gDrive folder designated to your institute.
 
-| VERSION  | RELEASE DATE This is the date when a given protocol version was finalised | DESCRIPTION OF REVISIONS Please include a brief description of what was changed relative to the previous version |
+| VERSION | RELEASE DATE This is the date when a given protocol version was finalised | DESCRIPTION OF REVISIONS Please include a brief description of what was changed relative to the previous version |
 | ------------- | ------------- | ------------- |
-| 1.0.0  | 2023-11-27  | Initial release  |
+| 1.0.0 | 2023-11-27 | Initial release |
+| 1.0.1 | 2024-10-23 | Formatting edits |
 
 ## RELATED PROTOCOLS IN YOUR FOLDER
 
 This is a list of other protocols deposited in your folder which should be known to users of this protocol. For example, if you create a derivative or altered protocol, you would link to the original protocol in the section below. Please include the link to each related protocol. Also include the version number of that protocol when you linked to it. 
 
-| PROTOCOL NAME AND LINK  | VERSION The version of the protocol you linked to | RELEASE DATE This is the date corresponding to the version listed to the left |
+| PROTOCOL NAME AND LINK | VERSION The version of the protocol you linked to | RELEASE DATE This is the date corresponding to the version listed to the left |
 | ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | yyyy-mm-dd  |
-| Content Cell  | Content Cell  | yyyy-mm-dd  |
+| Content Cell | Content Cell | yyyy-mm-dd |
+| Content Cell | Content Cell | yyyy-mm-dd |
 
 ## RELATED EXTERNAL PROTOCOLS
 
 This is a list of other protocols that are not in your folder which should be known to users of this protocol. These include, e.g., kit manuals. Please upload all relevant external protocols to Appendix A and link to them here.
 
-| EXTERNAL PROTOCOL NAME AND LINK  | ISSUER / AUTHOR Please note who authored the protocol (this may also be a company name) | ACCESS DATE This is the date you downloaded or scanned the protocol and uploaded it. |
+| EXTERNAL PROTOCOL NAME AND LINK | ISSUER / AUTHOR Please note who authored the protocol (this may also be a company name) | ACCESS DATE This is the date you downloaded or scanned the protocol and uploaded it. |
 | ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | yyyy-mm-dd  |
-| Content Cell  | Content Cell  | yyyy-mm-dd  |
+| Content Cell | Content Cell | yyyy-mm-dd |
+| Content Cell | Content Cell | yyyy-mm-dd |
 
 ## ACRONYMS AND ABBREVIATIONS
 
@@ -79,8 +80,8 @@ This is a list of other protocols that are not in your folder which should be kn
 
 | SPECIALISED TERM | DEFINITION |
 | ------------- | ------------- |
-| Field negative control  | Negative control created during sampling. Usually distilled (DI) water run through a Sterivex filter in place of a seawater eDNA sample. This will act as a control for contamination during field sampling. |
-| Niskin bottle  | Plastic cylindrical bottle used for collecting water samples at different depths. Comes in a variety of volumes. |
+| Field negative control | Negative control created during sampling. Usually distilled (DI) water run through a Sterivex filter in place of a seawater eDNA sample. This will act as a control for contamination during field sampling. |
+| Niskin bottle | Plastic cylindrical bottle used for collecting water samples at different depths. Comes in a variety of volumes. |
 
 # BACKGROUND
 
@@ -117,21 +118,21 @@ The process of setting up sampling equipment and filtering seawater will take ~2
 | DESCRIPTION e.g. filter | PRODUCT NAME AND MODEL Provide the official name of the product | MANUFACTURER Provide the name of the manufacturer of the product. | QUANTITY Provide quantities necessary for one application of the standard operating procedure (e.g. number of filters). | REMARK For example, some of the consumable may need to be sterilized, some commercial solution may need to be diluted or shielded from light during the operating procedure. |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Durable equipment | 
-| 20 L carboy | 20 L Nalgene Carboy | Generic Brand | 1 |  |
+| 20 L carboy | 20 L Nalgene Carboy | Generic Brand | 1 | |
 | 8 L carboy | 8 L Nalgene Carboy | Generic Brand | 1 | Used to hold bleach solution |
-| Peristaltic pump | Masterflex Peristaltic Pump | Cole Parmer | 1 |  |
+| Peristaltic pump | Masterflex Peristaltic Pump | Cole Parmer | 1 | |
 | Pump heads | Masterflex L/S Easy-Load II Pump Heads for Precision Tubing | Avantor | 1-3 | The greater the # of pump heads, the faster the sampling process |
 | Pump tubing | Masterflex Precision Pump Tubing, Peroxide-Cured Silicone | EW-96400-24 | Cole Parmer | 3 | Depends on # of pump heads |
 | Hose-barb adapter | Masteflex fitting, Male Luer Lock to Hose Barb Adapter | Cole-Parmer | 3 | Depends on # of pump tubes |
 | Serological pipette | 10 mL Serological Pipette | Generic Brand | 3 | Depends on # of pump tubes|
 | 2 L graduated cylinders | Graduated Cylinder - 2 L | Generic Brand | 3 | Depends on # of samples being pumped at once, can be substituted with carboys which tubing will be directly attached to (no serological pipets) using adapters |
-| -20 °C freezer | -20 °C Commercial Chest Freezer | Generic Brand | 1 |  |
+| -20 °C freezer | -20 °C Commercial Chest Freezer | Generic Brand | 1 | |
 | Consumable equipment |
 | Sterivex filter | Millipore Sterivex-GP Pressure Filter Unit, 0.22µm pore size | Millipore Sigma | # of samples | account for negative control field blanks |
 | Inlet (male) luer-lock cap | MasterFlex Male Luer Lock Plug | VWR | 1 per Sterivex | depends on # of samples |
 | Outlet (female) luer-lock cap | MasterFlex Female Luer Thread Style Cap | VWR | 1 per Sterivex | depends on # of samples |
 | Pre-printed cryo-babies labels | Cryo-Babies Labels | Cryo-Babies | 1 label per Sterivex | Depends on # of samples |
-| 60 mL syringe with male luer-lock outlet | Disposable Syringe with Luer Lock - 60 mL | Generic brand | 1 box |  |
+| 60 mL syringe with male luer-lock outlet | Disposable Syringe with Luer Lock - 60 mL | Generic brand | 1 box | |
 | Sterile collection bags | Whil-Pak Collection bags | Cole Parmer | 1 box | Various sizes can be used for water collection |
 | DNA/RNA Shield | Zymo DNA/RNA Shield | Zymo Research | 1 mL per Sterivex | # mL depends on sample size |
 | Zymo ZR BashingBead Lysis Tubes | Zymo ZR BashingBead Lysis Tubes (0.1 & 0.5 mm) | Zymo Research | 1 tube per Sterivex | # of tubes depends on sample size |

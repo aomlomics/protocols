@@ -6,60 +6,61 @@ MIOP protocol template
 
 See https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml for list and definitions.
 
-| MIOP Term  | Value |
+| MIOP Term | Value |
 | ------------- | ------------- | 
-| methodology category  | Omics Analysis |
-| project  | NOAA Atlantic Oceanographic and Meteorological Laboratory OMICS Lab Protocols |
-| purpose  | PCR [OBI:0000415] |
-| analyses  | PCR [OBI:0000415] |
-| geographic location  | Atlantic Ocean [GAZ:00000344], Gulf of Mexico [GAZ:00002853] |
-| broad-scale environmental context  | marine biome [ENVO:00000447], marine photic zone [ENVO:00000209] |
-| local environmental context  | marine biome [ENVO:00000447], marine photic zone[ENVO:00000209] |
-| environmental medium  | sea water [ENVO:00002149] , polymerase chain reaction [OBI:0000415] |
-| target  | 16S [NCIT:C105370]|
-| creator  | Luke Thompson, Sean Anderson |
-| materials required  | vortexer [OBI:0400118], PCR instrument [OBI:0000989], agarose gel electrophoresis system [OBI:0001134] |
-| skills required  | sterile technique, pipetting skills, standard molecular technique |
-| time required  | 240 |
-| personnel required  | 1 |
-| language  | en |
-| issued  | 2021-02-08 |
-| audience  | scientitsts |
-| publisher  | NOAA Atlantic Oceanographic and Meteorological Laboratory; Mississippi State University's Northern Gulf Institute |
+| methodology category | Omics Analysis |
+| project | NOAA Atlantic Oceanographic and Meteorological Laboratory OMICS Lab Protocols |
+| purpose | PCR [OBI:0000415] |
+| analyses | PCR [OBI:0000415] |
+| geographic location | Atlantic Ocean [GAZ:00000344], Gulf of Mexico [GAZ:00002853] |
+| broad-scale environmental context | marine biome [ENVO:00000447], marine photic zone [ENVO:00000209] |
+| local environmental context | marine biome [ENVO:00000447], marine photic zone[ENVO:00000209] |
+| environmental medium | sea water [ENVO:00002149] , polymerase chain reaction [OBI:0000415] |
+| target | 16S [NCIT:C105370]|
+| creator | Luke Thompson, Sean Anderson |
+| materials required | vortexer [OBI:0400118], PCR instrument [OBI:0000989], agarose gel electrophoresis system [OBI:0001134] |
+| skills required | sterile technique, pipetting skills, standard molecular technique |
+| time required | 240 |
+| personnel required | 1 |
+| language | en |
+| issued | 2021-02-08 |
+| audience | scientitsts |
+| publisher | NOAA Atlantic Oceanographic and Meteorological Laboratory; Mississippi State University's Northern Gulf Institute |
 
 ## AUTHORS
 
-| PREPARED BY All authors known to have contributed to the preparation of this protocol, including those who filled in the template.  | AFFILIATION | ORCID (visit https://orcid.org/ to register) | DATE |
+| PREPARED BY All authors known to have contributed to the preparation of this protocol, including those who filled in the template. | AFFILIATION | ORCID (visit https://orcid.org/ to register) | DATE |
 | ------------- | ------------- | ------------- | ------------- |
-| Luke Thompson  | NOAA AOML & NGI | https://orcid.org/0000-0002-3911-1280| 2021-02-28 |
-| Sean Anderson  | NOAA AOML  |  | 2021-02-28 |
-| Sammy Harding  | NOAA AOML & NGI | https://orcid.org/0009-0008-8885-6140 | 2024-08-19 |
+| Luke Thompson |NOAA/AOML, MSU/NGI | https://orcid.org/0000-0002-3911-1280 | 2021-02-28 |
+| Sean Anderson | NOAA/AOML, MSU/NGI | https://orcid.org/0000-0003-3096-1120 | 2021-02-28 |
+| Sammy Harding | NOAA/AOML, MSU/NGI | https://orcid.org/0009-0008-8885-6140 | 2024-08-19 |
 
 ## PROTOCOL REVISION RECORD
 
-| VERSION  | RELEASE DATE This is the date when a given protocol version was finalised | DESCRIPTION OF REVISIONS Please include a brief description of what was changed relative to the previous version |
+| VERSION | RELEASE DATE This is the date when a given protocol version was finalised | DESCRIPTION OF REVISIONS Please include a brief description of what was changed relative to the previous version |
 | ------------- | ------------- | ------------- |
-| 1.0.0  | 2021-02-28  | Initial release  |
+| 1.0.0 | 2021-02-28 | Initial release |
+| 1.0.1 | 2024-10-23 | Formatting edits |
 
 ## ACRONYMS AND ABBREVIATIONS
 
 | ACRONYM / ABBREVIATION | DEFINITION |
 | ------------- | ------------- |
-| NOAA  | National Oceanographic and Atmospheric Administration  |
-| AOML  | Atlantic Oceanographic and Meteorological Laboratory  |
-| MSU  | Mississippi State University  |
-| NGI  | Northern Gulf Institute  |
-| PCR | Polymerase chain reaction  |
-| eDNA | environmental DNA  |
-| NTC | No template control  |
-| EtOH | Ethanol  |
+| NOAA | National Oceanographic and Atmospheric Administration |
+| AOML | Atlantic Oceanographic and Meteorological Laboratory |
+| MSU | Mississippi State University |
+| NGI | Northern Gulf Institute |
+| PCR | Polymerase chain reaction |
+| eDNA | environmental DNA |
+| NTC | No template control |
+| EtOH | Ethanol |
 
 ## GLOSSARY
 
 | SPECIALISED TERM | DEFINITION |
 | ------------- | ------------- |
-| Extraction Blank  | A type of negative control to confirm there is no contamination during DNA extractions. Normally an empty filter extracted and PCR amplified alongside other samples. |
-| No Template Control  | A type of negative control during PCR to confirm there is no contamination during the PCR process. Normally nuclease-free water run in place of DNA on a PCR. |
+| Extraction Blank | A type of negative control to confirm there is no contamination during DNA extractions. Normally an empty filter extracted and PCR amplified alongside other samples. |
+| No Template Control | A type of negative control during PCR to confirm there is no contamination during the PCR process. Normally nuclease-free water run in place of DNA on a PCR. |
 
 # BACKGROUND
 
@@ -104,7 +105,7 @@ For 96-well Plate:
 | 10-100 ul 8-Channel Pipette | Eppendorf Research Plus 8 Channel Pipette | Eppendorf | 1 | Can be substituted with any accurate pipette |
 | 0.5-10 uL 8-Channel Pipette |Eppendorf Research Plus 8 Channel Pipette | Eppendorf | 1 | Can be substituted with any accurate pipette |
 | Thermal cycler | Mastercycler Nexus Thermal Cycler | Eppendorf | 1 | Can be substituted with generic |
-| Microwave | Generic Microwave | Generic Brand | 1 |  |
+| Microwave | Generic Microwave | Generic Brand | 1 | |
 | Flask | 500 mL Flask | Generic Brand | 1 | Used for mixing agarose gel solution |
 | 1-L Glass Container | 1 L Glass Container | Generic Brand | 1 | Used for storing 1x TBE buffer |
 | Gel Tray & Box | Gel Electrophoresis Box and Tray | Generic Brand | 1 | Can be substituted with generic |
@@ -112,30 +113,30 @@ For 96-well Plate:
 | Consumable equipment |
 | Gloves | Nitrile Gloves, Exam Grade, Powder-free | ULINE | 1 box | Can be substituted with generic |
 | Kim Wipes | KimWipe Delicate Task Wipers | KimTech | 1 box | Can be substituted with generic |
-| 96-well PCR Plate | | Armadillo PCR Plate, 96-well, clear, clear wells | ThermoFisher | 3 |  |
+| 96-well PCR Plate | | Armadillo PCR Plate, 96-well, clear, clear wells | ThermoFisher | 3 | |
 | PCR Plate Seal | AlumaSeal II Sealing Foils for PCR and Cold Storage | VWR | 2 | Can be substituted with generic, can use tightly-fitted strip caps in place of seal |
 | 1000µL Filter Tips | OT-2 Filter Tips, 1000µL | Opentrons | 1 box | Can be substituted with generic |
 | 200µL Filter Tips | OT-2 Filter Tips, 200µL | Opentrons | 2 boxes | Can be substituted with generic |
 | 10 ul Filter tips | TipOne Pipette Tips, 10 uL | TipOne | 2 boxes | Can be substituted with generic |
-| AmpliTaq Gold PCR Mix | AmpliTaq Gold DNA Polymerase 5 mL | ThermoFisher | 1.2 mL |  |
-| Molecular water | Invitrogen RT-PCR Grade Water | Fisher Scientific | 0.912 mL |  |
+| AmpliTaq Gold PCR Mix | AmpliTaq Gold DNA Polymerase 5 mL | ThermoFisher | 1.2 mL | |
+| Molecular water | Invitrogen RT-PCR Grade Water | Fisher Scientific | 0.912 mL | |
 | Forward Primer - 515 F | 16S 515F Fluidigm Primer | IDT | 105 ul (10uM) | Primer must be diluted from 100uM stocks to 10uM |
 | Reverse Primer - 926 R | 16S 926R Fluidigm Primer | IDT | 105 ul (10uM) | Primer must be diluted from 100uM stocks to 10uM |
-| TBE Buffer (10x) | TBE Buffer 10X Solution, Molecular Biology Grade, UltraPure | Thermo Scientific | 100 uL |  |
-| Agarose | Agarose LE, Molecular Biology Grade, UltraPure | Thermo Scientific | 4g |  |
+| TBE Buffer (10x) | TBE Buffer 10X Solution, Molecular Biology Grade, UltraPure | Thermo Scientific | 100 uL | |
+| Agarose | Agarose LE, Molecular Biology Grade, UltraPure | Thermo Scientific | 4g | |
 | SYBR Safe | SYBR Safe DNA Gel Stain | Invitrogen | 20 uL | Light sensitive - do not expose to light |
-| Gel stain loading dye | DNA Gel Loading Dye (6x) | Thermo Scientific | 480 ul (per plate) |  |
-| 100bp DNA Ladder | Generuler 100 bp DNA Ladder | Thermo Scientific | 6 ul per lane on gel |  |
+| Gel stain loading dye | DNA Gel Loading Dye (6x) | Thermo Scientific | 480 ul (per plate) | |
+| 100bp DNA Ladder | Generuler 100 bp DNA Ladder | Thermo Scientific | 6 ul per lane on gel | |
 | Parafilm | Parafilm M Lab Film | Generic | 1 roll | Can substitute with generic brand |
 | Chemicals |
 | RNase AWAY | RNase AWAY Surface Decontaminant | ThermoFisher Scientific | 1 bottle | Used to sterilize lab surfaces and equipment |
 | EtOH | Ethanol | Generic Brand | 1 wash bottle | Must be molecular grade ethanol |
-| DI water | Deionized water | Generic | 900 mL |  |
+| DI water | Deionized water | Generic | 900 mL | |
 | (OPTIONAL) Clean-Up Protocol |
-| AMPure XP Beads | AMPure XP Bead-Based Reagent | Beckman Coulter | 1 kit |  |
+| AMPure XP Beads | AMPure XP Bead-Based Reagent | Beckman Coulter | 1 kit | |
 | 96-well magnetic plate | MagDTR 96-Well Magnetic Separator | Edge Biosystems Inc | 1 | Can be substituted with generic brand |
 | (OPTIONAL) Qubit |
-| Qubit Reagents | Qubit dsDNA Quantification Assay Kit | Invitrogen | 1 kit |  |
+| Qubit Reagents | Qubit dsDNA Quantification Assay Kit | Invitrogen | 1 kit | |
 | Clear Qubit Assay tubes | 0.5 mL thin-walled, polypropylene tubes | Invitrogen | 98 | Must be correct tubes to allow for fluorometer to read concentration |
 
 
@@ -154,8 +155,8 @@ Preparation
 1. Make PCR master mix and add 24 ul to each well of PCR plate - possible use on Opentrons OT2 Pipetting Robot.
 - 12.5 ul AmpliTaq Gold PCR Mix
 - 9.5 ul molecular water 
-- 1 ul Fwd primer (10  μM) - 515 F
-- 1 ul Rev primer (10  μM) - 926 R
+- 1 ul Fwd primer (10 μM) - 515 F
+- 1 ul Rev primer (10 μM) - 926 R
 
 | PCR Primer Name | Direction | Sequence (5’ -> 3’)| Sequence (5’ -> 3’) with Fluidigm Adapters | Fluidigm Adapter |
 | ----- | ----- | ----- |
@@ -175,7 +176,7 @@ Preparation
 | Annealing | 50°C | 45s | 30x |
 | Extension | 72°C | 90s | 30x |
 | Final Extension | 72°C | 10min | 1x |
-| Hold | 4°C | ∞ |  |
+| Hold | 4°C | ∞ | |
 
 ### Quality control, PCR clean-up
 

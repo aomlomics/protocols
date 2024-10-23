@@ -2,54 +2,63 @@
 
 ## Minimum Information about an Omics Protocol (MIOP)
 
-| MIOP Term  | Value |
+| MIOP Term | Value |
 | ------------- | ------------- | 
-| methodology category  | Omics Analysis |
-| project  | NOAA Atlantic Oceanographic and Meteorological Laboratory OMICS Lab Protocols |
-| purpose  | PCR [OBI:0000415], Library Preparation [OBI:0000711] |
-| analyses  | PCR [OBI:0000415], Library Preparation [OBI:0000711] |
-| geographic location  | Atlantic Ocean [GAZ:00000344], Gulf of Mexico [GAZ:00002853] |
-| broad-scale environmental context  | marine biome [ENVO:00000447], marine photic zone [ENVO:00000209] |
-| local environmental context  | marine biome [ENVO:00000447], marine photic zone[ENVO:00000209] |
-| environmental medium  | sea water [ENVO:00002149] , polymerase chain reaction [OBI:0000415] |
-| target  | whole genome sequencing [OBI_0002117] |
-| creator  | Alyse Larkin, Eric Adams, Stephen Wandro, Julio Avelar-Barragan, Andrew Oliver, Katrine Whiteson |
-| materials required  | vortexer [OBI:0400118], PCR instrument [OBI:0000989], Centrifuge [OBI:0400106] |
-| skills required  | sterile technique, pipetting skills, standard molecular technique |
-| time required  |  |
-| personnel required  | 1 |
-| language  | en |
-| issued  | 2023-05-26 |
-| audience  | scientists |
-| publisher  | NOAA Atlantic Oceanographic and Meteorological Laboratory; Mississippi State University's Northern Gulf Institute |
+| methodology category | Omics Analysis |
+| project | NOAA Atlantic Oceanographic and Meteorological Laboratory OMICS Lab Protocols |
+| purpose | PCR [OBI:0000415], Library Preparation [OBI:0000711] |
+| analyses | PCR [OBI:0000415], Library Preparation [OBI:0000711] |
+| geographic location | Atlantic Ocean [GAZ:00000344], Gulf of Mexico [GAZ:00002853] |
+| broad-scale environmental context | marine biome [ENVO:00000447], marine photic zone [ENVO:00000209] |
+| local environmental context | marine biome [ENVO:00000447], marine photic zone[ENVO:00000209] |
+| environmental medium | sea water [ENVO:00002149] , polymerase chain reaction [OBI:0000415] |
+| target | whole genome sequencing [OBI_0002117] |
+| creator | Alyse Larkin, Eric Adams, Stephen Wandro, Julio Avelar-Barragan, Andrew Oliver, Katrine Whiteson |
+| materials required | vortexer [OBI:0400118], PCR instrument [OBI:0000989], Centrifuge [OBI:0400106] |
+| skills required | sterile technique, pipetting skills, standard molecular technique |
+| time required | |
+| personnel required | 1 |
+| language | en |
+| issued | 2023-05-26 |
+| audience | scientists |
+| publisher | NOAA Atlantic Oceanographic and Meteorological Laboratory; Mississippi State University's Northern Gulf Institute |
 
 ## AUTHORS
 
 | PREPARED BY | AFFILIATION | ORCID | DATE |
 | ------------- | ------------- | ------------- | ------------- |
 | Alyse Larkin | UCI | https://orcid.org/0000-0003-4466-0791 | 2023-05-26
-| Eric Adams et al. | UCI |  | 2020-10-21 |
+| Eric Adams et al. | UCI | | 2020-10-21 |
 | Luke Thompson | NOAA AOML & NGI | https://orcid.org/0000-0002-3911-1280 | 2024-09-05 |
-| Sammy Harding  | NOAA AOML & NGI | https://orcid.org/0009-0008-8885-6140 | 2024-09-05 |
+| Sammy Harding | NOAA AOML & NGI | https://orcid.org/0009-0008-8885-6140 | 2024-09-05 |
 
 ## PROTOCOL REVISION RECORD
 
-| VERSION  | RELEASE DATE | DESCRIPTION OF REVISIONS |
+| VERSION | RELEASE DATE | DESCRIPTION OF REVISIONS |
 | ------------- | ------------- | ------------- |
-| 1.0.0  | 2024-09-05  | Initial release  |
+| 1.0.0 | 2024-09-05 | Initial release |
+| 1.0.1 | 2024-10-23 | Formatting edits |
+
+## RELATED EXTERNAL PROTOCOLS
+
+This protocol follows [Low Volume Methodology for Nextera DNA Flex Library Prep Kit (96 Samples)](https://www.protocols.io/view/low-volume-methodology-for-nextera-dna-flex-librar-be6rjhd6)
+with minor modifications:
+Step 8: We use 56ul IPB and 29ul of nuclease free water instead of 54 and 48.
+Step 9: We think there is a mistake in the protocol; it is transfer at least 10ng of genomic DNA and not 100ng.
+Step 50: We use 12uL of IPB (undiluted stock) instead of 14.4uL. This step is to get the good fragment size in your library. We chose 12uL based on the paper (Bruinsma et al. 2018). Bead-linked transposomes enable anormalization-free workflow for NGS librarypreparation). Claudia also used 12uL and it worked great for me with an average fragment size of 337bp.
 
 ## ACRONYMS AND ABBREVIATIONS
 
 | ACRONYM / ABBREVIATION | DEFINITION |
 | ------------- | ------------- |
-| NOAA  | National Oceanographic and Atmospheric Administration  |
-| AOML  | Atlantic Oceanographic and Meteorological Laboratory  |
-| MSU  | Mississippi State University  |
-| NGI  | Northern Gulf Institute  |
-| PCR | Polymerase chain reaction  |
-| eDNA | environmental DNA  |
-| NTC | No template control  |
-| EtOH | Ethanol  |
+| NOAA | National Oceanographic and Atmospheric Administration |
+| AOML | Atlantic Oceanographic and Meteorological Laboratory |
+| MSU | Mississippi State University |
+| NGI | Northern Gulf Institute |
+| PCR | Polymerase chain reaction |
+| eDNA | environmental DNA |
+| NTC | No template control |
+| EtOH | Ethanol |
 | BLT | Bead-Linked Transposomes |
 | TB1 | Tagmentation Buffer |
 | TSB | Tagmentation Stop Buffer |
@@ -104,7 +113,7 @@ This protocol takes about 4-5 hours to execute. There is a safe-stopping point a
 | 0.5-10 uL 8-Channel Pipette | Eppendorf Research Plus 8 Channel Pipette | Eppendorf | 1 | Can be substituted with any accurate pipette |
 | Serological Pipette | Eppendorf Easypet 3 Pipette | Eppendorf | 1 | Can be substituted with any accurate pipette |
 | Consumable equipment |
-| 96-well PCR plate | Armadillo PCR Plate, 96-well, clear, clear wells | ThermoFisher | 1 |  |
+| 96-well PCR plate | Armadillo PCR Plate, 96-well, clear, clear wells | ThermoFisher | 1 | |
 | Aluminum Foil Sealing Tape | AlumaSeal II Sealing Foils for PCR and Cold Storage | VWR | 7 | Can be substituted with generic | 
 | 8-Strip Tubes | 0.2 mL 8-Strip PCR Tubes | Generic Brand | 5 | tubes without caps attached are better |
 | Microcentrifuge Tubes | 2.0 mL Microcentrifuge Tube | Generic Brand | 8 | Can be substituted with generic|
@@ -117,8 +126,8 @@ This protocol takes about 4-5 hours to execute. There is a safe-stopping point a
 | Kim Wipes | KimWipe Delicate Task Wipers | KimTech | 1 box | Can be substituted with generic |
 | Chemicals |
 | 80% Ethanol | Molecular biology grade ethanol |
-| Proteinase K | Proteinase K, recombinant, PCR grade | ThermoFisher Scientific | 1 mL vial |  |
-| Nuclease-free water | Nuclease-Free Water (not DEPC-Treated) | ThermoFisher Scientific | 1 ml vial |  |
+| Proteinase K | Proteinase K, recombinant, PCR grade | ThermoFisher Scientific | 1 mL vial | |
+| Nuclease-free water | Nuclease-Free Water (not DEPC-Treated) | ThermoFisher Scientific | 1 ml vial | |
 | Illumina DNA Prep Kit | Illumina DNA Prep, (M) Tagmentation (24 samples, IPB) | Illumina | 1 kit | Kit includes Bead-Leaded Transposomes (BLT), Tagmentation Buffer (TB1), Tagmentation Stop Buffer (TSB), Tagmentation Wash Buffer (TWB), Illumina Purification Beads (IPB), Resuspension Buffer (RSB) - previously named Nextera DNA Flex Kit |
 | Kapa Hifi Hotstart Kit | KAPA Hifi Hotstart Library Amplification Kit with Primer Mix | Roche | 1 kit | Kit includes KAPA Amplification Primer Mix (KAPA-PCR-F / KAPA-PCR-R), KAPA Hifi Hotstart ReadyMix |
 | Dual Indexes - Set A, B, C | IDT for Illumina DNA/RNA UD Indexes Sets A-C (20027213, 20027214, 20042666) | Illumina | 1 set | Product will be discontinued Jan 2025 - switch to Illumina DNA/RNA UD Indexes Sets A-C (20091654, 20091656, 20091658) |

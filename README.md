@@ -6,8 +6,6 @@ The repository contains protocols used by AOML Omics labs, made using the [BeBOP
 
 ### Sample collection
 
-protocol_libprep_metag_illumina.md:# NOAA/AOML Metagenome Library Prep Protocol (Illumina DNA Prep)
-
 * [Water Sampling Protocol using Sterivex with Zirconia Beads](https://github.com/aomlomics/protocols/blob/main/protocol_sampling_sterivex_beads.md)
 
 ### DNA extraction

@@ -83,6 +83,7 @@ pcr_method_additional: not provided
 | ------------- | ------------- | ------------- |
 | 1.0.0 | 2021-08-22 | Initial release |
 | 1.0.1 | 2024-10-23 | Formatting edits |
+| 1.1.0 | 2024-11-16 | Addition of FAIR eDNA terms in YAML frontmatter |
 
 - Version numbers start at 1.0.0 when the protocol is first completed and will increase when changes that impact the outcome of the procedure are made (patches: 1.0.1; minor changes: 1.1.0; major changes: 2.0.0).
 - Release date is the date when a given protocol version was finalised.
@@ -144,7 +145,7 @@ For 96-well Plate:
 
 | DESCRIPTION | PRODUCT NAME AND MODEL | MANUFACTURER | QUANTITY | REMARK |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Durable equipment |
+| **Durable equipment** |
 | 100-1000 ul Pipette | Eppendorf Research Plus Adjustable-Volume Pipette | Eppendorf | 1 | Can be substituted with any accurate pipette |
 | 10-100 ul Pipette | Eppendorf Research Plus Adjustable-Volume Pipette | Eppendorf | 1 | Can be substituted with any accurate pipette |
 | 0.1-2.5 ul Pipette | Eppendorf Research Plus Adjustable-Volume Pipette | Eppendorf | 1 | Can be substituted with any accurate pipette |
@@ -156,7 +157,7 @@ For 96-well Plate:
 | 1-L Glass Container | 1 L Glass Container | Generic Brand | 1 | Used for storing 1x TBE buffer |
 | Gel Tray & Box | Gel Electrophoresis Box and Tray | Generic Brand | 1 | Can be substituted with generic |
 | Gel Combs | Gel Electrophoresis Combs | Generic Brand | 2 | Can be substituted with generic |
-| Consumable equipment |
+| **Consumable equipment** |
 | Gloves | Nitrile Gloves, Exam Grade, Powder-free | ULINE | 1 box | Can be substituted with generic |
 | Kim Wipes | KimWipe Delicate Task Wipers | KimTech | 1 box | Can be substituted with generic |
 | 96-well PCR Plate | | Armadillo PCR Plate, 96-well, clear, clear wells | ThermoFisher | 3 | |
@@ -174,7 +175,7 @@ For 96-well Plate:
 | Gel stain loading dye | DNA Gel Loading Dye (6x) | Thermo Scientific | 480 ul (per plate) | |
 | 100bp DNA Ladder | Generuler 100 bp DNA Ladder | Thermo Scientific | 6 ul per lane on gel | |
 | Parafilm | Parafilm M Lab Film | Generic | 1 roll | Can substitute with generic brand |
-| Chemicals |
+| **Chemicals** |
 | RNase AWAY | RNase AWAY Surface Decontaminant | ThermoFisher Scientific | 1 bottle | Used to sterilize lab surfaces and equipment |
 | EtOH | Ethanol | Generic Brand | 1 wash bottle | Must be molecular grade ethanol |
 | DI water | Deionized water | Generic | 900 mL | |
@@ -184,6 +185,12 @@ For 96-well Plate:
 | (OPTIONAL) Qubit |
 | Qubit Reagents | Qubit dsDNA Quantification Assay Kit | Invitrogen | 1 kit | |
 | Clear Qubit Assay tubes | 0.5 mL thin-walled, polypropylene tubes | Invitrogen | 98 | Must be correct tubes to allow for fluorometer to read concentration |
+
+- Description: E.g., "filter".
+- Product Name and Model: Provide the official name of the product.
+- Manufacturer: Provide the name of the manufacturer of the product.
+- Quantity: Provide quantities necessary for one application of the standard operating procedure (e.g., number of filters).
+- Remark: For example, some of the consumable may need to be sterilized, some commercial solution may need to be diluted or shielded from light during the operating procedure.
 
 ## STANDARD OPERATING PROCEDURE
 

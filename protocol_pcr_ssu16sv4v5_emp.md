@@ -64,18 +64,18 @@ pcr_method_additional: not provided
 ### Minimum Information about an Omics Protocol (MIOP)
 
 - MIOP terms are listed in the YAML frontmatter of this page.
-- See https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml for list and definitions.
+- See <https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml> for list and definitions.
 
 ### Authors
 
 | PREPARED BY | AFFILIATION | ORCID | DATE |
 | ------------- | ------------- | ------------- | ------------- |
-| Luke Thompson | NOAA/AOML, MSU/NGI | https://orcid.org/0000-0002-3911-1280 | 2021-02-28 |
-| Sean Anderson | NOAA/AOML, MSU/NGI | https://orcid.org/0000-0003-3096-1120 | 2021-02-28 |
-| Sammy Harding | NOAA/AOML, MSU/NGI | https://orcid.org/0009-0008-8885-6140 | 2024-08-19 |
+| Luke Thompson | NOAA/AOML, MSU/NGI | <https://orcid.org/0000-0002-3911-1280> | 2021-02-28 |
+| Sean Anderson | NOAA/AOML, MSU/NGI | <https://orcid.org/0000-0003-3096-1120> | 2021-02-28 |
+| Sammy Harding | NOAA/AOML, MSU/NGI | <https://orcid.org/0009-0008-8885-6140> | 2024-08-19 |
 
 - All authors known to have contributed to the preparation of this protocol should be listed, including those who filled in the template.
-- Visit https://orcid.org/ to register for an ORCID.
+- Visit <https://orcid.org/> to register for an ORCID.
 
 ### Protocol Revision Record
 
@@ -83,6 +83,7 @@ pcr_method_additional: not provided
 | ------------- | ------------- | ------------- |
 | 1.0.0 | 2021-02-28 | Initial release |
 | 1.0.1 | 2024-10-23 | Formatting edits |
+| 1.1.0 | 2024-11-16 | Addition of FAIR eDNA terms in YAML frontmatter |
 
 - Version numbers start at 1.0.0 when the protocol is first completed and will increase when changes that impact the outcome of the procedure are made (patches: 1.0.1; minor changes: 1.1.0; major changes: 2.0.0).
 - Release date is the date when a given protocol version was finalised.
@@ -112,7 +113,7 @@ pcr_method_additional: not provided
 
 ### Summary
 
-This protocol describes steps for performing PCR for 16S marker gene regions using eDNA extracted from Sterivex at NOAA's AOML. There are several optional steps at the end of the protocol including using AMPure beads to clean up PCR products. Some steps (e.g. PCR plate preparation, AMPure bead cleanup, sequencing plate dilutions) have been or can be optimized for use with the Opentrons OT2 robot. This protocol closely aligns with the following 16S protocol: https://www.protocols.io/view/fuhrman-lab-515f-926r-16s-and-18s-rrna-gene-sequen-j8nlkpd1g5r7/v2?step=102.
+This protocol describes steps for performing PCR for 16S marker gene regions using eDNA extracted from Sterivex at NOAA's AOML. There are several optional steps at the end of the protocol including using AMPure beads to clean up PCR products. Some steps (e.g. PCR plate preparation, AMPure bead cleanup, sequencing plate dilutions) have been or can be optimized for use with the Opentrons OT2 robot. This protocol closely aligns with the following 16S protocol: <https://www.protocols.io/view/fuhrman-lab-515f-926r-16s-and-18s-rrna-gene-sequen-j8nlkpd1g5r7/v2?step=102>.
 
 ### Method description and rationale
 
@@ -144,7 +145,7 @@ For 96-well Plate:
 
 | DESCRIPTION | PRODUCT NAME AND MODEL | MANUFACTURER | QUANTITY | REMARK |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Durable equipment |
+| **Durable equipment** |
 | 100-1000 ul Pipette | Eppendorf Research Plus Adjustable-Volume Pipette | Eppendorf | 1 | Can be substituted with any accurate pipette |
 | 10-100 ul Pipette | Eppendorf Research Plus Adjustable-Volume Pipette | Eppendorf | 1 | Can be substituted with any accurate pipette |
 | 0.1-2.5 ul Pipette | Eppendorf Research Plus Adjustable-Volume Pipette | Eppendorf | 1 | Can be substituted with any accurate pipette |
@@ -156,7 +157,7 @@ For 96-well Plate:
 | 1-L Glass Container | 1 L Glass Container | Generic Brand | 1 | Used for storing 1x TBE buffer |
 | Gel Tray & Box | Gel Electrophoresis Box and Tray | Generic Brand | 1 | Can be substituted with generic |
 | Gel Combs | Gel Electrophoresis Combs | Generic Brand | 2 | Can be substituted with generic |
-| Consumable equipment |
+| **Consumable equipment** |
 | Gloves | Nitrile Gloves, Exam Grade, Powder-free | ULINE | 1 box | Can be substituted with generic |
 | Kim Wipes | KimWipe Delicate Task Wipers | KimTech | 1 box | Can be substituted with generic |
 | 96-well PCR Plate | | Armadillo PCR Plate, 96-well, clear, clear wells | ThermoFisher | 3 | |
@@ -174,16 +175,22 @@ For 96-well Plate:
 | Gel stain loading dye | DNA Gel Loading Dye (6x) | Thermo Scientific | 480 ul (per plate) | |
 | 100bp DNA Ladder | Generuler 100 bp DNA Ladder | Thermo Scientific | 6 ul per lane on gel | |
 | Parafilm | Parafilm M Lab Film | Generic | 1 roll | Can substitute with generic brand |
-| Chemicals |
+| **Chemicals** |
 | RNase AWAY | RNase AWAY Surface Decontaminant | ThermoFisher Scientific | 1 bottle | Used to sterilize lab surfaces and equipment |
 | EtOH | Ethanol | Generic Brand | 1 wash bottle | Must be molecular grade ethanol |
 | DI water | Deionized water | Generic | 900 mL | |
-| (OPTIONAL) Clean-Up Protocol |
+| **(OPTIONAL) Clean-Up Protocol** |
 | AMPure XP Beads | AMPure XP Bead-Based Reagent | Beckman Coulter | 1 kit | |
 | 96-well magnetic plate | MagDTR 96-Well Magnetic Separator | Edge Biosystems Inc | 1 | Can be substituted with generic brand |
-| (OPTIONAL) Qubit |
+| **(OPTIONAL) Qubit** |
 | Qubit Reagents | Qubit dsDNA Quantification Assay Kit | Invitrogen | 1 kit | |
 | Clear Qubit Assay tubes | 0.5 mL thin-walled, polypropylene tubes | Invitrogen | 98 | Must be correct tubes to allow for fluorometer to read concentration |
+
+- Description: E.g., "filter".
+- Product Name and Model: Provide the official name of the product.
+- Manufacturer: Provide the name of the manufacturer of the product.
+- Quantity: Provide quantities necessary for one application of the standard operating procedure (e.g., number of filters).
+- Remark: For example, some of the consumable may need to be sterilized, some commercial solution may need to be diluted or shielded from light during the operating procedure.
 
 ## STANDARD OPERATING PROCEDURE
 
@@ -243,14 +250,14 @@ Following PCR amplification, run products through 2% agarose gel to confirm pres
 
 (OPTIONAL) Purify PCR products using AMPure beads protocol (optimized for Opentrons)
 
-1. Follow along with AMPure XP beads manufacturer protocol (begins on page 5 of manual - https://www.beckmancoulter.com/wsrportal/techdocs?docname=B37419).
+1. Follow along with AMPure XP beads manufacturer protocol (begins on page 5 of manual - <https://www.beckmancoulter.com/wsrportal/techdocs?docname=B37419>).
 2. Will need magnetic plate and fresh 70% ethanol.
 3. Adjust bead ratio - 0.8x beads to sample volume for 16S.
 4. End product will be ~40 ul of cleaned DNA eluted in molecular grade water.
 
 (OPTIONAL) Run Qubit on final PCR Products
 
-1. Follow manufacturer protocol for running Qubit: https://tools.thermofisher.com/content/sfs/manuals/Qubit_dsDNA_HS_Assay_UG.pdf.
+1. Follow manufacturer protocol for running Qubit: <https://tools.thermofisher.com/content/sfs/manuals/Qubit_dsDNA_HS_Assay_UG.pdf>.
 
 (OPTIONAL) Run Second 2% Agarose Gel on Purified PCR Products
 
@@ -277,10 +284,10 @@ Weak Amplification
 ## REFERENCES
 
 Furman Lab 515F-926R 16S rRNA Gene Sequencing Protocol V.2
-https://www.protocols.io/view/fuhrman-lab-515f-926r-16s-and-18s-rrna-gene-sequen-j8nlkpd1g5r7/v2?step=9
+<https://www.protocols.io/view/fuhrman-lab-515f-926r-16s-and-18s-rrna-gene-sequen-j8nlkpd1g5r7/v2?step=9>
 
 AMPure Beads Protocol (Beckman Coulter)
-https://www.beckmancoulter.com/wsrportal/techdocs?docname=B37419
+<https://www.beckmancoulter.com/wsrportal/techdocs?docname=B37419>
 
 Qubit Protocol (Thermo Fisher)
-https://tools.thermofisher.com/content/sfs/manuals/Qubit_dsDNA_HS_Assay_UG.pdf
+<https://tools.thermofisher.com/content/sfs/manuals/Qubit_dsDNA_HS_Assay_UG.pdf>

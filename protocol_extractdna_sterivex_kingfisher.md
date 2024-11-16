@@ -36,32 +36,34 @@ pool_dna_num: not applicable
 nucl_acid_ext_method_additional: not applicable
 ---
 
-# NOAA/AOML OMICS DNA Extraction Protocol for Sterivex Using KingFisher
+# NOAA/AOML DNA Extraction Protocol for Sterivex using KingFisher
 
 ## PROTOCOL INFORMATION
 
 ### Minimum Information about an Omics Protocol (MIOP)
 
-See https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml for list and definitions.
+See <https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml> for list and definitions.
 
 ### Authors
 
 | PREPARED BY | AFFILIATION | ORCID | DATE |
 | ------------- | ------------- | ------------- | ------------- |
-| Luke Thompson  | NOAA AOML & MSU NGI  | Content Cell | yyyy-mm-dd |
-| Sean Anderson | NOAA AOML | Content Cell | yyyy-mm-dd |
-| Sammy Harding  | NOAA AOML & MSU NGI  | Content Cell | 2024-06-26 |
+| Luke Thompson | NOAA/AOML, MSU/NGI | <https://orcid.org/0000-0002-3911-1280> | 2021-09-13 |
+| Sean Anderson | NOAA/AOML, MSU/NGI | <https://orcid.org/0000-0003-3096-1120> | 2021-09-13 |
+| Sammy Harding | NOAA/AOML, MSU/NGI | <https://orcid.org/0009-0008-8885-6140> | 2024-06-26 |
 
 - All authors known to have contributed to the preparation of this protocol should be listed, including those who filled in the template.
-- Visit https://orcid.org/ to register for an ORCID.
+- Visit <https://orcid.org/> to register for an ORCID.
 
 ### Protocol Revision Record
-
-Version numbers start at "1.0.0" when the protocol is first completed and will increase when changes that impact the outcome of the procedure are made (patches: 1.0.1; minor changes: 1.1.0; major changes: 2.0.0).
 
 | VERSION  | RELEASE DATE | DESCRIPTION OF REVISIONS |
 | ------------- | ------------- | ------------- |
 | 1.0.0  | 2024-06-26  | Initial release  |
+
+- Version numbers start at 1.0.0 when the protocol is first completed and will increase when changes that impact the outcome of the procedure are made (patches: 1.0.1; minor changes: 1.1.0; major changes: 2.0.0).
+- Release date is the date when a given protocol version was finalised.
+- Description of revisions includes a brief description of what was changed relative to the previous version.
 
 ### Acronyms and Abbreviations
 
@@ -104,7 +106,7 @@ One person with molecular biology experience.
 
 ### Safety
 
-MagBinding Buffer from the ZymoBIOMICS Kit is classified as category 4 for acute toxicity and causes severe skin burns and serious eye damage. It is also noted that the MagBinding Buffer is harmful to aquatic life with long lasting effects. MagWash1 from the ZymoBIOMICS Kit is classified as category 4 for acute toxicity, is highly flammable, causes skin and serious eye irritation and may cause drowsiness or dizziness. MagWash2 from the ZymoBIOMICS Kit is flammable, causes serious eye irritation and may cause drowsiness or dizziness. Additional details available on SDS (https://files.zymoresearch.com/sds/_d4302_d4308_zymobiomics-96_magbead_dna_kits.pdf). For other reagents, standard precautions for handling chemicals including wearing PPE is recommended to avoid skin and eye exposure. 
+MagBinding Buffer from the ZymoBIOMICS Kit is classified as category 4 for acute toxicity and causes severe skin burns and serious eye damage. It is also noted that the MagBinding Buffer is harmful to aquatic life with long lasting effects. MagWash1 from the ZymoBIOMICS Kit is classified as category 4 for acute toxicity, is highly flammable, causes skin and serious eye irritation and may cause drowsiness or dizziness. MagWash2 from the ZymoBIOMICS Kit is flammable, causes serious eye irritation and may cause drowsiness or dizziness. Additional details available on SDS (<https://files.zymoresearch.com/sds/_d4302_d4308_zymobiomics-96_magbead_dna_kits.pdf>). For other reagents, standard precautions for handling chemicals including wearing PPE is recommended to avoid skin and eye exposure. 
 
 ### Training requirements
 
@@ -116,8 +118,9 @@ Extracting DNA from 94 sterivex samples takes about 5 hours (300 minutes) includ
 
 ## EQUIPMENT
 
+| DESCRIPTION | PRODUCT NAME AND MODEL | MANUFACTURER | QUANTITY | REMARK |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Durable equipment |
+| **Durable equipment** | | | | |
 | Vortex | Vortex Genie | Scientific Industries | as many as possible | # of vortexes will affect run time of protocol |
 | Vortex Adapter Plate | Vortex Adapter for 6 x 5ml tubes| QIAGEN | depends on # of vortexes | # of vortex adapter plates will affect run time |
 | Centrifuge | Centrifuge 5425 R - Microcentrifuge | Eppendorf | 1 | Can be substituted with generic |
@@ -128,7 +131,7 @@ Extracting DNA from 94 sterivex samples takes about 5 hours (300 minutes) includ
 | 1 uL-10 mL Repeater Pipette | Repeater M4 Pipette, 1 uL-10 mL Dispensing Volume for use with Combitips Advanced Syringe Tips | Can be substituted with any accurate pipette, optional for filling KingFisher plates |
 | Tube Racks | 2 mL tube 96-well tube racks | Generic | 1 | Can be any brand, must fit 2 mL tubes |
 | Wash bottles | Safety wash bottles 500 mL for EtOH | Generic | 1 | Can be substituted with generic |
-| Consumable equipment |  |  |  |  |
+| **Consumable equipment** |  |  |  |  |
 | Sterivex Filter | Millipore Sterivex-GP Pressure Filter Unit, 0.22µm pore size | Millipore Sigma | 94 |  |
 | DNA/RNA Shield | Zymo DNA/RNA Shield | Zymo Research | 94 mL | only required if sterivex are not pre-loaded or for adding an extraction blank |
 | Zirconia Beads | Zymo ZR BashingBead Lysis Tubes (0.1 & 0.5 mm) | Zymo Research | 94 | only required if sterivex are not pre-loaded or for adding an extraction blank |
@@ -148,19 +151,21 @@ Extracting DNA from 94 sterivex samples takes about 5 hours (300 minutes) includ
 | 10 mL Combitips | Combitips advanced, 10 mL, orange, colorless tips | Eppendorf | 3 tips | optional for KF plate prep with repeater pipette |
 | Gloves | Nitrile Gloves, Exam Grade, Powder-free | ULINE | 1 box | Can be substituted with generic |
 | Kim Wipes | KimWipe Delicate Task Wipers | KimTech | 1 box | Can be substituted with generic |
-| Opentrons Consumables (if using Opentrons OT-2 Robot for KF Plate Prep) |  |  |  |  |
+| **Opentrons Consumables** |  |  |  |  |
 | 12-Well Reservoir, 15 mL | NEST 12-Well Reservoir, 15 mL | Opentrons | 1 | optional for KF plate prep on OT-2 Robot |
 | Deep Single-Well Reservoir, 300 mL | Nalgene Disposable Polypropylene Robotic Reservoirs | ThermoFisher | 2 | optional for KF plate prep on OT-2 Robot |
 | 200µL Filter Tips | OT-2 Filter Tips, 200µL | Opentrons | 1 box | optional for KF plate prep on OT-2 Robot |
-| Chemicals |  |  |  |  |
+| **Chemicals** |  |  |  |  |
 | 70% EtOH | Molecular bio grade ethanol | Generic | 1 Wash Bottle | only used for cleaning lab surfaces |
-| ZymoBIOMICS 96 MagBead DNA Kit |  |  |  |  |
+| **ZymoBIOMICS 96 MagBead DNA Kit** |  |  |  |  |
 | Lysis Solution | ZymoBIOMICS Lysis Solution | Zymo Research | 94 mL | can be used in place of DNA/RNA Shield, only required if sterivex are not pre-loaded or for adding an extraction blank |
 | MagBinding Buffer | ZymoBIOMICS MagBinding Buffer | Zymo Research | 57.6 mL |  |
 | MagBinding Beads | ZymoBIOMICS MagBinding Beads | Zymo Research | 2.4 mL |  |
 | MagWash 1 | ZymoBIOMICS MagWash 1 | Zymo Research | 48 mL |  |
 | MagWash 2 | ZymoBIOMICS MagWash 2 | Zymo Research | 86.4 mL |  |
 | DNAse/RNAse Free Water | ZymoBIOMICS DNAse/RNAse Free Water | Zymo Research | 14.4 mL |  |
+
+**Opentrons Consumables** (if using Opentrons OT-2 Robot for KF Plate Prep)
 
 ## STANDARD OPERATING PROCEDURE
 

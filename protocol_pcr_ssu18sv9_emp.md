@@ -64,18 +64,18 @@ pcr_method_additional: not provided
 ### Minimum Information about an Omics Protocol (MIOP)
 
 - MIOP terms are listed in the YAML frontmatter of this page.
-- See https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml for list and definitions.
+- See <https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml> for list and definitions.
 
 ### Authors
 
 | PREPARED BY | AFFILIATION | ORCID | DATE |
 | ------------- | ------------- | ------------- | ------------- |
-| Luke Thompson |NOAA/AOML, MSU/NGI | https://orcid.org/0000-0002-3911-1280 | 2021-02-28 |
-| Sean Anderson | NOAA/AOML, MSU/NGI | https://orcid.org/0000-0003-3096-1120 | 2021-02-28 |
-| Sammy Harding | NOAA/AOML, MSU/NGI | https://orcid.org/0009-0008-8885-6140 | 2024-08-22 |
+| Luke Thompson |NOAA/AOML, MSU/NGI | <https://orcid.org/0000-0002-3911-1280> | 2021-02-28 |
+| Sean Anderson | NOAA/AOML, MSU/NGI | <https://orcid.org/0000-0003-3096-1120> | 2021-02-28 |
+| Sammy Harding | NOAA/AOML, MSU/NGI | <https://orcid.org/0009-0008-8885-6140> | 2024-08-22 |
 
 - All authors known to have contributed to the preparation of this protocol should be listed, including those who filled in the template.
-- Visit https://orcid.org/ to register for an ORCID.
+- Visit <https://orcid.org/> to register for an ORCID.
 
 ### Protocol Revision Record
 
@@ -84,6 +84,7 @@ pcr_method_additional: not provided
 | 1.0.0 | 2021-08-22 | Initial release |
 | 1.0.1 | 2024-10-23 | Formatting edits |
 
+- Version numbers start at 1.0.0 when the protocol is first completed and will increase when changes that impact the outcome of the procedure are made (patches: 1.0.1; minor changes: 1.1.0; major changes: 2.0.0).
 - Release date is the date when a given protocol version was finalised.
 - Description of revisions includes a brief description of what was changed relative to the previous version.
 
@@ -244,13 +245,13 @@ Following PCR amplification, run products through 2% agarose gel to confirm pres
 
 (OPTIONAL) Purify PCR products using AMPure beads protocol (optimized for Opentrons)
 
-15. Follow along with AMPure XP beads manufacturer protocol (begins on page 5 of manual - https://www.beckmancoulter.com/wsrportal/techdocs?docname=B37419).
+15. Follow along with AMPure XP beads manufacturer protocol (begins on page 5 of manual - <https://www.beckmancoulter.com/wsrportal/techdocs?docname=B37419>).
 16. Will need magnetic plate and fresh 70% ethanol.
 17. End product will be ~40 ul of cleaned DNA eluted in molecular grade water.
 
 (OPTIONAL) Run Qubit on final PCR Products
 
-18. Follow manufacturer protocol for running Qubit: https://tools.thermofisher.com/content/sfs/manuals/Qubit_dsDNA_HS_Assay_UG.pdf.
+18. Follow manufacturer protocol for running Qubit: <https://tools.thermofisher.com/content/sfs/manuals/Qubit_dsDNA_HS_Assay_UG.pdf>.
 
 (OPTIONAL) Run Second 2% Agarose Gel on Purified PCR Products
 
@@ -277,7 +278,7 @@ Weak Amplification
 ## REFERENCES
 
 AMPure Beads Protocol (Beckman Coulter)
-https://www.beckmancoulter.com/wsrportal/techdocs?docname=B37419
+<https://www.beckmancoulter.com/wsrportal/techdocs?docname=B37419>
 
 Qubit Protocol (Thermo Fisher)
-https://tools.thermofisher.com/content/sfs/manuals/Qubit_dsDNA_HS_Assay_UG.pdf
+<https://tools.thermofisher.com/content/sfs/manuals/Qubit_dsDNA_HS_Assay_UG.pdf>

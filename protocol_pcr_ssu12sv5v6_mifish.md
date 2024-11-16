@@ -64,18 +64,18 @@ pcr_method_additional: not provided
 ### Minimum Information about an Omics Protocol (MIOP)
 
 - MIOP terms are listed in the YAML frontmatter of this page.
-- See https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml for list and definitions.
+- See <https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml> for list and definitions.
 
 ### Authors
 
 | PREPARED BY | AFFILIATION | ORCID | DATE |
 | ------------- | ------------- | ------------- | ------------- |
-| Luke Thompson |NOAA/AOML, MSU/NGI | https://orcid.org/0000-0002-3911-1280 | 2021-02-28 |
-| Sean Anderson | NOAA/AOML, MSU/NGI | https://orcid.org/0000-0003-3096-1120 | 2021-02-28 |
-| Sammy Harding | NOAA/AOML, MSU/NGI | https://orcid.org/0009-0008-8885-6140 | 2024-08-19 |
+| Luke Thompson |NOAA/AOML, MSU/NGI | <https://orcid.org/0000-0002-3911-1280> | 2021-02-28 |
+| Sean Anderson | NOAA/AOML, MSU/NGI | <https://orcid.org/0000-0003-3096-1120> | 2021-02-28 |
+| Sammy Harding | NOAA/AOML, MSU/NGI | <https://orcid.org/0009-0008-8885-6140> | 2024-08-19 |
 
 - All authors known to have contributed to the preparation of this protocol should be listed, including those who filled in the template.
-- Visit https://orcid.org/ to register for an ORCID.
+- Visit <https://orcid.org/> to register for an ORCID.
 
 ### Protocol Revision Record
 
@@ -84,6 +84,7 @@ pcr_method_additional: not provided
 | 1.0.0 | 2021-08-22 | Initial release |
 | 1.0.1 | 2024-10-23 | Formatting edits |
 
+- Version numbers start at 1.0.0 when the protocol is first completed and will increase when changes that impact the outcome of the procedure are made (patches: 1.0.1; minor changes: 1.1.0; major changes: 2.0.0).
 - Release date is the date when a given protocol version was finalised.
 - Description of revisions includes a brief description of what was changed relative to the previous version.
 
@@ -111,7 +112,7 @@ pcr_method_additional: not provided
 
 ### Summary
 
-This protocol describes steps for performing PCR for 12S marker gene regions using eDNA extracted from Sterivex at NOAA's AOML. There are several optional steps at the end of the protocol including using AMPure beads to clean up PCR products. Some steps (e.g. PCR plate preparation, AMPure bead cleanup, sequencing plate dilutions) have been or can be optimized for use with the Opentrons OT2 robot. This protocol closely follows along with the following protocol: https://www.protocols.io/view/environmental-dna-edna-12s-metabarcoding-illumina-kqdg35kqzv25/v2.
+This protocol describes steps for performing PCR for 12S marker gene regions using eDNA extracted from Sterivex at NOAA's AOML. There are several optional steps at the end of the protocol including using AMPure beads to clean up PCR products. Some steps (e.g. PCR plate preparation, AMPure bead cleanup, sequencing plate dilutions) have been or can be optimized for use with the Opentrons OT2 robot. This protocol closely follows along with the following protocol: <https://www.protocols.io/view/environmental-dna-edna-12s-metabarcoding-illumina-kqdg35kqzv25/v2>.
 
 ### Method description and rationale
 
@@ -199,11 +200,11 @@ For 96-well Plate:
 1. Make PCR master mix and add 24 ul to each well of PCR plate - possible use on Opentrons OT2 Pipetting Robot. Account for triplicate reactions.
 
 - 12.5 ul AmpliTaq Gold PCR Mix
-- 9.5 ul molecular water 
+- 9.5 ul molecular water
 - 1 ul Fwd primer (10 μM) - MiFish F V2
 - 1 ul Rev primer (10 μM) - MiFish R
 
-| PCR Primer Name | Direction | Sequence (5’ -> 3’) | Sequence (5’ -> 3’) with Fluidigm Adapters | Fluidigm Adapter | 
+| PCR Primer Name | Direction | Sequence (5’ -> 3’) | Sequence (5’ -> 3’) with Fluidigm Adapters | Fluidigm Adapter |
 | ----- | ----- | ----- |----|----|
 | 12S MiFish F V2 | forward | GCCGGTAAAACTCGTGCCAGC | ACACTGACGACATGGTTCTACA xxx GCCGGTAAAACTCGTGCCAGC | CS1-TS-F |
 | 12S MiFish R | reverse | CATAGTGGGGTATCTAATCCCAGTTTG | TACGGTAGCAGAGACTTGGTCT xxx CATAGTGGGGTATCTAATCCCAGTTTG | CS2-TS-R |
@@ -230,6 +231,7 @@ For 96-well Plate:
 
 2% Agarose Gel
 Following PCR amplification, pool triplicate PCR products then run through 2% agarose gel to confirm presence of target bands:
+
 1. Make stock solution of TBE buffer (1x) in a 1-L glass container by adding 100 ml of stock TBE buffer (10x) to 900 ml DI water.
 2. For a 5.5in x 5.5in gel tray, mix 200 ml of TBE buffer (1x) and 4 g of agarose in a flask. Use scale to weigh agarose.
 3. Microwave mixture for 1 minute, followed by 15-30 second intervals. Watch carefully after 1 minute - mixture can bubble out of flask! The agarose should be fully dissolved so that the solution is mostly clear. Wear a protective glove when handling flask as the mixture will be hot.
@@ -246,15 +248,18 @@ Following PCR amplification, pool triplicate PCR products then run through 2% ag
 14. Run gel at 100 V for 40-50 min then visualize on gel reader machine.
 
 (OPTIONAL) Purify PCR products using AMPure beads protocol (optimized for Opentrons)
-1. Follow along with AMPure XP beads manufacturer protocol (begins on page 5 of manual - https://www.beckmancoulter.com/wsrportal/techdocs?docname=B37419).
+
+1. Follow along with AMPure XP beads manufacturer protocol (begins on page 5 of manual - <https://www.beckmancoulter.com/wsrportal/techdocs?docname=B37419>).
 2. Adjust bead ratio: 1.2x beads to sample volume for 12S.
 3. Will need magnetic plate and fresh 70% ethanol.
 4. End product will be ~40 ul of cleaned DNA eluted in molecular grade water.
 
 (OPTIONAL) Run Qubit on final PCR Products
-1. Follow manufacturer protocol for running Qubit: https://tools.thermofisher.com/content/sfs/manuals/Qubit_dsDNA_HS_Assay_UG.pdf.
+
+1. Follow manufacturer protocol for running Qubit: <https://tools.thermofisher.com/content/sfs/manuals/Qubit_dsDNA_HS_Assay_UG.pdf>.
 
 (OPTIONAL) Run Second 2% Agarose Gel on Purified PCR Products
+
 1. Follow along with previous gel instructions.
 
 ### Quality control
@@ -264,18 +269,21 @@ The inclusion of a negative control for PCR is to confirm the absence of contami
 ### Basic troubleshooting guide
 
 Low Volume Post-PCR
+
 - If using strip-caps, ensure they are tightly fitting on wells. Any gap in the lid will allow for some volume to evaporate during the PCR process on the thermal cycler. If using PCR plate seals, spin down the plate after taking it off the thermal cycler to ensure all condensation is drawn back into the well.
 
 Contamination
-- If there are contamination bands appearing on the gel, run another PCR ensuring full sterilization of work spaces and equipment under the hood and use new vials of AmpliTaq Gold and molecular water. If diluted primers are contaminated, use freshly-made aliquot of primers. 
+
+- If there are contamination bands appearing on the gel, run another PCR ensuring full sterilization of work spaces and equipment under the hood and use new vials of AmpliTaq Gold and molecular water. If diluted primers are contaminated, use freshly-made aliquot of primers.
 
 Weak Amplification
-- If there are weak amplification bands on the gel, ensure the master mix and DNA is being fully mixed. You can also increase the concentration of primers or tweak the PCR process on the thermal cycler (increasing # of cycles of PCR or optimize annealing temperature). The addition of Bovine Serum Albumin (BSA) to master mix is also useful in some cases. 
+
+- If there are weak amplification bands on the gel, ensure the master mix and DNA is being fully mixed. You can also increase the concentration of primers or tweak the PCR process on the thermal cycler (increasing # of cycles of PCR or optimize annealing temperature). The addition of Bovine Serum Albumin (BSA) to master mix is also useful in some cases.
 
 ## REFERENCES
 
 AMPure Beads Protocol (Beckman Coulter)
-https://www.beckmancoulter.com/wsrportal/techdocs?docname=B37419
+<https://www.beckmancoulter.com/wsrportal/techdocs?docname=B37419>
 
 Qubit Protocol (Thermo Fisher)
-https://tools.thermofisher.com/content/sfs/manuals/Qubit_dsDNA_HS_Assay_UG.pdf
+<https://tools.thermofisher.com/content/sfs/manuals/Qubit_dsDNA_HS_Assay_UG.pdf>

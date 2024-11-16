@@ -84,6 +84,7 @@ pcr_method_additional: not provided
 | 1.0.0 | 2021-02-28 | Initial release |
 | 1.0.1 | 2024-10-23 | Formatting edits |
 
+- Version numbers start at 1.0.0 when the protocol is first completed and will increase when changes that impact the outcome of the procedure are made (patches: 1.0.1; minor changes: 1.1.0; major changes: 2.0.0).
 - Release date is the date when a given protocol version was finalised.
 - Description of revisions includes a brief description of what was changed relative to the previous version.
 

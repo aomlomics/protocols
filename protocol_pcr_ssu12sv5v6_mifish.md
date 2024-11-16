@@ -1,48 +1,93 @@
-# NOAA AOML OMICS PCR Protocol 12S MiFish rRNA Region with Optional Use of Opentrons OT2 Robot
+---
+# MIOP terms
+methodology_category: Omics Analysis
+project: NOAA Atlantic Oceanographic and Meteorological Laboratory OMICS Lab Protocols
+purpose: PCR [OBI:0000415]
+analyses: PCR [OBI:0000415]
+geographic_location: Atlantic Ocean [GAZ:00000344], Gulf of Mexico [GAZ:00002853]
+broad_scale_environmental_context: marine biome [ENVO:00000447], marine photic zone [ENVO:00000209]
+local_environmental_context: marine biome [ENVO:00000447], marine photic zone [ENVO:00000209]
+environmental_medium: sea water [ENVO:00002149], polymerase chain reaction [OBI:0000415]
+target: 12S
+creator: Luke Thompson
+materials_required: vortexer [OBI:0400118], PCR instrument [OBI:0000989], agarose gel electrophoresis system [OBI:0001134]
+skills_required: sterile technique, pipetting skills, standard molecular technique
+time_required: 240
+personnel_required: 1
+language: en
+issued: 2024-08-22
+audience: scientists
+publisher: NOAA Atlantic Oceanographic and Meteorological Laboratory; Mississippi State University's Northern Gulf Institute
 
-MIOP protocol template
+# FAIR eDNA terms
+pcr_0_1: 1
+thermocycler: Eppendorf Mastercycler Nexus Thermal Cycler
+amplificationReactionVolume: 
+assay_name: ssu12sv5v6_mifish
+assay_validation: not provided
+targetTaxonomicAssay: 
+targetTaxonomicScope: 
+target_gene: 12S rRNA
+target_subfragment: V5-V6
+ampliconSize: 
+pcr_primer_forward: 
+pcr_primer_reverse: 
+pcr_primer_name_forward: 
+pcr_primer_name_reverse: 
+pcr_primer_reference_forward: 
+pcr_primer_reference_reverse: 
+pcr_primer_vol_forward: 
+pcr_primer_vol_reverse: 
+pcr_primer_conc_forward: 
+pcr_primer_conc_reverse: 
+probeReporter: not applicable
+probeQuencher: not applicable
+probe_seq: not applicable
+probe_ref: not applicable
+probe_conc: not applicable
+commercial_mm: AmpliTaq Gold 360 Master Mix, Thermo Fisher Scientific
+custom_mm: 
+pcr_dna_vol: 
+pcr_rep: 
+nucl_acid_amp: 
+pcr_cond: 
+annealingTemp: 
+pcr_cycles: 
+pcr_analysis_software: not provided
+pcr_method_additional: not provided
+---
 
-## Minimum Information about an Omics Protocol (MIOP)
+# NOAA/AOML PCR Protocol 12S rRNA V5-V6 (MiFish)
 
-See https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml for list and definitions.
+## PROTOCOL INFORMATION
 
-| MIOP Term | Value |
-| ------------- | ------------- | 
-| methodology category | Omics Analysis |
-| project | NOAA Atlantic Oceanographic and Meteorological Laboratory OMICS Lab Protocols |
-| purpose | PCR [OBI:0000415] |
-| analyses | PCR [OBI:0000415] |
-| geographic location | Atlantic Ocean [GAZ:00000344], Gulf of Mexico [GAZ:00002853] |
-| broad-scale environmental context | marine biome [ENVO:00000447], marine photic zone [ENVO:00000209] |
-| local environmental context | marine biome [ENVO:00000447], marine photic zone[ENVO:00000209] |
-| environmental medium | sea water [ENVO:00002149] , polymerase chain reaction [OBI:0000415] |
-| target | 12S |
-| creator | Luke Thompson |
-| materials required | vortexer [OBI:0400118], PCR instrument [OBI:0000989], agarose gel electrophoresis system [OBI:0001134] |
-| skills required | sterile technique, pipetting skills, standard molecular technique |
-| time required | 240 |
-| personnel required | 1 |
-| language | en |
-| issued | 2024-08-22 |
-| audience | scientists |
-| publisher | NOAA Atlantic Oceanographic and Meteorological Laboratory; Mississippi State University's Northern Gulf Institute |
+### Minimum Information about an Omics Protocol (MIOP)
 
-## AUTHORS
+- MIOP terms are listed in the YAML frontmatter of this page.
+- See https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml for list and definitions.
 
-| PREPARED BY All authors known to have contributed to the preparation of this protocol, including those who filled in the template. | AFFILIATION | ORCID (visit https://orcid.org/ to register) | DATE |
+### Authors
+
+| PREPARED BY | AFFILIATION | ORCID | DATE |
 | ------------- | ------------- | ------------- | ------------- |
 | Luke Thompson |NOAA/AOML, MSU/NGI | https://orcid.org/0000-0002-3911-1280 | 2021-02-28 |
 | Sean Anderson | NOAA/AOML, MSU/NGI | https://orcid.org/0000-0003-3096-1120 | 2021-02-28 |
 | Sammy Harding | NOAA/AOML, MSU/NGI | https://orcid.org/0009-0008-8885-6140 | 2024-08-19 |
 
-## PROTOCOL REVISION RECORD
+- All authors known to have contributed to the preparation of this protocol should be listed, including those who filled in the template.
+- Visit https://orcid.org/ to register for an ORCID.
 
-| VERSION | RELEASE DATE This is the date when a given protocol version was finalised | DESCRIPTION OF REVISIONS Please include a brief description of what was changed relative to the previous version |
+### Protocol Revision Record
+
+| VERSION | RELEASE DATE | DESCRIPTION OF REVISIONS |
 | ------------- | ------------- | ------------- |
 | 1.0.0 | 2021-08-22 | Initial release |
 | 1.0.1 | 2024-10-23 | Formatting edits |
 
-## ACRONYMS AND ABBREVIATIONS
+- Release date is the date when a given protocol version was finalised.
+- Description of revisions includes a brief description of what was changed relative to the previous version.
+
+### Acronyms and Abbreviations
 
 | ACRONYM / ABBREVIATION | DEFINITION |
 | ------------- | ------------- |
@@ -55,44 +100,44 @@ See https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml for lis
 | NTC | No template control |
 | EtOH | Ethanol |
 
-## GLOSSARY
+### Glossary
 
 | SPECIALISED TERM | DEFINITION |
 | ------------- | ------------- |
 | Extraction Blank | A type of negative control to confirm there is no contamination during DNA extractions. Normally an empty is filter extracted and PCR amplified alongside other samples. |
 | No Template Control | A type of negative control during PCR to confirm there is no contamination during the PCR process. Normally nuclease-free water is run in place of DNA on a PCR. |
 
-# BACKGROUND
+## BACKGROUND
 
-## Summary
+### Summary
 
 This protocol describes steps for performing PCR for 12S marker gene regions using eDNA extracted from Sterivex at NOAA's AOML. There are several optional steps at the end of the protocol including using AMPure beads to clean up PCR products. Some steps (e.g. PCR plate preparation, AMPure bead cleanup, sequencing plate dilutions) have been or can be optimized for use with the Opentrons OT2 robot. This protocol closely follows along with the following protocol: https://www.protocols.io/view/environmental-dna-edna-12s-metabarcoding-illumina-kqdg35kqzv25/v2.
 
-## Method description and rationale
+### Method description and rationale
 
 This protocol is used for PCR amplifying the 12S MiFish marker gene regions of environmental DNA. Fluidigm adapters are already present on the primers described in the following protocol. It is highly reproducible and can easily be adapted for any number of samples (i.e. a full 96-well plate or a few samples).
 
-## Spatial coverage and environment(s) of relevance
+### Spatial coverage and environment(s) of relevance
 
 This protocol can be used to amplify the 12S marker gene region of any eDNA sample.
 
-# PERSONNEL REQUIRED
+## PERSONNEL REQUIRED
 
 One person with molecular biology experience.
 
-## Safety
+### Safety
 
 There are no hazardous chemicals or materials involved in this protocol. Standard lab safety techniques should still be used such as wearing PPE to avoid skin or eye contact.
 
-## Training requirements
+### Training requirements
 
 Basic molecular biology training is sufficient for this protocol including sterile technique, pipetting small volumes and programming/running PCR thermal cyclers.
 
-## Time needed to execute the procedure
+### Time needed to execute the procedure
 
 Protocol takes about 4 hours (240 minutes) including thermal cycler run time.
 
-# EQUIPMENT
+## EQUIPMENT
 
 For 96-well Plate:
 
@@ -139,9 +184,9 @@ For 96-well Plate:
 | Qubit Reagents | Qubit dsDNA Quantification Assay Kit | Invitrogen | 1 kit | |
 | Clear Qubit Assay tubes | 0.5 mL thin-walled, polypropylene tubes | Invitrogen | 98 | Must be correct tubes to allow for fluorometer to read concentration |
 
-# STANDARD OPERATING PROCEDURE
+## STANDARD OPERATING PROCEDURE
 
-## Protocol
+### Protocol
 
 Preparation
 
@@ -149,7 +194,7 @@ Preparation
 2. Set up PCR under hood by wiping off all surfaces, pipettes, and racks with RNase AWAY and UV sterilizing for 5-10 mins.
 3. Map out order of samples on 96-well PCR plate. Make sure to leave a space for a no template control (NTC) and positive control.
 
-### PCR
+#### PCR
 
 1. Make PCR master mix and add 24 ul to each well of PCR plate - possible use on Opentrons OT2 Pipetting Robot. Account for triplicate reactions.
 - 12.5 ul AmpliTaq Gold PCR Mix
@@ -182,7 +227,7 @@ Preparation
 | Final Extension | 72°C | 10min | 1x |
 | Hold | 4°C | ∞ | |
 
-### Quality control, PCR clean-up
+#### Quality control, PCR clean-up
 
 2% Agarose Gel
 Following PCR amplification, pool triplicate PCR products then run through 2% agarose gel to confirm presence of target bands:
@@ -213,11 +258,11 @@ Following PCR amplification, pool triplicate PCR products then run through 2% ag
 (OPTIONAL) Run Second 2% Agarose Gel on Purified PCR Products
 1. Follow along with previous gel instructions.
 
-## Quality control
+### Quality control
 
 The inclusion of a negative control for PCR is to confirm the absence of contamination during the process. The inclusion of a positive control (mock community) is to confirm the PCR is amplifying DNA. There are several optional steps at the end of the process to confirm the presence and concentration of amplified DNA.
 
-## Basic troubleshooting guide
+### Basic troubleshooting guide
 
 Low Volume Post-PCR
 - If using strip-caps, ensure they are tightly fitting on wells. Any gap in the lid will allow for some volume to evaporate during the PCR process on the thermal cycler. If using PCR plate seals, spin down the plate after taking it off the thermal cycler to ensure all condensation is drawn back into the well.
@@ -228,7 +273,7 @@ Contamination
 Weak Amplification
 - If there are weak amplification bands on the gel, ensure the master mix and DNA is being fully mixed. You can also increase the concentration of primers or tweak the PCR process on the thermal cycler (increasing # of cycles of PCR or optimize annealing temperature). The addition of Bovine Serum Albumin (BSA) to master mix is also useful in some cases. 
 
-# REFERENCES
+## REFERENCES
 
 AMPure Beads Protocol (Beckman Coulter)
 https://www.beckmancoulter.com/wsrportal/techdocs?docname=B37419

@@ -25,8 +25,6 @@ publisher: NOAA Atlantic Oceanographic and Meteorological Laboratory; Mississipp
 
 # NOAA/AOML Metagenome Library Prep Protocol (Illumina DNA Prep)
 
-Adapted from "Low-volume Nextera DNA Flex library prep protocol" by Alyse Larkin (version dated 2023-05-26).
-
 ## PROTOCOL INFORMATION
 
 ### Minimum Information about an Omics Protocol (MIOP)

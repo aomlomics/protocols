@@ -42,7 +42,8 @@ nucl_acid_ext_method_additional: not applicable
 
 ### Minimum Information about an Omics Protocol (MIOP)
 
-See <https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml> for list and definitions.
+- MIOP terms are listed in the YAML frontmatter of this page.
+- See <https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml> for list and definitions.
 
 ### Authors
 

@@ -26,7 +26,7 @@ maturity_level:
 
 ---
 
-# NOAA AOML GO-SHIP DNA/RNA Filtration Protocol - with ZR Bashing Beads
+# NOAA/AOML Water Sampling Protocol using Sterivex with Zirconia Beads
 
 ## PROTOCOL INFORMATION
 

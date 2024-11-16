@@ -6,21 +6,23 @@ The repository contains protocols used by AOML Omics labs, made using the [BeBOP
 
 ### Sample collection
 
-* [Water sampling protocol (Sterivex)](https://github.com/aomlomics/protocols/blob/main/protocol_sampling_Sterivex.md)
+protocol_libprep_metag_illumina.md:# NOAA/AOML Metagenome Library Prep Protocol (Illumina DNA Prep)
+
+* [Water Sampling Protocol using Sterivex with Zirconia Beads](https://github.com/aomlomics/protocols/blob/main/protocol_sampling_sterivex_beads.md)
 
 ### DNA extraction
 
-* [DNA extraction protocol (Sterivex)](https://github.com/aomlomics/protocols/blob/main/protocol_DNA_extraction_Sterivex.md)
+* [DNA Extraction Protocol for Sterivex using KingFisher](https://github.com/aomlomics/protocols/blob/main/protocol_extractdna_sterivex_kingfisher.md)
 
 ### Metabarcoding (amplicon) library prep
 
-* [16S V4-V5 (bacteria) metabarcoding library prep protocol (for Illumina)](https://github.com/aomlomics/protocols/blob/main/protocol_PCR_16S_V4V5.md)
-* [18S V9 (protists & metazoa) metabarcoding library prep protocol (for Illumina)](https://github.com/aomlomics/protocols/blob/main/protocol_PCR_18S_V9.md)
-* [12S MiFish (fish) metabarcoding library prep protocol (for Illumina)](https://github.com/aomlomics/protocols/blob/main/protocol_PCR_12S_MiFish.md)
+* [PCR Protocol 16S rRNA V4-V5 (EMP)](https://github.com/aomlomics/protocols/blob/main/protocol_pcr_ssu16sv4v5_emp.md)
+* [PCR Protocol 18S rRNA V9 (EMP)](https://github.com/aomlomics/protocols/blob/main/protocol_pcr_ssu18sv9_emp.md)
+* [PCR Protocol 12S rRNA V5-V6 (MiFish)](https://github.com/aomlomics/protocols/blob/main/protocol_pcr_ssu12sv5v6_mifish.md)
 
 ### Metagenomic (shotgun) library prep
 
-* [Metagenomic library prep protocol (Nextera for Illumina)](https://github.com/aomlomics/protocols/blob/main/protocol_metag_nextera.md)
+* [Metagenome Library Prep Protocol (Illumina DNA Prep)](https://github.com/aomlomics/protocols/blob/main/protocol_libprep_metag_illumina.md)
 
 ## How to use
 

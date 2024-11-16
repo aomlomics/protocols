@@ -1,4 +1,6 @@
-# NOAA AOML OMICS Low Volume Illumina DNA Prep (Nextera DNA Flex Library Prep) Protocol
+# NOAA/AOML Metagenome Library Prep Protocol (Illumina DNA Prep)
+
+Adapted from "Low-volume Nextera DNA Flex library prep protocol" by Alyse Larkin (version dated 2023-05-26).
 
 ## Minimum Information about an Omics Protocol (MIOP)
 
@@ -27,10 +29,10 @@
 
 | PREPARED BY | AFFILIATION | ORCID | DATE |
 | ------------- | ------------- | ------------- | ------------- |
-| Alyse Larkin | UCI | https://orcid.org/0000-0003-4466-0791 | 2023-05-26
+| Alyse Larkin | UCI | <https://orcid.org/0000-0003-4466-0791> | 2023-05-26
 | Eric Adams et al. | UCI | | 2020-10-21 |
-| Luke Thompson | NOAA AOML & NGI | https://orcid.org/0000-0002-3911-1280 | 2024-09-05 |
-| Sammy Harding | NOAA AOML & NGI | https://orcid.org/0009-0008-8885-6140 | 2024-09-05 |
+| Luke Thompson | NOAA/AOML, MSU/NGI | <https://orcid.org/0000-0002-3911-1280> | 2024-09-05 |
+| Sammy Harding | NOAA/AOML, MSU/NGI | <https://orcid.org/0009-0008-8885-6140> | 2024-09-05 |
 
 ## PROTOCOL REVISION RECORD
 
@@ -70,7 +72,7 @@ Step 50: We use 12uL of IPB (undiluted stock) instead of 14.4uL. This step is to
 
 ## Summary
 
-This protocol has been used by NOAA's AOML Omics Lab to library prep eDNA seawater samples from the Bio-GO-SHIP project for whole genome sequencing using the Illumina DNA Prep Kit (formerly Nextera DNA Flex Library Prep Kit). This is a low volume methodology that allows for the number of sequencing libraries that can be generated from each Illumina DNA Prep kit to more than double from 384 samples (4 x 96-wells) to 864 samples (9 x 96-wells). The minimum required amount of DNA per sample is 25ng (5 ng/uL) - quality of concentration yield and sequence reads drops off if input DNA is lower than 25ng. This protocol closely follows along with the following protocol with minor changes: https://www.protocols.io/view/low-volume-methodology-for-nextera-dna-flex-librar-dm6gpr2r8vzp/v1.
+This protocol has been used by NOAA's AOML Omics Lab to library prep eDNA seawater samples from the Bio-GO-SHIP project for whole genome sequencing using the Illumina DNA Prep Kit (formerly Nextera DNA Flex Library Prep Kit). This is a low volume methodology that allows for the number of sequencing libraries that can be generated from each Illumina DNA Prep kit to more than double from 384 samples (4 x 96-wells) to 864 samples (9 x 96-wells). The minimum required amount of DNA per sample is 25ng (5 ng/uL) - quality of concentration yield and sequence reads drops off if input DNA is lower than 25ng. This protocol closely follows along with the following protocol with minor changes: <https://www.protocols.io/view/low-volume-methodology-for-nextera-dna-flex-librar-dm6gpr2r8vzp/v1>.
 
 ## Method description and rationale
 

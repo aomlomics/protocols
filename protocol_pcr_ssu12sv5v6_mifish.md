@@ -188,7 +188,7 @@ For 96-well Plate:
 
 ### Protocol
 
-Preparation
+#### Preparation
 
 1. Dilute primers from 100 uM to 10 uM if not already at 10uM.
 2. Set up PCR under hood by wiping off all surfaces, pipettes, and racks with RNase AWAY and UV sterilizing for 5-10 mins.
@@ -197,6 +197,7 @@ Preparation
 #### PCR
 
 1. Make PCR master mix and add 24 ul to each well of PCR plate - possible use on Opentrons OT2 Pipetting Robot. Account for triplicate reactions.
+
 - 12.5 ul AmpliTaq Gold PCR Mix
 - 9.5 ul molecular water 
 - 1 ul Fwd primer (10 μM) - MiFish F V2
@@ -208,9 +209,7 @@ Preparation
 | 12S MiFish R | reverse | CATAGTGGGGTATCTAATCCCAGTTTG | TACGGTAGCAGAGACTTGGTCT xxx CATAGTGGGGTATCTAATCCCAGTTTG | CS2-TS-R |
 
 2. Add 1 ul of sample DNA (or molecular water for NTC) to respective triplicate wells for a total reaction volume of 25 ul per well. Pipette up and down or vortex to fully distribute DNA into master mix.
-
 3. Seal plate with PCR plate seal or strip caps.
-
 4. Load plate onto thermal cycler and select "MBARI 12S Touchdown" program to run the following steps:
 
 | PCR step | Temperature | Duration | Repetition |

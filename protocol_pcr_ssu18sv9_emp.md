@@ -188,7 +188,7 @@ For 96-well Plate:
 
 ### Protocol
 
-Preparation
+#### Preparation
 
 1. Dilute primers from 100 uM to 10 uM if not already at 10uM.
 2. Set up PCR under hood by wiping off all surfaces, pipettes, and racks with RNase AWAY and UV sterilizing for 5-10 mins.
@@ -197,6 +197,7 @@ Preparation
 #### PCR
 
 1. Make PCR master mix and add 24 ul to each well of PCR plate - possible use on Opentrons OT2 Pipetting Robot.
+
 - 12.5 ul AmpliTaq Gold PCR Mix
 - 9.5 ul molecular water 
 - 1 ul Fwd primer (10 μM) - 1391F
@@ -223,7 +224,9 @@ Preparation
 #### Quality control, PCR clean-up
 
 2% Agarose Gel
+
 Following PCR amplification, run products through 2% agarose gel to confirm presence of target bands:
+
 1. Make stock solution of TBE buffer (1x) in a 1-L glass container by adding 100 ml of stock TBE buffer (10x) to 900 ml DI water.
 2. For a 5.5in x 5.5in gel tray, mix 200 ml of TBE buffer (1x) and 4 g of agarose in a flask. Use scale to weigh agarose.
 3. Microwave mixture for 1 minute, followed by 15-30 second intervals. Watch carefully after 1 minute - mixture can bubble out of flask! The agarose should be fully dissolved so that the solution is mostly clear. Wear a protective glove when handling flask as the mixture will be hot.
@@ -241,17 +244,17 @@ Following PCR amplification, run products through 2% agarose gel to confirm pres
 
 (OPTIONAL) Purify PCR products using AMPure beads protocol (optimized for Opentrons)
 
-1. Follow along with AMPure XP beads manufacturer protocol (begins on page 5 of manual - https://www.beckmancoulter.com/wsrportal/techdocs?docname=B37419).
-2. Will need magnetic plate and fresh 70% ethanol.
-3. End product will be ~40 ul of cleaned DNA eluted in molecular grade water.
+15. Follow along with AMPure XP beads manufacturer protocol (begins on page 5 of manual - https://www.beckmancoulter.com/wsrportal/techdocs?docname=B37419).
+16. Will need magnetic plate and fresh 70% ethanol.
+17. End product will be ~40 ul of cleaned DNA eluted in molecular grade water.
 
 (OPTIONAL) Run Qubit on final PCR Products
 
-1. Follow manufacturer protocol for running Qubit: https://tools.thermofisher.com/content/sfs/manuals/Qubit_dsDNA_HS_Assay_UG.pdf.
+18. Follow manufacturer protocol for running Qubit: https://tools.thermofisher.com/content/sfs/manuals/Qubit_dsDNA_HS_Assay_UG.pdf.
 
 (OPTIONAL) Run Second 2% Agarose Gel on Purified PCR Products
 
-1. Follow along with previous gel instructions.
+19. Follow along with previous gel instructions.
 
 ### Quality control
 

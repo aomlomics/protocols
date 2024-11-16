@@ -188,7 +188,7 @@ For 96-well Plate:
 
 ### Protocol
 
-Preparation
+#### Preparation
 
 1. Dilute primers from 100 uM to 10 uM if not already at 10 uM.
 2. Set up PCR under hood by wiping off all surfaces, pipettes, and racks with RNase AWAY and UV sterilizing for 5-10 mins.
@@ -197,6 +197,7 @@ Preparation
 #### PCR
 
 1. Make PCR master mix and add 24 ul to each well of PCR plate - possible use on Opentrons OT2 Pipetting Robot.
+
 - 12.5 ul AmpliTaq Gold PCR Mix
 - 9.5 ul molecular water 
 - 1 ul Fwd primer (10 μM) - 515 F

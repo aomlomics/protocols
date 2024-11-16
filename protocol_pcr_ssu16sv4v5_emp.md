@@ -63,28 +63,8 @@ pcr_method_additional: not provided
 
 ### Minimum Information about an Omics Protocol (MIOP)
 
-See https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml for list and definitions.
-
-| MIOP Term  | Value |
-| ------------- | ------------- | 
-| methodology category  | Omics Analysis |
-| project  | NOAA Atlantic Oceanographic and Meteorological Laboratory OMICS Lab Protocols |
-| purpose  | PCR [OBI:0000415] |
-| analyses  | PCR [OBI:0000415] |
-| geographic location  | Atlantic Ocean [GAZ:00000344], Gulf of Mexico [GAZ:00002853] |
-| broad-scale environmental context  | marine biome [ENVO:00000447], marine photic zone [ENVO:00000209] |
-| local environmental context  | marine biome [ENVO:00000447], marine photic zone[ENVO:00000209] |
-| environmental medium  | sea water [ENVO:00002149] , polymerase chain reaction [OBI:0000415] |
-| target  | 16S [NCIT:C105370]|
-| creator  | Luke Thompson, Sean Anderson |
-| materials required  | vortexer [OBI:0400118], PCR instrument [OBI:0000989], agarose gel electrophoresis system [OBI:0001134] |
-| skills required  | sterile technique, pipetting skills, standard molecular technique |
-| time required  | 240 |
-| personnel required  | 1 |
-| language  | en |
-| issued  | 2021-02-08 |
-| audience  | scientists |
-| publisher  | NOAA Atlantic Oceanographic and Meteorological Laboratory; Mississippi State University's Northern Gulf Institute |
+- MIOP terms are listed in the YAML frontmatter of this page.
+- See https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml for list and definitions.
 
 ### Authors
 

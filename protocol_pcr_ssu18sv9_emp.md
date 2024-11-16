@@ -1,37 +1,23 @@
 ---
 # MIOP terms
-methodology_category: "Omics Analysis"
-project: "NOAA Atlantic Oceanographic and Meteorological Laboratory OMICS Lab Protocols"
-purpose: "PCR [OBI:0000415]"
-analyses: "PCR [OBI:0000415]"
-geographic_location:
-  - "Atlantic Ocean [GAZ:00000344]"
-  - "Gulf of Mexico [GAZ:00002853]"
-broad_scale_environmental_context:
-  - "marine biome [ENVO:00000447]"
-  - "marine photic zone [ENVO:00000209]"
-local_environmental_context:
-  - "marine biome [ENVO:00000447]"
-  - "marine photic zone [ENVO:00000209]"
-environmental_medium:
-  - "sea water [ENVO:00002149]"
-  - "polymerase chain reaction [OBI:0000415]"
-target: "18S [NCIT:C48172]"
-creator: "Luke Thompson"
-materials_required:
-  - "vortexer [OBI:0400118]"
-  - "PCR instrument [OBI:0000989]"
-  - "agarose gel electrophoresis system [OBI:0001134]"
-skills_required:
-  - "sterile technique"
-  - "pipetting skills"
-  - "standard molecular technique"
+methodology_category: Omics Analysis
+project: NOAA Atlantic Oceanographic and Meteorological Laboratory OMICS Lab Protocols
+purpose: PCR [OBI:0000415]
+analyses: PCR [OBI:0000415]
+geographic_location: Atlantic Ocean [GAZ:00000344], Gulf of Mexico [GAZ:00002853]
+broad_scale_environmental_context: marine biome [ENVO:00000447], marine photic zone [ENVO:00000209]
+local_environmental_context: marine biome [ENVO:00000447], marine photic zone [ENVO:00000209]
+environmental_medium: sea water [ENVO:00002149], polymerase chain reaction [OBI:0000415]
+target: 18S [NCIT:C48172]
+creator: Luke Thompson
+materials_required: vortexer [OBI:0400118], PCR instrument [OBI:0000989], agarose gel electrophoresis system [OBI:0001134]
+skills_required: sterile technique, pipetting skills, standard molecular technique
 time_required: 240
 personnel_required: 1
-language: "en"
-issued: "2024-08-22"
-audience: "scientists"
-publisher: "NOAA Atlantic Oceanographic and Meteorological Laboratory; Mississippi State University's Northern Gulf Institute"
+language: en
+issued: 2024-08-22
+audience: scientists
+publisher: NOAA Atlantic Oceanographic and Meteorological Laboratory; Mississippi State University's Northern Gulf Institute
 
 # FAIR eDNA terms
 pcr_0_1: 1
@@ -77,28 +63,8 @@ pcr_method_additional: not provided
 
 ### Minimum Information about an Omics Protocol (MIOP)
 
-See https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml for list and definitions.
-
-| MIOP Term | Value |
-| ------------- | ------------- |
-| methodology category | Omics Analysis |
-| project | NOAA Atlantic Oceanographic and Meteorological Laboratory OMICS Lab Protocols |
-| purpose | PCR [OBI:0000415] |
-| analyses | PCR [OBI:0000415] |
-| geographic location | Atlantic Ocean [GAZ:00000344], Gulf of Mexico [GAZ:00002853] |
-| broad-scale environmental context | marine biome [ENVO:00000447], marine photic zone [ENVO:00000209] |
-| local environmental context | marine biome [ENVO:00000447], marine photic zone[ENVO:00000209] |
-| environmental medium | sea water [ENVO:00002149] , polymerase chain reaction [OBI:0000415] |
-| target | 18S [NCIT:C48172]|
-| creator | Luke Thompson |
-| materials required | vortexer [OBI:0400118], PCR instrument [OBI:0000989], agarose gel electrophoresis system [OBI:0001134] |
-| skills required | sterile technique, pipetting skills, standard molecular technique |
-| time required | 240 |
-| personnel required | 1 |
-| language | en |
-| issued | 2024-08-22 |
-| audience | scientists |
-| publisher | NOAA Atlantic Oceanographic and Meteorological Laboratory; Mississippi State University's Northern Gulf Institute |
+- MIOP terms are listed in the YAML frontmatter of this page.
+- See https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml for list and definitions.
 
 ### Authors
 

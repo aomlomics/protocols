@@ -18,12 +18,31 @@ language: en
 issued: 2024-08-15
 audience: scientists
 publisher: NOAA Atlantic Oceanographic and Meteorological Laboratory; University of Mississippi's Northern Gulf Institute
-hasVersion: 
-license: 
-maturity_level: 
 
 # FAIR eDNA terms
-
+samp_category: sample
+decimalLatitude: 
+decimalLongitude: 
+verbatimLatitude: 
+verbatimLongitude: 
+verbatimCoordinateSystem: 
+verbatimSRS: 
+geo_loc_name: 
+eventDate: 
+eventDurationValue: 
+eventDurationUnit: 
+verbatimEventDate: 
+verbatimEventTime: 
+verbatimDateEnd: 
+verbatimTimeEnd: 
+env_broad_scale: marine biome [ENVO:00000447]
+env_local_scale: marine photic zone [ENVO:00000209]
+env_medium: sea water [ENVO:00002149]
+habitat_natural_artificial_0_1: 0
+samp_collect_method: CTD rosette
+samp_collect_device: Niskin bottle
+samp_size: 1000
+samp_size_unit: mL
 ---
 
 # NOAA/AOML Water Sampling Protocol using Sterivex with Zirconia Beads

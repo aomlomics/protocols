@@ -50,7 +50,7 @@ custom_mm: PCR reactions were run in 25 uL reaction volumes, with 1.0 uL of DNA,
 pcr_dna_vol: 1.0
 pcr_rep: 1
 nucl_acid_amp: https://doi.org/10.1111/1462-2920.13023
-pcr_cond: initial denaturation:95_3;denaturation:95_0.75;annealing:50_0.75;elongation:72_1.5;final elongation:72_10;4
+pcr_cond: initial denaturation:95_3;denaturation:95_0.75;annealing:50_0.75;elongation:72_1.5;final elongation:72_10;30
 annealingTemp: 50
 pcr_cycles: 30
 pcr_analysis_software: not provided

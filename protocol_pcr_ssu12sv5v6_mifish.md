@@ -22,37 +22,37 @@ publisher: NOAA Atlantic Oceanographic and Meteorological Laboratory; Mississipp
 # FAIR eDNA terms
 pcr_0_1: 1
 thermocycler: Eppendorf Mastercycler Nexus Thermal Cycler
-amplificationReactionVolume: 
+amplificationReactionVolume: 25
 assay_name: ssu12sv5v6_mifish
 assay_validation: not provided
-targetTaxonomicAssay: 
-targetTaxonomicScope: 
+targetTaxonomicAssay: 12S rRNA gene sequencing targeting the V5-V6 region using primers MiFish-F V2 and MiFish-R
+targetTaxonomicScope: fishes
 target_gene: 12S rRNA
 target_subfragment: V5-V6
-ampliconSize: 
-pcr_primer_forward: 
-pcr_primer_reverse: 
-pcr_primer_name_forward: 
-pcr_primer_name_reverse: 
-pcr_primer_reference_forward: 
-pcr_primer_reference_reverse: 
-pcr_primer_vol_forward: 
-pcr_primer_vol_reverse: 
-pcr_primer_conc_forward: 
-pcr_primer_conc_reverse: 
+ampliconSize: 163 | 185
+pcr_primer_forward: GCCGGTAAAACTCGTGCCAGC
+pcr_primer_reverse: CATAGTGGGGTATCTAATCCCAGTTTG
+pcr_primer_name_forward: 12S MiFish_U F Fluidigm V2
+pcr_primer_name_reverse: 12S MiFish_U R Fluidigm
+pcr_primer_reference_forward: http://dx.doi.org/10.1098/rsos.150088
+pcr_primer_reference_reverse: http://dx.doi.org/10.1098/rsos.150088
+pcr_primer_vol_forward: 1.0
+pcr_primer_vol_reverse: 1.0
+pcr_primer_conc_forward: 10
+pcr_primer_conc_reverse: 10
 probeReporter: not applicable
 probeQuencher: not applicable
 probe_seq: not applicable
 probe_ref: not applicable
 probe_conc: not applicable
 commercial_mm: AmpliTaq Gold 360 Master Mix, Thermo Fisher Scientific
-custom_mm: 
-pcr_dna_vol: 
-pcr_rep: 
-nucl_acid_amp: 
-pcr_cond: 
-annealingTemp: 
-pcr_cycles: 
+custom_mm: PCR reactions were run in 25 uL reaction volumes, with 1.0 uL of DNA, 12.5 uL of AmpliTaq Gold, 9.5 uL of water, and 1.0 uL of each primer (10 uM).
+pcr_dna_vol: 1.0
+pcr_rep: 1.0
+nucl_acid_amp: https://www.protocols.io/view/environmental-dna-edna-12s-metabarcoding-illumina-kqdg35kqzv25/v
+pcr_cond: initial denaturation:95_15;touchdown cycling;denaturation:94_0.5;annealing:69.5_0.5;elongation:72_1.5;13;normal cycling;denaturation:94_0.5;annealing:50_0.5;elongation:72_0.75;final elongation:72_10;25
+annealingTemp: 69.5;50
+pcr_cycles: 13;35
 pcr_analysis_software: not provided
 pcr_method_additional: not provided
 ---

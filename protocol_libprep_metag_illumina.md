@@ -20,7 +20,21 @@ audience: scientists
 publisher: NOAA Atlantic Oceanographic and Meteorological Laboratory; Mississippi State University's Northern Gulf Institute
 
 # FAIR eDNA terms
-
+barcoding_pcr_appr: two-step pcr
+library_id: 
+platform: ILLUMINA
+instrument: Illumina MiSeq System
+seq_kit: Illumina DNA Prep Kit
+lib_layout: paired end
+sequencing_location: 
+adapter_forward: 
+adapter_reverse: 
+lib_screen: 
+mid_forward: 
+mid_reverse: 
+filename: 
+filename2: 
+seq_method_additional: not applicable
 ---
 
 # NOAA/AOML Metagenome Library Prep Protocol (Illumina DNA Prep)

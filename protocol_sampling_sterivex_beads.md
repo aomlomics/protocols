@@ -17,7 +17,7 @@ personnel_required: 1
 language: en
 issued: 2024-08-15
 audience: scientists
-publisher: NOAA Atlantic Oceanographic and Meteorological Laboratory; University of Mississippi's Northern Gulf Institute
+publisher: NOAA's Atlantic Oceanographic and Meteorological Laboratory
 
 # FAIR eDNA terms
 samp_category: sample

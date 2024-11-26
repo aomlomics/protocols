@@ -69,11 +69,15 @@ samp_size_unit: mL
 
 ### Protocol Revision Record
 
-| VERSION | RELEASE DATE This is the date when a given protocol version was finalised | DESCRIPTION OF REVISIONS Please include a brief description of what was changed relative to the previous version |
+| VERSION | RELEASE DATE | DESCRIPTION OF REVISIONS |
 | ------------- | ------------- | ------------- |
 | 1.0.0 | 2023-11-27 | Initial release |
 | 1.0.1 | 2024-10-23 | Formatting edits |
 | 1.1.0 | 2024-11-16 | Addition of FAIR eDNA terms in YAML frontmatter |
+
+- Version numbers start at 1.0.0 when the protocol is first completed and will increase when changes that impact the outcome of the procedure are made (patches: 1.0.1; minor changes: 1.1.0; major changes: 2.0.0).
+- Release date is the date when a given protocol version was finalised.
+- Description of revisions includes a brief description of what was changed relative to the previous version.
 
 ### Acronyms and Abbreviations
 

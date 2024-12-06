@@ -1,50 +1,99 @@
-# Protocol Template
+---
+# MIOP terms
+methodology category: 
+project: 
+purpose: 
+analyses: 
+geographic location: 
+broad-scale environmental context: 
+local environmental context: 
+environmental medium: 
+target: 
+creator: 
+materials required: 
+skills required: 
+time required: 
+personnel required: 
+language: 
+issued: 
+audience: 
+publisher: 
+hasVersion: 
+license: 
+maturity level: 
 
-MIOP protocol template
+# FAIRe terms
+sop_bioinformatics: 
+trim_method: 
+trim_param: 
+demux_tool: 
+demux_max_mismatch: 
+merge_tool: 
+merge_min_overlap: 
+min_len_cutoff: 
+min_len_tool: 
+error_rate_tool: 
+error_rate_type: 
+error_rate_cutoff: 
+chimera_check_method: 
+chimera_check_param: 
+otu_clust_tool: 
+otu_clust_cutoff: 
+min_reads_cutoff: 
+min_reads_cutoff_unit: 
+min_reads_tool: 
+otu_db: 
+otu_db_custom: 
+tax_assign_cat: 
+otu_seq_comp_appr: 
+tax_class_id_cutoff: 
+tax_class_query_cutoff: 
+tax_class_collapse: 
+tax_class_other: 
+screen_contam_method: 
+screen_geograph_method: 
+screen_nontarget_method: 
+screen_other: 
+otu_raw_description: 
+otu_final_description: 
+bioinfo_method_additional: 
+input_read_count: 
+output_read_count: 
+output_otu_num: 
+otu_num_tax_assigned: 
+---
 
-## Minimum Information about an Omics Protocol (MIOP)
+# NOAA/AOML Amplicon Analysis Protocol
 
-See https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml for list and definitions.
+## PROTOCOL INFORMATION
 
-| MIOP Term  | Value |
-| ------------- | ------------- | 
-| methodology category  |  |
-| project  |  |
-| purpose  |  |
-| analyses  |  |
-| geographic location  |  |
-| broad-scale environmental context  |  |
-| local environmental context  |  |
-| environmental medium  |  |
-| target  |  |
-| creator  |  |
-| materials required  |  |
-| skills required  |  |
-| time required  |  |
-| personnel required  |  |
-| language  |  |
-| issued  |  |
-| audience  |  |
-| publisher  |  |
-| hasVersion  |  |
-| license  |  |
-| maturity level  |  |
+### Minimum Information about an Omics Protocol (MIOP)
 
-## AUTHORS
+- MIOP terms are listed in the YAML frontmatter of this page.
+- See <https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml> for list and definitions.
 
-| PREPARED BY All authors known to have contributed to the preparation of this protocol, including those who filled in the template.  | AFFILIATION | ORCID (visit https://orcid.org/ to register) | DATE |
+### Authors
+
+| PREPARED BY | AFFILIATION | ORCID | DATE |
 | ------------- | ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | Content Cell | yyyy-mm-dd |
-| Content Cell  | Content Cell  | Content Cell | yyyy-mm-dd |
+| Luke Thompson | NOAA/AOML, MSU/NGI | <https://orcid.org/0000-0002-3911-1280> | 2024-12-06 |
 
-## PROTOCOL REVISION RECORD
+- All authors known to have contributed to the preparation of this protocol should be listed, including those who filled in the template.
+- Visit <https://orcid.org/> to register for an ORCID.
 
-Version numbers start at "1.0.0" when the protocol is first completed and will increase when changes that impact the outcome of the procedure are made (patches: 1.0.1; minor changes: 1.1.0; major changes: 2.0.0). Please store all versions in the gDrive folder designated to your institute.
+### Protocol Revision Record
 
-| VERSION  | RELEASE DATE This is the date when a given protocol version was finalised | DESCRIPTION OF REVISIONS Please include a brief description of what was changed relative to the previous version |
+| VERSION | RELEASE DATE | DESCRIPTION OF REVISIONS |
 | ------------- | ------------- | ------------- |
-| 1.0.0  | yyyy-mm-dd  | Initial release  |
-| Content Cell  | Content Cell  | Content Cell  |
+| 1.0.0 | 2024-12-06 | Initial release |
+
+- Version numbers start at 1.0.0 when the protocol is first completed and will increase when changes that impact the outcome of the procedure are made (patches: 1.0.1; minor changes: 1.1.0; major changes: 2.0.0).
+- Release date is the date when a given protocol version was finalised.
+- Description of revisions includes a brief description of what was changed relative to the previous version.
+
+---
+
+NEED TO EDIT HEADINGS BELOW...
 
 ## RELATED PROTOCOLS IN YOUR FOLDER
 
@@ -64,11 +113,14 @@ This is a list of other protocols that are not in your folder which should be kn
 | Content Cell  | Content Cell  | yyyy-mm-dd  |
 | Content Cell  | Content Cell  | yyyy-mm-dd  |
 
-## ACRONYMS AND ABBREVIATIONS
+### Acronyms and Abbreviations
 
 | ACRONYM / ABBREVIATION | DEFINITION |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
+| NOAA | National Oceanographic and Atmospheric Administration |
+| AOML | Atlantic Oceanographic and Meteorological Laboratory |
+| MSU | Mississippi State University |
+| NGI | Northern Gulf Institute |
 
 ## GLOSSARY
 

@@ -74,6 +74,7 @@ samp_size_unit: mL
 | 1.0.0 | 2023-11-27 | Initial release |
 | 1.0.1 | 2024-10-23 | Formatting edits |
 | 1.1.0 | 2024-11-16 | Addition of FAIR eDNA terms in YAML frontmatter |
+| 1.2.0 | 2025-01-08 | Clarified the concentration of bleach throughout |
 
 - Version numbers start at 1.0.0 when the protocol is first completed and will increase when changes that impact the outcome of the procedure are made (patches: 1.0.1; minor changes: 1.1.0; major changes: 2.0.0).
 - Release date is the date when a given protocol version was finalised.
@@ -132,29 +133,29 @@ The process of setting up sampling equipment and filtering seawater will take ~2
 | DESCRIPTION | PRODUCT NAME AND MODEL | MANUFACTURER | QUANTITY | REMARK |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | **Durable equipment** | 
-| 20 L carboy | 20 L Nalgene Carboy | Generic Brand | 1 | |
-| 8 L carboy | 8 L Nalgene Carboy | Generic Brand | 1 | Used to hold bleach solution |
-| Peristaltic pump | Masterflex Peristaltic Pump | Cole Parmer | 1 | |
+| 20 L carboy | 20 L Nalgene carboy | Generic brand | 1 | |
+| 8 L carboy | 8 L Nalgene carboy | Generic brand | 1 | Used to hold bleach solution |
+| Peristaltic pump | Masterflex peristaltic pump | Cole Parmer | 1 | |
 | Pump heads | Masterflex L/S Easy-Load II Pump Heads for Precision Tubing | Avantor | 1-3 | The greater the # of pump heads, the faster the sampling process |
 | Pump tubing | Masterflex Precision Pump Tubing, Peroxide-Cured Silicone | EW-96400-24 | Cole Parmer | 3 | Depends on # of pump heads |
 | Hose-barb adapter | Masteflex fitting, Male Luer Lock to Hose Barb Adapter | Cole-Parmer | 3 | Depends on # of pump tubes |
-| Serological pipette | 10 mL Serological Pipette | Generic Brand | 3 | Depends on # of pump tubes|
-| 2 L graduated cylinders | Graduated Cylinder - 2 L | Generic Brand | 3 | Depends on # of samples being pumped at once, can be substituted with carboys which tubing will be directly attached to (no serological pipets) using adapters |
-| -20 °C freezer | -20 °C Commercial Chest Freezer | Generic Brand | 1 | |
+| Serological pipette | 10 mL Serological Pipette | Generic brand | 3 | Depends on # of pump tubes|
+| 2 L graduated cylinders | Graduated cylinder - 2 L | Generic brand | 3 | Depends on # of samples being pumped at once, can be substituted with carboys which tubing will be directly attached to (no serological pipets) using adapters |
+| -20 °C freezer | -20 °C commercial chest freezer | Generic brand | 1 | |
 | **Consumable equipment** |
 | Sterivex filter | Millipore Sterivex-GP Pressure Filter Unit, 0.22µm pore size | Millipore Sigma | # of samples | account for negative control field blanks |
 | Inlet (male) luer-lock cap | MasterFlex Male Luer Lock Plug | VWR | 1 per Sterivex | depends on # of samples |
 | Outlet (female) luer-lock cap | MasterFlex Female Luer Thread Style Cap | VWR | 1 per Sterivex | depends on # of samples |
-| Pre-printed cryo-babies labels | Cryo-Babies Labels | Cryo-Babies | 1 label per Sterivex | Depends on # of samples |
-| 60 mL syringe with male luer-lock outlet | Disposable Syringe with Luer Lock - 60 mL | Generic brand | 1 box | |
-| Sterile collection bags | Whil-Pak Collection bags | Cole Parmer | 1 box | Various sizes can be used for water collection |
+| Pre-printed Cryo-Babies labels | Cryo-Babies LCRY-1700 | Diversified Biotech | 1 label per Sterivex | Depends on # of samples |
+| 60 mL syringe with male luer-lock outlet | Disposable syringe with luer lock - 60 mL | Generic brand | 1 box | |
+| Sterile collection bags | Whil-Pak collection bags | Cole Parmer | 1 box | Various sizes can be used for water collection |
 | DNA/RNA Shield | Zymo DNA/RNA Shield | Zymo Research | 1 mL per Sterivex | # mL depends on sample size |
 | Zymo ZR BashingBead Lysis Tubes | Zymo ZR BashingBead Lysis Tubes (0.1 & 0.5 mm) | Zymo Research | 1 tube per Sterivex | # of tubes depends on sample size |
-| Gloves | Powder free nitrile gloves | Generic Brand | 1 box | Can be any generic brand of gloves |
-| Field notebook | Hard cover notebook | Generic Brand | 1 | Encouraged to keep a digital sample log in addition to written notes |
+| Gloves | Powder-free nitrile gloves | Generic brand | 1 box | Can be any generic brand of gloves |
+| Field notebook | Hard cover notebook | Generic brand | 1 | Encouraged to keep a digital sample log in addition to written notes |
 | **Chemicals** |
-| 5% bleach | Household Bleach | Generic Brand | 1 bottle | Dilute to 2% bleach solution |
-| Deionized or Milli-Q water | DI water | Generic Brand | At least 8 L | Or use ship's DI water |
+| 5-9% Sodium hypochlorite | Household bleach | Generic brand | 1 bottle | Dilute 1:20 for lab use |
+| Deionized or Milli-Q water | DI water | Generic brand | At least 8 L | Or use ship's DI water |
 
 - Description: E.g., "filter".
 - Product Name and Model: Provide the official name of the product.
@@ -170,12 +171,12 @@ The process of setting up sampling equipment and filtering seawater will take ~2
 
 Preparation
 
-1. Prepare a 2% bleach solution by diluting 5% household bleach with DI water and storing in an 8 L carboy.
+1. Prepare a 1:20 dilution bleach solution by mixing 1 part household bleach (5-9% sodium hypochlorite) with DI water and storing in an 8 L carboy.
 2. Wearing gloves, prepare the Sterivex filters by carefully adding 1 tube of Zymo ZR BashingBeads. It is recommended to cut off the top half of a 1000 uL tip and place it into the top of the Sterivex filter to act as a funnel while pouring beads into the Sterivex. 
 3. Label each Sterivex filter with a pre-printed sticker.
 4. Attach hose-barb adapter to one end of peristaltic pump tubing.
 5. Attach serological pipette to other end of peristaltic pump tubing.
-6. Sterilize 60 mL syringe with 2% bleach.
+6. Sterilize 60 mL syringe with 1:20 dilution bleach solution.
 
 Sampling
 
@@ -195,7 +196,7 @@ Filtration
 5. Unscrew and remove Sterivex filters from the hose-barb adapters.
 6. Gently remove any excess seawater from the filters using a sterilized 60 mL syringe.
 7. Cap the bottom end (outlet) of the Sterivex filter with a female luer-lock cap.
-8. In between filtering different water samples, rinse out the tubing with 2% bleach solution, followed by DI water. Then proceed with the next volume of seawater.
+8. In between filtering different water samples, rinse out the tubing with 1:20 dilution bleach solution, followed by DI water. Then proceed with the next volume of seawater.
 
 Sample preservation
 

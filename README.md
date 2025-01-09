@@ -53,6 +53,8 @@ pip install -U pandoc-mustache
 
 #### Run
 
-* Create a file called `vars.yaml` with all the YAML terms. You can change the name of this file.
-* Add the line `mustache: ./vars.yaml` to the beginning of the YAML frontmatter of the Markdown document. Note: Only YAML terms in vars.yaml will be readable. Other YAML frontmatter in the Markdown document is ignored by pandoc.
-* Run pandoc with command `pandoc test_pandoc-mustache.md --filter pandoc-mustache -o test_pandoc-mustache.pdf`.
+From the `code` directory, run the command `./pandoc.sh ../markdown/*.md`. This script does the following for each Markdown file:
+
+* Create a file called `mustache.yaml` with all the YAML terms from the frontmatter.
+* Replace the YAML frontmatter with a single line `mustache: mustache.yaml` in the Markdown document `mustache.yaml`. Note: Only YAML terms in this separate YAML file will be readable. Other YAML frontmatter in the Markdown document is ignored by pandoc.
+* Run pandoc with commands `pandoc "$output_file" --filter pandoc-mustache -o ../docx/"${input_file_base}.docx"` and `pandoc "$output_file" --filter pandoc-mustache -o ../html/"${input_file_base}.html"` to generate the Word and HTML files, respectively.

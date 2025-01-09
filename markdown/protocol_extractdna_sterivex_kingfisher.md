@@ -92,7 +92,7 @@ nucl_acid_ext_method_additional: not applicable
 
 ### Summary
 
-This protocol is used for DNA extraction of sea water eDNA samples from sterivex filters using contents of ZymoBIOMICS 96 Magbead DNA Kit and a KingFisher. Optional use of Opentrons OT-2 Robot to prepare plates for KingFisher. This protocol is used by the OMICS lab group of NOAA's AOML.
+This protocol is used for DNA extraction of sea water eDNA samples from sterivex filters using contents of a {{nucl_acid_ext_kit}} and a KingFisher Flex robot. Optional use of Opentrons OT-2 Robot to prepare plates for KingFisher. This protocol is used by the Molecular and Computational Biodiversity group of NOAA's AOML.
 
 ### Method description and rationale
 
@@ -108,7 +108,7 @@ One person with molecular biology experience.
 
 ### Safety
 
-MagBinding Buffer from the ZymoBIOMICS Kit is classified as category 4 for acute toxicity and causes severe skin burns and serious eye damage. It is also noted that the MagBinding Buffer is harmful to aquatic life with long lasting effects. MagWash1 from the ZymoBIOMICS Kit is classified as category 4 for acute toxicity, is highly flammable, causes skin and serious eye irritation and may cause drowsiness or dizziness. MagWash2 from the ZymoBIOMICS Kit is flammable, causes serious eye irritation and may cause drowsiness or dizziness. Additional details available on SDS (<https://files.zymoresearch.com/sds/_d4302_d4308_zymobiomics-96_magbead_dna_kits.pdf>). For other reagents, standard precautions for handling chemicals including wearing PPE is recommended to avoid skin and eye exposure. 
+MagBinding Buffer from the {{nucl_acid_ext_kit}} is classified as category 4 for acute toxicity and causes severe skin burns and serious eye damage. It is also noted that the MagBinding Buffer is harmful to aquatic life with long lasting effects. MagWash 1 from the {{nucl_acid_ext_kit}} is classified as category 4 for acute toxicity, is highly flammable, causes skin and serious eye irritation and may cause drowsiness or dizziness. MagWash2 from the {{nucl_acid_ext_kit}} is flammable, causes serious eye irritation and may cause drowsiness or dizziness. Additional details available on SDS (<https://files.zymoresearch.com/sds/_d4302_d4308_zymobiomics-96_magbead_dna_kits.pdf>). For other reagents, standard precautions for handling chemicals including wearing PPE is recommended to avoid skin and eye exposure.
 
 ### Training requirements
 

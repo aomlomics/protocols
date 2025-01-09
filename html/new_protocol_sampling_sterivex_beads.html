@@ -1,0 +1,538 @@
+<h1
+id="noaaaoml-water-sampling-protocol-using-sterivex-with-zirconia-beads">NOAA/AOML
+Water Sampling Protocol using Sterivex with Zirconia Beads</h1>
+<h2 id="protocol-information">PROTOCOL INFORMATION</h2>
+<h3 id="minimum-information-about-an-omics-protocol-miop">Minimum
+Information about an Omics Protocol (MIOP)</h3>
+<ul>
+<li>MIOP terms are listed in the YAML frontmatter of this page.</li>
+<li>See <a
+href="https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml"
+class="uri">https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml</a>
+for list and definitions.</li>
+</ul>
+<h3 id="authors">Authors</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>PREPARED BY</th>
+<th>AFFILIATION</th>
+<th>ORCID</th>
+<th>DATE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sean Anderson</td>
+<td>NOAA/AOML, MSU/NGI</td>
+<td><a href="https://orcid.org/0000-0003-3096-1120"
+class="uri">https://orcid.org/0000-0003-3096-1120</a></td>
+<td>2023-11-27</td>
+</tr>
+<tr>
+<td>Luke Thompson</td>
+<td>NOAA/AOML, MSU/NGI</td>
+<td><a href="https://orcid.org/0000-0002-3911-1280"
+class="uri">https://orcid.org/0000-0002-3911-1280</a></td>
+<td>2023-11-27</td>
+</tr>
+<tr>
+<td>Sammy Harding</td>
+<td>NOAA/AOML, MSU/NGI</td>
+<td><a href="https://orcid.org/0009-0008-8885-6140"
+class="uri">https://orcid.org/0009-0008-8885-6140</a></td>
+<td>2024-08-15</td>
+</tr>
+<tr>
+<td>Alyse Larkin</td>
+<td>UC-Irvine</td>
+<td><a href="https://orcid.org/0000-0003-4466-0791"
+class="uri">https://orcid.org/0000-0003-4466-0791</a></td>
+<td>2023-11-27</td>
+</tr>
+<tr>
+<td>Adam Martiny</td>
+<td>UC-Irvine</td>
+<td><a href="https://orcid.org/0000-0003-2829-4314"
+class="uri">https://orcid.org/0000-0003-2829-4314</a></td>
+<td>2023-11-27</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>All authors known to have contributed to the preparation of this
+protocol should be listed, including those who filled in the
+template.</li>
+<li>Visit <a href="https://orcid.org/"
+class="uri">https://orcid.org/</a> to register for an ORCID.</li>
+</ul>
+<h3 id="protocol-revision-record">Protocol Revision Record</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>VERSION</th>
+<th>RELEASE DATE</th>
+<th>DESCRIPTION OF REVISIONS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0.0</td>
+<td>2023-11-27</td>
+<td>Initial release</td>
+</tr>
+<tr>
+<td>1.0.1</td>
+<td>2024-10-23</td>
+<td>Formatting edits</td>
+</tr>
+<tr>
+<td>1.1.0</td>
+<td>2024-11-16</td>
+<td>Addition of FAIR eDNA terms in YAML frontmatter</td>
+</tr>
+<tr>
+<td>1.2.0</td>
+<td>2025-01-08</td>
+<td>Clarified the concentration of bleach throughout</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Version numbers start at 1.0.0 when the protocol is first completed
+and will increase when changes that impact the outcome of the procedure
+are made (patches: 1.0.1; minor changes: 1.1.0; major changes:
+2.0.0).</li>
+<li>Release date is the date when a given protocol version was
+finalised.</li>
+<li>Description of revisions includes a brief description of what was
+changed relative to the previous version.</li>
+</ul>
+<h3 id="acronyms-and-abbreviations">Acronyms and Abbreviations</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>ACRONYM / ABBREVIATION</th>
+<th>DEFINITION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GO-SHIP</td>
+<td>Global Ocean Ship-based Hydrographic Investigations Program</td>
+</tr>
+<tr>
+<td>NOAA</td>
+<td>National Oceanic and Atmospheric Administration</td>
+</tr>
+<tr>
+<td>AOML</td>
+<td>Atlantic Oceanographic and Meteorological Laboratory</td>
+</tr>
+<tr>
+<td>MSU</td>
+<td>Mississippi State University</td>
+</tr>
+<tr>
+<td>NGI</td>
+<td>Northern Gulf Institute</td>
+</tr>
+<tr>
+<td>eDNA</td>
+<td>environmental DNA</td>
+</tr>
+</tbody>
+</table>
+<h3 id="glossary">Glossary</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>SPECIALISED TERM</th>
+<th>DEFINITION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Field negative control</td>
+<td>Negative control created during sampling. Usually distilled (DI)
+water run through a Sterivex filter in place of a seawater eDNA sample.
+This will act as a control for contamination during field sampling.</td>
+</tr>
+<tr>
+<td>Niskin bottle</td>
+<td>Plastic cylindrical bottle used for collecting water samples at
+different depths. Comes in a variety of volumes.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="background">BACKGROUND</h2>
+<h3 id="summary">Summary</h3>
+<p>This protocol describes collection and filtration of marine eDNA
+samples using Sterivex cartridge filters and can be adapted to collect
+water samples from individual Niskin bottles, CTD Niskin rosettes, or
+flow through systems. This protocol is used by NOAA’s AOML GO-SHIP
+collaborators.</p>
+<h3 id="method-description-and-rationale">Method description and
+rationale</h3>
+<p>This protocol is used to pump sea water samples collected via Niskin
+bottle, CTD Niskin rosettes or flow through systems and pump it through
+a 0.22 uM Sterivex filter using a peristaltic pump. Sterivex filters are
+loaded with Zymo ZR BashingBeads prior to pumping and DNA/RNA
+preservative is immediately added post-pumping to better preserve eDNA
+and expedite DNA extraction upon processing in the lab. The recommended
+filtration volume for GO-SHIP samples is ~8 liters, which takes ~2
+hours. Precautions are taken to minimize contamination of samples by
+thoroughly sterilizing all equipment prior to use.</p>
+<h3 id="spatial-coverage-and-environments-of-relevance">Spatial coverage
+and environment(s) of relevance</h3>
+<p>This protocol can be used across any marine environment to
+effectively collect water samples for biodviersity monitoring. This
+protocol can tolerate a wide range of depths for sampling - NOAA’s AOML
+samples from 1m up to 1000m.</p>
+<h2 id="personnel-required">PERSONNEL REQUIRED</h2>
+<p>One person with pipetting experience. Research vessel experience is
+recommended but not required.</p>
+<h3 id="safety">Safety</h3>
+<p>There are no major safety concerns with this protocol. Standard
+precuations should be taken such as wearing PPE at all times to avoid
+skin and eye exposure especially when working with bleach.</p>
+<h3 id="training-requirements">Training requirements</h3>
+<p>Standard moleculary biology training including sterile technique and
+pipetting technique is required to properly conduct this protocol.
+Research vessel experience is recommended. Personnel should be trained
+in filtering protocol prior to conducting on ship.</p>
+<h3 id="time-needed-to-execute-the-procedure">Time needed to execute the
+procedure</h3>
+<p>The process of setting up sampling equipment and filtering seawater
+will take ~2 hours (depending on number of samples).</p>
+<h2 id="equipment">EQUIPMENT</h2>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>DESCRIPTION</th>
+<th>PRODUCT NAME AND MODEL</th>
+<th>MANUFACTURER</th>
+<th>QUANTITY</th>
+<th>REMARK</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Durable equipment</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>20 L carboy</td>
+<td>20 L Nalgene carboy</td>
+<td>Generic brand</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>8 L carboy</td>
+<td>8 L Nalgene carboy</td>
+<td>Generic brand</td>
+<td>1</td>
+<td>Used to hold bleach solution</td>
+</tr>
+<tr>
+<td>Peristaltic pump</td>
+<td>Masterflex peristaltic pump</td>
+<td>Cole Parmer</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>Pump heads</td>
+<td>Masterflex L/S Easy-Load II Pump Heads for Precision Tubing</td>
+<td>Avantor</td>
+<td>1-3</td>
+<td>The greater the # of pump heads, the faster the sampling
+process</td>
+</tr>
+<tr>
+<td>Pump tubing</td>
+<td>Masterflex Precision Pump Tubing, Peroxide-Cured Silicone</td>
+<td>EW-96400-24</td>
+<td>Cole Parmer</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Hose-barb adapter</td>
+<td>Masteflex fitting, Male Luer Lock to Hose Barb Adapter</td>
+<td>Cole-Parmer</td>
+<td>3</td>
+<td>Depends on # of pump tubes</td>
+</tr>
+<tr>
+<td>Serological pipette</td>
+<td>10 mL Serological Pipette</td>
+<td>Generic brand</td>
+<td>3</td>
+<td>Depends on # of pump tubes</td>
+</tr>
+<tr>
+<td>2 L graduated cylinders</td>
+<td>Graduated cylinder - 2 L</td>
+<td>Generic brand</td>
+<td>3</td>
+<td>Depends on # of samples being pumped at once, can be substituted
+with carboys which tubing will be directly attached to (no serological
+pipets) using adapters</td>
+</tr>
+<tr>
+<td>-20 °C freezer</td>
+<td>-20 °C commercial chest freezer</td>
+<td>Generic brand</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Consumable equipment</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Sterivex filter</td>
+<td>Millipore Sterivex-GP Pressure Filter Unit, 0.22µm pore size</td>
+<td>Millipore Sigma</td>
+<td># of samples</td>
+<td>account for negative control field blanks</td>
+</tr>
+<tr>
+<td>Inlet (male) luer-lock cap</td>
+<td>MasterFlex Male Luer Lock Plug</td>
+<td>VWR</td>
+<td>1 per Sterivex</td>
+<td>depends on # of samples</td>
+</tr>
+<tr>
+<td>Outlet (female) luer-lock cap</td>
+<td>MasterFlex Female Luer Thread Style Cap</td>
+<td>VWR</td>
+<td>1 per Sterivex</td>
+<td>depends on # of samples</td>
+</tr>
+<tr>
+<td>Pre-printed Cryo-Babies labels</td>
+<td>Cryo-Babies LCRY-1700</td>
+<td>Diversified Biotech</td>
+<td>1 label per Sterivex</td>
+<td>Depends on # of samples</td>
+</tr>
+<tr>
+<td>60 mL syringe with male luer-lock outlet</td>
+<td>Disposable syringe with luer lock - 60 mL</td>
+<td>Generic brand</td>
+<td>1 box</td>
+<td></td>
+</tr>
+<tr>
+<td>Sterile collection bags</td>
+<td>Whil-Pak collection bags</td>
+<td>Cole Parmer</td>
+<td>1 box</td>
+<td>Various sizes can be used for water collection</td>
+</tr>
+<tr>
+<td>DNA/RNA Shield</td>
+<td>Zymo DNA/RNA Shield</td>
+<td>Zymo Research</td>
+<td>1 mL per Sterivex</td>
+<td># mL depends on sample size</td>
+</tr>
+<tr>
+<td>Zymo ZR BashingBead Lysis Tubes</td>
+<td>Zymo ZR BashingBead Lysis Tubes (0.1 &amp; 0.5 mm)</td>
+<td>Zymo Research</td>
+<td>1 tube per Sterivex</td>
+<td># of tubes depends on sample size</td>
+</tr>
+<tr>
+<td>Gloves</td>
+<td>Powder-free nitrile gloves</td>
+<td>Generic brand</td>
+<td>1 box</td>
+<td>Can be any generic brand of gloves</td>
+</tr>
+<tr>
+<td>Field notebook</td>
+<td>Hard cover notebook</td>
+<td>Generic brand</td>
+<td>1</td>
+<td>Encouraged to keep a digital sample log in addition to written
+notes</td>
+</tr>
+<tr>
+<td><strong>Chemicals</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5-9% Sodium hypochlorite</td>
+<td>Household bleach</td>
+<td>Generic brand</td>
+<td>1 bottle</td>
+<td>Dilute 1:20 for lab use</td>
+</tr>
+<tr>
+<td>Deionized or Milli-Q water</td>
+<td>DI water</td>
+<td>Generic brand</td>
+<td>At least 8 L</td>
+<td>Or use ship’s DI water</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Description: E.g., “filter”.</li>
+<li>Product Name and Model: Provide the official name of the
+product.</li>
+<li>Manufacturer: Provide the name of the manufacturer of the
+product.</li>
+<li>Quantity: Provide quantities necessary for one application of the
+standard operating procedure (e.g., number of filters).</li>
+<li>Remark: For example, some of the consumable may need to be
+sterilized, some commercial solution may need to be diluted or shielded
+from light during the operating procedure.</li>
+</ul>
+<h2 id="standard-operating-procedure">STANDARD OPERATING PROCEDURE</h2>
+<h3 id="protocol">Protocol</h3>
+<h3 id="sampling">Sampling</h3>
+<p>Preparation</p>
+<ol type="1">
+<li>Prepare a 1:20 dilution bleach solution by mixing 1 part household
+bleach (5-9% sodium hypochlorite) with DI water and storing in an 8 L
+carboy.</li>
+<li>Wearing gloves, prepare the Sterivex filters by carefully adding 1
+tube of Zymo ZR BashingBeads. It is recommended to cut off the top half
+of a 1000 uL tip and place it into the top of the Sterivex filter to act
+as a funnel while pouring beads into the Sterivex.</li>
+<li>Label each Sterivex filter with a pre-printed sticker.</li>
+<li>Attach hose-barb adapter to one end of peristaltic pump tubing.</li>
+<li>Attach serological pipette to other end of peristaltic pump
+tubing.</li>
+<li>Sterilize 60 mL syringe with 1:20 dilution bleach solution.</li>
+</ol>
+<p>Sampling</p>
+<ol type="1">
+<li>Rinse 20-L carboy 2 times with ~100 mL of sample water (200 mL
+total)</li>
+<li>Wearing gloves, collect water from the flow-through system (or
+Niskin bottles) into 20-L carboy.</li>
+<li>Place serological pipettes into bag(s) or bottle(s), ensuring the
+other end of the tubing (with hose-barb) is flowing into the graduated
+cyclinders.</li>
+<li>Turn on the pump and run ~100 mL of seawater to prime the
+tubing.</li>
+<li>Run the pump at 100-150 rpm.</li>
+<li>Pause the pump and discard water.</li>
+</ol>
+<p>Filtration</p>
+<ol type="1">
+<li>Attach the Sterivex filter input to the hose-barb that is already
+attached to the tubing outflow. The filter should screw on tightly.
+Avoid handling Sterivex filter input or output ends.</li>
+<li>Run the pump and filter seawater until ~8 L has been filtered,
+measured using the graduated cyclinders or another container.</li>
+<li>On the log sheet, record the date, time, latitute, longitude, volume
+filtered and any notes about the sample. This information should be
+entered into an Excel spreadsheet every few days to maintain a digital
+copy in addition to the paper copy.</li>
+<li>Pause pump and open pump head valves to release pressure.</li>
+<li>Unscrew and remove Sterivex filters from the hose-barb
+adapters.</li>
+<li>Gently remove any excess seawater from the filters using a
+sterilized 60 mL syringe.</li>
+<li>Cap the bottom end (outlet) of the Sterivex filter with a female
+luer-lock cap.</li>
+<li>In between filtering different water samples, rinse out the tubing
+with 1:20 dilution bleach solution, followed by DI water. Then proceed
+with the next volume of seawater.</li>
+</ol>
+<p>Sample preservation</p>
+<ol type="1">
+<li>Using a P1000 (1000 uL pipette), gently add 1000 uL of DNA/RNA
+Shield preservative into the Sterivex.</li>
+<li>Cap the top end (inlet) of the Sterivex with a male luer-lock
+cap.</li>
+</ol>
+<p>Storage</p>
+<ol type="1">
+<li>Freeze at ≥ –20 °C until extraction.</li>
+</ol>
+<p>Post-Sampling 1. Return the bottle of DNA/RNA Shield to a
+refrigerator to reduce contamination. 2. Run ~1 L of 5% bleach through
+the lines to clean pump tubing. Repeat with ~1 L of deionized water. 3.
+Rinse the 20 L collection carboy 3 times with ~0.5 L DI water (1.5 L
+total) after sampling.</p>
+<h3 id="quality-control">Quality control</h3>
+<p>Negative field controls are included with every research cruise.
+After the addition of Zymo ZR BashingBeads to a new Sterivex filter, DI
+water is filtered in place of sea water and then DNA/RNA Shield is
+added. These Sterivex are stored the same as other sample Sterivex.</p>
+<h3 id="basic-troubleshooting-guide">Basic troubleshooting guide</h3>
+<p>Leaks</p>
+<ul>
+<li>If there is a leak present in the pump setup, you will notice
+trouble pulling water through the pump system. Check all seals and
+re-attach tubing.</li>
+</ul>
+<p>Clogged Filter</p>
+<ul>
+<li>If a filter is clogged, turn valves and connections off and attempt
+to clear obstructions (i.e. large chunks of sediment or algae). Make
+note of any abnormal conditions and try to pump the full volume of
+seawater through the filter. In more productive areas, especially
+surface samples, we would frequently have filters that could not take
+the full volume. Since there are only two pumps and multiple sample
+depths at one time, it was common for us to use a cut-off time before
+starting next sample (~45 min).</li>
+</ul>
+<h2 id="references">REFERENCES</h2>
+<p>Insert all references cited in the document. Please insert full DOI
+address when available, e.g. <a
+href="http://doi.dx.org/10.1007/s11258-014-0404-1"
+class="uri">http://doi.dx.org/10.1007/s11258-014-0404-1</a>.</p>
+<h2 id="appendix-a-datasheets">APPENDIX A: DATASHEETS</h2>
+<p>Link templates (e.g. preformatted spreadsheets) used to record
+measurements and report on the quality of the data as well as any
+documents such as manufacturer specifications, images, etc that support
+this protocol. Please include a short note describing the document’s
+relevance.</p>
+<p>Link to youtube video demonstrating eDNA Sampling for GO-SHIP: <a
+href="https://www.youtube.com/watch?v=RjJ_bpb1z04"
+class="uri">https://www.youtube.com/watch?v=RjJ_bpb1z04</a>.</p>

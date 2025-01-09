@@ -1,0 +1,735 @@
+<h1
+id="noaaaoml-dna-extraction-protocol-for-sterivex-using-kingfisher">NOAA/AOML
+DNA Extraction Protocol for Sterivex using KingFisher</h1>
+<h2 id="protocol-information">PROTOCOL INFORMATION</h2>
+<h3 id="minimum-information-about-an-omics-protocol-miop">Minimum
+Information about an Omics Protocol (MIOP)</h3>
+<ul>
+<li>MIOP terms are listed in the YAML frontmatter of this page.</li>
+<li>See <a
+href="https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml"
+class="uri">https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml</a>
+for list and definitions.</li>
+</ul>
+<h3 id="authors">Authors</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>PREPARED BY</th>
+<th>AFFILIATION</th>
+<th>ORCID</th>
+<th>DATE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Luke Thompson</td>
+<td>NOAA/AOML, MSU/NGI</td>
+<td><a href="https://orcid.org/0000-0002-3911-1280"
+class="uri">https://orcid.org/0000-0002-3911-1280</a></td>
+<td>2021-09-13</td>
+</tr>
+<tr>
+<td>Sean Anderson</td>
+<td>NOAA/AOML, MSU/NGI</td>
+<td><a href="https://orcid.org/0000-0003-3096-1120"
+class="uri">https://orcid.org/0000-0003-3096-1120</a></td>
+<td>2021-09-13</td>
+</tr>
+<tr>
+<td>Sammy Harding</td>
+<td>NOAA/AOML, MSU/NGI</td>
+<td><a href="https://orcid.org/0009-0008-8885-6140"
+class="uri">https://orcid.org/0009-0008-8885-6140</a></td>
+<td>2024-06-26</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>All authors known to have contributed to the preparation of this
+protocol should be listed, including those who filled in the
+template.</li>
+<li>Visit <a href="https://orcid.org/"
+class="uri">https://orcid.org/</a> to register for an ORCID.</li>
+</ul>
+<h3 id="protocol-revision-record">Protocol Revision Record</h3>
+<table>
+<thead>
+<tr>
+<th>VERSION</th>
+<th>RELEASE DATE</th>
+<th>DESCRIPTION OF REVISIONS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0.0</td>
+<td>2024-06-26</td>
+<td>Initial release</td>
+</tr>
+<tr>
+<td>1.1.0</td>
+<td>2024-11-16</td>
+<td>Addition of FAIR eDNA terms in YAML frontmatter</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Version numbers start at 1.0.0 when the protocol is first completed
+and will increase when changes that impact the outcome of the procedure
+are made (patches: 1.0.1; minor changes: 1.1.0; major changes:
+2.0.0).</li>
+<li>Release date is the date when a given protocol version was
+finalised.</li>
+<li>Description of revisions includes a brief description of what was
+changed relative to the previous version.</li>
+</ul>
+<h3 id="acronyms-and-abbreviations">Acronyms and Abbreviations</h3>
+<table>
+<thead>
+<tr>
+<th>ACRONYM / ABBREVIATION</th>
+<th>DEFINITION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NOAA</td>
+<td>National Oceanic and Atmospheric Administration</td>
+</tr>
+<tr>
+<td>AOML</td>
+<td>Atlantic Oceanographic and Meteorological Laboratory</td>
+</tr>
+<tr>
+<td>MSU</td>
+<td>Mississippi State University</td>
+</tr>
+<tr>
+<td>NGI</td>
+<td>Northern Gulf Institute</td>
+</tr>
+<tr>
+<td>eDNA</td>
+<td>environmental DNA</td>
+</tr>
+<tr>
+<td>PPE</td>
+<td>Personal protective equipment</td>
+</tr>
+<tr>
+<td>PCR</td>
+<td>Polymerase chain reaction</td>
+</tr>
+<tr>
+<td>EtOH</td>
+<td>Ethanol</td>
+</tr>
+<tr>
+<td>NTC</td>
+<td>No template control</td>
+</tr>
+</tbody>
+</table>
+<h3 id="glossary">Glossary</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>SPECIALISED TERM</th>
+<th>DEFINITION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Extraction Blank</td>
+<td>A type of negative control to confirm there is no contamination
+during DNA extractions. Normally an empty filter extracted and PCR
+amplified alongside other samples.</td>
+</tr>
+<tr>
+<td>No Template Control</td>
+<td>A type of negative control during PCR to confirm there is no
+contamination during the PCR process. Normally nuclease-free water run
+in place of DNA on a PCR.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="background">BACKGROUND</h2>
+<h3 id="summary">Summary</h3>
+<p>This protocol is used for DNA extraction of sea water eDNA samples
+from sterivex filters using contents of ZymoBIOMICS 96 Magbead DNA Kit
+and a KingFisher. Optional use of Opentrons OT-2 Robot to prepare plates
+for KingFisher. This protocol is used by the OMICS lab group of NOAA’s
+AOML.</p>
+<h3 id="method-description-and-rationale">Method description and
+rationale</h3>
+<p>This protocol is optimized for high throughput DNA extractions of
+sterivex filters. It is easily reproducible and generates sufficient DNA
+yields while minimizing contamination and time requirements through the
+use of a KingFisher and optional use of an Opentrons OT-2 Pipetting
+Robot.</p>
+<h3 id="spatial-coverage-and-environments-of-relevance">Spatial coverage
+and environment(s) of relevance</h3>
+<p>This protocol has been used to extract DNA from thousands of sea
+water eDNA samples taken from stations off of South Florida coasts
+(Atlantic Ocean and Gulf of Mexico). Sample collection depths range from
+1m to 200m in the epipelagic zone (marine photic zone
+[ENVO:00000209]).</p>
+<h2 id="personnel-required">PERSONNEL REQUIRED</h2>
+<p>One person with molecular biology experience.</p>
+<h3 id="safety">Safety</h3>
+<p>MagBinding Buffer from the ZymoBIOMICS Kit is classified as category
+4 for acute toxicity and causes severe skin burns and serious eye
+damage. It is also noted that the MagBinding Buffer is harmful to
+aquatic life with long lasting effects. MagWash1 from the ZymoBIOMICS
+Kit is classified as category 4 for acute toxicity, is highly flammable,
+causes skin and serious eye irritation and may cause drowsiness or
+dizziness. MagWash2 from the ZymoBIOMICS Kit is flammable, causes
+serious eye irritation and may cause drowsiness or dizziness. Additional
+details available on SDS (<a
+href="https://files.zymoresearch.com/sds/_d4302_d4308_zymobiomics-96_magbead_dna_kits.pdf"
+class="uri">https://files.zymoresearch.com/sds/_d4302_d4308_zymobiomics-96_magbead_dna_kits.pdf</a>).
+For other reagents, standard precautions for handling chemicals
+including wearing PPE is recommended to avoid skin and eye exposure.</p>
+<h3 id="training-requirements">Training requirements</h3>
+<p>Basic molecular biology training (including sterile technique,
+pipetting) is required to conduct this protocol.</p>
+<h3 id="time-needed-to-execute-the-procedure">Time needed to execute the
+procedure</h3>
+<p>Extracting DNA from 94 sterivex samples takes about 5 hours (300
+minutes) including KingFisher run time.</p>
+<h2 id="equipment">EQUIPMENT</h2>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>DESCRIPTION</th>
+<th>PRODUCT NAME AND MODEL</th>
+<th>MANUFACTURER</th>
+<th>QUANTITY</th>
+<th>REMARK</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Durable equipment</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Vortex</td>
+<td>Vortex Genie</td>
+<td>Scientific Industries</td>
+<td>as many as possible</td>
+<td># of vortexes will affect run time of protocol</td>
+</tr>
+<tr>
+<td>Vortex Adapter Plate</td>
+<td>Vortex Adapter for 6 x 5ml tubes</td>
+<td>QIAGEN</td>
+<td>depends on # of vortexes</td>
+<td># of vortex adapter plates will affect run time</td>
+</tr>
+<tr>
+<td>Centrifuge</td>
+<td>Centrifuge 5425 R - Microcentrifuge</td>
+<td>Eppendorf</td>
+<td>1</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td>Opentrons OT-2 Robot</td>
+<td>OT-2 Pipetting Robot</td>
+<td>Opentrons</td>
+<td>1</td>
+<td>Optional equipment for protocol; 8-Channel pipette recommended</td>
+</tr>
+<tr>
+<td>KingFisher</td>
+<td>KingFisher Flex Purification System</td>
+<td>ThermoFisher</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>100-1000 uL Pipette</td>
+<td>Eppendorf Research Plus Adjustable-Volume Pipette</td>
+<td>Eppendorf</td>
+<td>1</td>
+<td>Can be substituted with any accurate pipette</td>
+</tr>
+<tr>
+<td>10-100 uL 8 Channel Pipette</td>
+<td>Eppendorf Research Plus 8 Channel Pipette</td>
+<td>Eppendorf</td>
+<td>1</td>
+<td>Can be substituted with any accurate pipette</td>
+</tr>
+<tr>
+<td>1 uL-10 mL Repeater Pipette</td>
+<td>Repeater M4 Pipette, 1 uL-10 mL Dispensing Volume for use with
+Combitips Advanced Syringe Tips</td>
+<td>Can be substituted with any accurate pipette, optional for filling
+KingFisher plates</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Tube Racks</td>
+<td>2 mL tube 96-well tube racks</td>
+<td>Generic</td>
+<td>1</td>
+<td>Can be any brand, must fit 2 mL tubes</td>
+</tr>
+<tr>
+<td>Wash bottles</td>
+<td>Safety wash bottles 500 mL for EtOH</td>
+<td>Generic</td>
+<td>1</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td><strong>Consumable equipment</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Sterivex Filter</td>
+<td>Millipore Sterivex-GP Pressure Filter Unit, 0.22µm pore size</td>
+<td>Millipore Sigma</td>
+<td>94</td>
+<td></td>
+</tr>
+<tr>
+<td>DNA/RNA Shield</td>
+<td>Zymo DNA/RNA Shield</td>
+<td>Zymo Research</td>
+<td>94 mL</td>
+<td>only required if sterivex are not pre-loaded or for adding an
+extraction blank</td>
+</tr>
+<tr>
+<td>Zirconia Beads</td>
+<td>Zymo ZR BashingBead Lysis Tubes (0.1 &amp; 0.5 mm)</td>
+<td>Zymo Research</td>
+<td>94</td>
+<td>only required if sterivex are not pre-loaded or for adding an
+extraction blank</td>
+</tr>
+<tr>
+<td>Filter Cap (Male)</td>
+<td>MasterFlex Male Luer Lock Plug</td>
+<td>VWR</td>
+<td>94</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td>Filter Cap (Female)</td>
+<td>MasterFlex Female Luer Thread Style Cap</td>
+<td>VWR</td>
+<td>94</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td>Parafilm</td>
+<td>Parafilm M Lab Film</td>
+<td>Generic</td>
+<td>1 roll</td>
+<td>Can substitute with generic brand</td>
+</tr>
+<tr>
+<td>Syringes</td>
+<td>BD Disposable Syringes with Luer-Lock Tips, 5 mL</td>
+<td>Fisher Scientific</td>
+<td>94</td>
+<td>Can be substituted with generic as long as they twist onto
+Sterivex</td>
+</tr>
+<tr>
+<td>Microcentrifuge Tubes</td>
+<td>NEST 2.0 mL Microcentrifuge Tube</td>
+<td>Opentrons</td>
+<td>94</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td>KingFisher 96 deep-well plate</td>
+<td>KingFisher Plastics for 96 deep-well format</td>
+<td>ThermoFisher</td>
+<td>7</td>
+<td></td>
+</tr>
+<tr>
+<td>Kingfisher 96 well microplate (200uL)</td>
+<td>KingFisher Plastics for 96 standard and PCR formats</td>
+<td>ThermoFisher</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>KingFisher 96 tip comb for deep-well magnets</td>
+<td>Kingfisher Flex 96 Deep-Well Tip Combs</td>
+<td>ThermoFisher</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>96-well PCR plate</td>
+<td>Armadillo PCR Plate, 96-well, clear, clear wells</td>
+<td>ThermoFisher</td>
+<td>3</td>
+<td></td>
+</tr>
+<tr>
+<td>Aluminum Foil Sealing Tape</td>
+<td>AlumaSeal II Sealing Foils for PCR and Cold Storage</td>
+<td>VWR</td>
+<td>3</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td>1000µL Filter Tips</td>
+<td>OT-2 Filter Tips, 1000µL</td>
+<td>Opentrons</td>
+<td>2 boxes</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td>200µL Filter Tips</td>
+<td>OT-2 Filter Tips, 200µL</td>
+<td>Opentrons</td>
+<td>1 box</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td>2.5 mL Combitips</td>
+<td>Combitips advanced, 2.5 mL, green, colorless tips</td>
+<td>Eppendorf</td>
+<td>1 tip</td>
+<td>optional for MagBinding Beads with repeater pipette</td>
+</tr>
+<tr>
+<td>10 mL Combitips</td>
+<td>Combitips advanced, 10 mL, orange, colorless tips</td>
+<td>Eppendorf</td>
+<td>3 tips</td>
+<td>optional for KF plate prep with repeater pipette</td>
+</tr>
+<tr>
+<td>Gloves</td>
+<td>Nitrile Gloves, Exam Grade, Powder-free</td>
+<td>ULINE</td>
+<td>1 box</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td>Kim Wipes</td>
+<td>KimWipe Delicate Task Wipers</td>
+<td>KimTech</td>
+<td>1 box</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td><strong>Opentrons Consumables</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>12-Well Reservoir, 15 mL</td>
+<td>NEST 12-Well Reservoir, 15 mL</td>
+<td>Opentrons</td>
+<td>1</td>
+<td>optional for KF plate prep on OT-2 Robot</td>
+</tr>
+<tr>
+<td>Deep Single-Well Reservoir, 300 mL</td>
+<td>Nalgene Disposable Polypropylene Robotic Reservoirs</td>
+<td>ThermoFisher</td>
+<td>2</td>
+<td>optional for KF plate prep on OT-2 Robot</td>
+</tr>
+<tr>
+<td>200µL Filter Tips</td>
+<td>OT-2 Filter Tips, 200µL</td>
+<td>Opentrons</td>
+<td>1 box</td>
+<td>optional for KF plate prep on OT-2 Robot</td>
+</tr>
+<tr>
+<td><strong>Chemicals</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>70% EtOH</td>
+<td>Molecular bio grade ethanol</td>
+<td>Generic</td>
+<td>1 Wash Bottle</td>
+<td>only used for cleaning lab surfaces</td>
+</tr>
+<tr>
+<td><strong>ZymoBIOMICS 96 MagBead DNA Kit</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Lysis Solution</td>
+<td>ZymoBIOMICS Lysis Solution</td>
+<td>Zymo Research</td>
+<td>94 mL</td>
+<td>can be used in place of DNA/RNA Shield, only required if sterivex
+are not pre-loaded or for adding an extraction blank</td>
+</tr>
+<tr>
+<td>MagBinding Buffer</td>
+<td>ZymoBIOMICS MagBinding Buffer</td>
+<td>Zymo Research</td>
+<td>57.6 mL</td>
+<td></td>
+</tr>
+<tr>
+<td>MagBinding Beads</td>
+<td>ZymoBIOMICS MagBinding Beads</td>
+<td>Zymo Research</td>
+<td>2.4 mL</td>
+<td></td>
+</tr>
+<tr>
+<td>MagWash 1</td>
+<td>ZymoBIOMICS MagWash 1</td>
+<td>Zymo Research</td>
+<td>48 mL</td>
+<td></td>
+</tr>
+<tr>
+<td>MagWash 2</td>
+<td>ZymoBIOMICS MagWash 2</td>
+<td>Zymo Research</td>
+<td>86.4 mL</td>
+<td></td>
+</tr>
+<tr>
+<td>DNAse/RNAse Free Water</td>
+<td>ZymoBIOMICS DNAse/RNAse Free Water</td>
+<td>Zymo Research</td>
+<td>14.4 mL</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>Opentrons Consumables: If using Opentrons OT-2 Robot for KF Plate
+Prep.</p></li>
+<li><p>Description: E.g., “filter”.</p></li>
+<li><p>Product Name and Model: Provide the official name of the
+product.</p></li>
+<li><p>Manufacturer: Provide the name of the manufacturer of the
+product.</p></li>
+<li><p>Quantity: Provide quantities necessary for one application of the
+standard operating procedure (e.g., number of filters).</p></li>
+<li><p>Remark: For example, some of the consumable may need to be
+sterilized, some commercial solution may need to be diluted or shielded
+from light during the operating procedure.</p></li>
+</ul>
+<h2 id="standard-operating-procedure">STANDARD OPERATING PROCEDURE</h2>
+<h3 id="dna-extraction-protocol">DNA extraction Protocol</h3>
+<h4 id="preparation">Preparation</h4>
+<ol type="1">
+<li>Sterilize all workspaces and durable equipment with 70% EtOH.</li>
+<li>Label 94 2-ml microcentrifuge tubes 1 through 94 and place in
+96-well tube rack.</li>
+<li>Fill large ice bin with ice.</li>
+</ol>
+<h4 id="extraction">Extraction</h4>
+<ol type="1">
+<li><p>Remove Sterivex from freezer and immediately place on ice while
+randomizing the order of the filters.</p></li>
+<li><p>If Sterivex are wrapped in aluminum foil, remove foil and ensure
+all Sterivex have filter caps on either end (male and female).</p></li>
+<li><p>If Sterivex do not already contain zirconia beads and DNA/RNA
+Shield, add as follows:</p>
+<ul>
+<li>Remove the male luer plug from the inlet port.</li>
+<li>Remove any liquid from the inlet port using a sterile swab or
+twisted piece of KimWipe.</li>
+<li>Pour beads from ZR BashingBead Lysis Tubes (0.1 &amp; 0.5 mm) into
+the inlet port. If water has been removed, this should be easily done.
+If beads get stuck, use a pipette tip to unclog them.</li>
+<li>Add 1 mL ZymoBiomics Lysis Buffer or 1:10 dilution of DNA/RNA Shield
+to the Sterivex using a pipette.</li>
+<li>Replace the male luer plug in the inlet port.</li>
+</ul></li>
+<li><p>Number the filters sequentially and use scanner to scan QR codes
+(cryo-babies labels) onto a google sheet or other form of processing
+log. If Sterivex do not have QR codes, record the numbers with their
+corresponding sample names in a google sheet or lab notebook.</p></li>
+<li><p>Vortex for 40 minutes via Vortex Genie at speed ~6. Make sure the
+proper adjustable head is secured, which has brackets that fit the
+Sterivex filters. If brackets are loose and Sterivex are falling out,
+wrap a small portion of parafilm around the outside of the Sterivex and
+secure in bracket.</p></li>
+<li><p>While vortexes are running, prepare KingFisher plates by hand
+using a repeater pipette:</p>
+<ul>
+<li>Sample Plates (3): Add 600 µl of MagBinding Buffer and 25 µl of
+MagBinding beads to each well.</li>
+<li>Wash 1: Add 500 µl of ZymoBiomics MagWash 1 to each well.</li>
+<li>Wash 2-1: Add 900 µl of ZymoBiomics MagWash 2 to each well.</li>
+<li>Wash 2-2: Add 900 µl of ZymoBiomics MagWash 2 to each well.</li>
+<li>Elution: Add 150 µl of ZymoBiomics RNAse Free Water to each
+well.</li>
+</ul></li>
+</ol>
+<p>OR</p>
+<p>(OPTIONAL) Prepare KingFisher plates with Opentrons OT-2 Pipetting
+Robot:</p>
+<ul>
+<li>Turn on OT-2 Robot and computer, open Opentrons program and begin
+protocol setup.</li>
+<li>Place 200 uL filter tips in correct slot of deck.</li>
+<li>Carefully fill 12-well reservoir with reagents:
+<ul>
+<li>Fill the first two columns 1/2 way full with DNA/RNAse Free
+Water.</li>
+<li>Fill columns five, six, seven and eight completely with MagWash
+1.</li>
+<li>Place reservoir in correct deck slot of Opentrons.</li>
+</ul></li>
+<li>Place a deep single-well reservoir in the MagBinding deck slot and
+carefully fill completely with MagBinding Buffer.</li>
+<li>Place a deep single-well reservoir in the MagWash 2 deck slot and
+carefully fill completely with MagWash 2.</li>
+<li>Place sample plates (3), wash plates (3), and elution plate in
+respective deck slots.</li>
+<li>Confirm all plates are correctly placed in deck slots and begin the
+run.</li>
+<li>Once the run is complete, use a repeater pipette to add 25 uL of
+Magbinding Beads to each well of the 3 sample plates. Make sure to shake
+or vortex the MagBinding Beads before pipetting to resuspend the
+beads.</li>
+</ul>
+<ol start="7" type="1">
+<li><p>After 40 minutes of vortexing, expel lysate from Sterivex filters
+as follows:</p>
+<ul>
+<li>Remove the male filter cap and insert a 3-ml syringe into the inlet
+port (syringe should twist and fit tight).</li>
+<li>Gently expel the lysate into the syringe. Some bead carry-over is
+common.</li>
+<li>Transfer lysate to a labeled and sterile 2-ml microcentrifuge tube
+(liquid and beads will reach ~0.75 ml mark ideally).</li>
+</ul></li>
+<li><p>Centrifuge tubes at ≥ 10,000 x g for 1 min to pellet the beads
+and leave the sample as supernatant.</p></li>
+<li><p>Gently pipette 250 uL of sample supernatant into respective well
+of KingFisher Sample Plate 1, Sample Plate 2 and 3. Repeat for each
+sample. If there is less than 750 uL of sample lysate in a
+microcentrifuge tube, attempt to pipette even amounts into each of the 3
+sample plates.</p></li>
+<li><p>Turn on the KingFisher instrument and computer and open up the
+BindIt software for KingFisher.</p></li>
+<li><p>Choose correct protocol for a 3-plate run.</p></li>
+<li><p>Press start and save a new run file (you can create a new file or
+save over a previous file that used the same protocol).</p></li>
+<li><p>Follow along with instructions on the KingFisher screen to load
+the appropriate plates onto the KingFisher carousel and ensure all
+plates are in the correct position. Once the last plate has been added,
+the run will begin.</p></li>
+<li><p>Run will last ~1hr 15min for a 3-plate protocol.</p></li>
+<li><p>Once the run is complete, discard the wash, sample and tip
+plates. DO NOT THROW OUT ELUTION PLATE.</p></li>
+<li><p>Transfer samples in Elution plate (~150 uL per well) to a
+permanent 96-well PCR plate for long term storage of DNA at –20 to –80
+°C.</p></li>
+</ol>
+<ul>
+<li>Specific to NOAA/AOML: Transfer 50 uL of sample to a 96-well PCR
+plate labeled “Working Stock”, another 50 uL of sample to a 96-well
+plate labeled “Archive 1”, and the remainder 50 uL of sample to a third
+96-well plate labeled “Archive 2”. (see quality control for more
+information)</li>
+</ul>
+<ol start="17" type="1">
+<li>Turn off KingFisher instrument and computer.</li>
+</ol>
+<h3 id="quality-control">Quality control</h3>
+<ul>
+<li>An extraction blank (negative control) is included in every
+extraction set (93 samples + 1 extraction blank). All samples and
+controls are then quantified to confirm DNA concentration. Samples are
+also PCR amplified with a NTC and positive controls (Zymo Mock
+Community).</li>
+<li>Specific to NOAA/AOML: Extracted samples are transferred into 3
+aliquots stored at -20°C: a working stock for use in lab (~50 uL),
+Archive 1 (~50 uL), and Archive 2 (~50 uL).</li>
+</ul>
+<h3 id="basic-troubleshooting-guide">Basic troubleshooting guide</h3>
+<ul>
+<li>Issue 1: There have been issues with cracks in the ring around the
+inlet ports of Sterivex (usually only one side) and leaks occurring
+after thawing.
+<ul>
+<li>Solution: To make the Sterivex usable, wipe off excess
+leakage/condensation on the outside of the sterivex using a KimWipe and
+firmly press putty into the concave ring surrounding the inlet ports of
+the Sterivex. Then use parafilm to tightly wrap the areas where putty
+was applied.</li>
+</ul></li>
+<li>Issue 2: Depending on the type of bracket used on Vortex Genies,
+Sterivex may fall out of the brackets as soon as vortexes are turned on.
+<ul>
+<li>Solution: Use a KimWipe to wipe off excess condensation on the
+Sterivex then wrap a small strip of parafilm around the outside of the
+Sterivex and clip back into the bracket.</li>
+</ul></li>
+<li>Issue 3: (Opentrons OT-2 Robot) Occasionally the Opentrons OT-2
+Robot will have an issue with dispensing liquid because of bubbling
+occurring inside the tips dispensing MagBinding buffer due to the
+“soapy” nature of the solution.
+<ul>
+<li>Solution: Press the “Pause” button on the computer and replace the
+bubbly tip manually with gloved hands. Then unpause the run and watch to
+see if the tip correctly dispenses MagBinding buffer. If a sample plate
+has empty wells, use a pipette to manually add MagBinding buffer after
+the plate comes off the Opentrons.</li>
+</ul></li>
+</ul>
+<h2 id="references">REFERENCES</h2>
+<ul>
+<li>Insert all references cited in the document.</li>
+<li>Please insert full DOI address when available.</li>
+</ul>
+<h2 id="appendix-a-datasheets">APPENDIX A: DATASHEETS</h2>
+<ul>
+<li>Link templates (e.g. preformatted spreadsheets) used to record
+measurements and report on the quality of the data as well as any
+documents such as manufacturer specifications, images, etc that support
+this protocol. Please include a short note describing the document’s
+relevance.</li>
+</ul>

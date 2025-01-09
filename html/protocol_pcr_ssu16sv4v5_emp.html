@@ -1,0 +1,719 @@
+<h1 id="noaaaoml-pcr-protocol-16s-rrna-v4-v5-emp">NOAA/AOML PCR Protocol
+16S rRNA V4-V5 (EMP)</h1>
+<h2 id="protocol-information">PROTOCOL INFORMATION</h2>
+<h3 id="minimum-information-about-an-omics-protocol-miop">Minimum
+Information about an Omics Protocol (MIOP)</h3>
+<ul>
+<li>MIOP terms are listed in the YAML frontmatter of this page.</li>
+<li>See <a
+href="https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml"
+class="uri">https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml</a>
+for list and definitions.</li>
+</ul>
+<h3 id="authors">Authors</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>PREPARED BY</th>
+<th>AFFILIATION</th>
+<th>ORCID</th>
+<th>DATE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Luke Thompson</td>
+<td>NOAA/AOML, MSU/NGI</td>
+<td><a href="https://orcid.org/0000-0002-3911-1280"
+class="uri">https://orcid.org/0000-0002-3911-1280</a></td>
+<td>2021-02-28</td>
+</tr>
+<tr>
+<td>Sean Anderson</td>
+<td>NOAA/AOML, MSU/NGI</td>
+<td><a href="https://orcid.org/0000-0003-3096-1120"
+class="uri">https://orcid.org/0000-0003-3096-1120</a></td>
+<td>2021-02-28</td>
+</tr>
+<tr>
+<td>Sammy Harding</td>
+<td>NOAA/AOML, MSU/NGI</td>
+<td><a href="https://orcid.org/0009-0008-8885-6140"
+class="uri">https://orcid.org/0009-0008-8885-6140</a></td>
+<td>2024-08-19</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>All authors known to have contributed to the preparation of this
+protocol should be listed, including those who filled in the
+template.</li>
+<li>Visit <a href="https://orcid.org/"
+class="uri">https://orcid.org/</a> to register for an ORCID.</li>
+</ul>
+<h3 id="protocol-revision-record">Protocol Revision Record</h3>
+<table>
+<thead>
+<tr>
+<th>VERSION</th>
+<th>RELEASE DATE</th>
+<th>DESCRIPTION OF REVISIONS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0.0</td>
+<td>2021-02-28</td>
+<td>Initial release</td>
+</tr>
+<tr>
+<td>1.0.1</td>
+<td>2024-10-23</td>
+<td>Formatting edits</td>
+</tr>
+<tr>
+<td>1.1.0</td>
+<td>2024-11-16</td>
+<td>Addition of FAIR eDNA terms in YAML frontmatter</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Version numbers start at 1.0.0 when the protocol is first completed
+and will increase when changes that impact the outcome of the procedure
+are made (patches: 1.0.1; minor changes: 1.1.0; major changes:
+2.0.0).</li>
+<li>Release date is the date when a given protocol version was
+finalised.</li>
+<li>Description of revisions includes a brief description of what was
+changed relative to the previous version.</li>
+</ul>
+<h3 id="acronyms-and-abbreviations">Acronyms and Abbreviations</h3>
+<table>
+<thead>
+<tr>
+<th>ACRONYM / ABBREVIATION</th>
+<th>DEFINITION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NOAA</td>
+<td>National Oceanographic and Atmospheric Administration</td>
+</tr>
+<tr>
+<td>AOML</td>
+<td>Atlantic Oceanographic and Meteorological Laboratory</td>
+</tr>
+<tr>
+<td>MSU</td>
+<td>Mississippi State University</td>
+</tr>
+<tr>
+<td>NGI</td>
+<td>Northern Gulf Institute</td>
+</tr>
+<tr>
+<td>PCR</td>
+<td>Polymerase chain reaction</td>
+</tr>
+<tr>
+<td>eDNA</td>
+<td>environmental DNA</td>
+</tr>
+<tr>
+<td>NTC</td>
+<td>No template control</td>
+</tr>
+<tr>
+<td>EtOH</td>
+<td>Ethanol</td>
+</tr>
+</tbody>
+</table>
+<h3 id="glossary">Glossary</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>SPECIALISED TERM</th>
+<th>DEFINITION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Extraction Blank</td>
+<td>A type of negative control to confirm there is no contamination
+during DNA extractions. Normally an empty filter extracted and PCR
+amplified alongside other samples.</td>
+</tr>
+<tr>
+<td>No Template Control</td>
+<td>A type of negative control during PCR to confirm there is no
+contamination during the PCR process. Normally nuclease-free water run
+in place of DNA on a PCR.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="background">BACKGROUND</h2>
+<h3 id="summary">Summary</h3>
+<p>This protocol describes steps for performing PCR for 16S marker gene
+regions using eDNA extracted from Sterivex at NOAA’s AOML. There are
+several optional steps at the end of the protocol including using AMPure
+beads to clean up PCR products. Some steps (e.g. PCR plate preparation,
+AMPure bead cleanup, sequencing plate dilutions) have been or can be
+optimized for use with the Opentrons OT2 robot. This protocol closely
+aligns with the following 16S protocol: <a
+href="https://www.protocols.io/view/fuhrman-lab-515f-926r-16s-and-18s-rrna-gene-sequen-j8nlkpd1g5r7/v2?step=102"
+class="uri">https://www.protocols.io/view/fuhrman-lab-515f-926r-16s-and-18s-rrna-gene-sequen-j8nlkpd1g5r7/v2?step=102</a>.</p>
+<h3 id="method-description-and-rationale">Method description and
+rationale</h3>
+<p>This protocol is used for PCR amplifying the 16S V4-V5 marker gene
+regions of environmental DNA. Fluidigm adapter are already present on
+the primers described in the following protocol. It is highly
+reproducible and can easily be adapted for any number of samples (i.e. a
+full 96-well plate or a few samples).</p>
+<h3 id="spatial-coverage-and-environments-of-relevance">Spatial coverage
+and environment(s) of relevance</h3>
+<p>This protocol can be used to amplify the 16S marker gene region of
+any eDNA sample.</p>
+<h2 id="personnel-required">PERSONNEL REQUIRED</h2>
+<p>One person with molecular biology experience.</p>
+<h3 id="safety">Safety</h3>
+<p>There are no hazardous chemicals or materials involved in this
+protocol. Standard lab safety techniques should still be used such as
+wearing PPE to avoid skin or eye contact.</p>
+<h3 id="training-requirements">Training requirements</h3>
+<p>Basic molecular biology training is sufficient for this protocol
+including sterile technique, pipetting small volumes and
+programming/running PCR thermal cyclers.</p>
+<h3 id="time-needed-to-execute-the-procedure">Time needed to execute the
+procedure</h3>
+<p>Protocol takes about 4 hours (240 minutes) including thermal cycler
+run time.</p>
+<h2 id="equipment">EQUIPMENT</h2>
+<p>For 96-well Plate:</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>DESCRIPTION</th>
+<th>PRODUCT NAME AND MODEL</th>
+<th>MANUFACTURER</th>
+<th>QUANTITY</th>
+<th>REMARK</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Durable equipment</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>100-1000 ul Pipette</td>
+<td>Eppendorf Research Plus Adjustable-Volume Pipette</td>
+<td>Eppendorf</td>
+<td>1</td>
+<td>Can be substituted with any accurate pipette</td>
+</tr>
+<tr>
+<td>10-100 ul Pipette</td>
+<td>Eppendorf Research Plus Adjustable-Volume Pipette</td>
+<td>Eppendorf</td>
+<td>1</td>
+<td>Can be substituted with any accurate pipette</td>
+</tr>
+<tr>
+<td>0.1-2.5 ul Pipette</td>
+<td>Eppendorf Research Plus Adjustable-Volume Pipette</td>
+<td>Eppendorf</td>
+<td>1</td>
+<td>Can be substituted with any accurate pipette</td>
+</tr>
+<tr>
+<td>10-100 ul 8-Channel Pipette</td>
+<td>Eppendorf Research Plus 8 Channel Pipette</td>
+<td>Eppendorf</td>
+<td>1</td>
+<td>Can be substituted with any accurate pipette</td>
+</tr>
+<tr>
+<td>0.5-10 uL 8-Channel Pipette</td>
+<td>Eppendorf Research Plus 8 Channel Pipette</td>
+<td>Eppendorf</td>
+<td>1</td>
+<td>Can be substituted with any accurate pipette</td>
+</tr>
+<tr>
+<td>Thermal cycler</td>
+<td>Mastercycler Nexus Thermal Cycler</td>
+<td>Eppendorf</td>
+<td>1</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td>Microwave</td>
+<td>Generic Microwave</td>
+<td>Generic Brand</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>Flask</td>
+<td>500 mL Flask</td>
+<td>Generic Brand</td>
+<td>1</td>
+<td>Used for mixing agarose gel solution</td>
+</tr>
+<tr>
+<td>1-L Glass Container</td>
+<td>1 L Glass Container</td>
+<td>Generic Brand</td>
+<td>1</td>
+<td>Used for storing 1x TBE buffer</td>
+</tr>
+<tr>
+<td>Gel Tray &amp; Box</td>
+<td>Gel Electrophoresis Box and Tray</td>
+<td>Generic Brand</td>
+<td>1</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td>Gel Combs</td>
+<td>Gel Electrophoresis Combs</td>
+<td>Generic Brand</td>
+<td>2</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td><strong>Consumable equipment</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Gloves</td>
+<td>Nitrile Gloves, Exam Grade, Powder-free</td>
+<td>ULINE</td>
+<td>1 box</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td>Kim Wipes</td>
+<td>KimWipe Delicate Task Wipers</td>
+<td>KimTech</td>
+<td>1 box</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td>96-well PCR Plate</td>
+<td></td>
+<td>Armadillo PCR Plate, 96-well, clear, clear wells</td>
+<td>ThermoFisher</td>
+<td>3</td>
+</tr>
+<tr>
+<td>PCR Plate Seal</td>
+<td>AlumaSeal II Sealing Foils for PCR and Cold Storage</td>
+<td>VWR</td>
+<td>2</td>
+<td>Can be substituted with generic, can use tightly-fitted strip caps
+in place of seal</td>
+</tr>
+<tr>
+<td>1000µL Filter Tips</td>
+<td>OT-2 Filter Tips, 1000µL</td>
+<td>Opentrons</td>
+<td>1 box</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td>200µL Filter Tips</td>
+<td>OT-2 Filter Tips, 200µL</td>
+<td>Opentrons</td>
+<td>2 boxes</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td>10 ul Filter tips</td>
+<td>TipOne Pipette Tips, 10 uL</td>
+<td>TipOne</td>
+<td>2 boxes</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td>AmpliTaq Gold PCR Mix</td>
+<td>AmpliTaq Gold DNA Polymerase 5 mL</td>
+<td>ThermoFisher</td>
+<td>1.2 mL</td>
+<td></td>
+</tr>
+<tr>
+<td>Molecular water</td>
+<td>Invitrogen RT-PCR Grade Water</td>
+<td>Fisher Scientific</td>
+<td>0.912 mL</td>
+<td></td>
+</tr>
+<tr>
+<td>Forward Primer - 515 F</td>
+<td>16S 515F Fluidigm Primer</td>
+<td>IDT</td>
+<td>105 ul (10uM)</td>
+<td>Primer must be diluted from 100uM stocks to 10uM</td>
+</tr>
+<tr>
+<td>Reverse Primer - 926 R</td>
+<td>16S 926R Fluidigm Primer</td>
+<td>IDT</td>
+<td>105 ul (10uM)</td>
+<td>Primer must be diluted from 100uM stocks to 10uM</td>
+</tr>
+<tr>
+<td>TBE Buffer (10x)</td>
+<td>TBE Buffer 10X Solution, Molecular Biology Grade, UltraPure</td>
+<td>Thermo Scientific</td>
+<td>100 uL</td>
+<td></td>
+</tr>
+<tr>
+<td>Agarose</td>
+<td>Agarose LE, Molecular Biology Grade, UltraPure</td>
+<td>Thermo Scientific</td>
+<td>4g</td>
+<td></td>
+</tr>
+<tr>
+<td>SYBR Safe</td>
+<td>SYBR Safe DNA Gel Stain</td>
+<td>Invitrogen</td>
+<td>20 uL</td>
+<td>Light sensitive - do not expose to light</td>
+</tr>
+<tr>
+<td>Gel stain loading dye</td>
+<td>DNA Gel Loading Dye (6x)</td>
+<td>Thermo Scientific</td>
+<td>480 ul (per plate)</td>
+<td></td>
+</tr>
+<tr>
+<td>100bp DNA Ladder</td>
+<td>Generuler 100 bp DNA Ladder</td>
+<td>Thermo Scientific</td>
+<td>6 ul per lane on gel</td>
+<td></td>
+</tr>
+<tr>
+<td>Parafilm</td>
+<td>Parafilm M Lab Film</td>
+<td>Generic</td>
+<td>1 roll</td>
+<td>Can substitute with generic brand</td>
+</tr>
+<tr>
+<td><strong>Chemicals</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>RNase AWAY</td>
+<td>RNase AWAY Surface Decontaminant</td>
+<td>ThermoFisher Scientific</td>
+<td>1 bottle</td>
+<td>Used to sterilize lab surfaces and equipment</td>
+</tr>
+<tr>
+<td>EtOH</td>
+<td>Ethanol</td>
+<td>Generic Brand</td>
+<td>1 wash bottle</td>
+<td>Must be molecular grade ethanol</td>
+</tr>
+<tr>
+<td>DI water</td>
+<td>Deionized water</td>
+<td>Generic</td>
+<td>900 mL</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>(OPTIONAL) Clean-Up Protocol</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>AMPure XP Beads</td>
+<td>AMPure XP Bead-Based Reagent</td>
+<td>Beckman Coulter</td>
+<td>1 kit</td>
+<td></td>
+</tr>
+<tr>
+<td>96-well magnetic plate</td>
+<td>MagDTR 96-Well Magnetic Separator</td>
+<td>Edge Biosystems Inc</td>
+<td>1</td>
+<td>Can be substituted with generic brand</td>
+</tr>
+<tr>
+<td><strong>(OPTIONAL) Qubit</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Qubit Reagents</td>
+<td>Qubit dsDNA Quantification Assay Kit</td>
+<td>Invitrogen</td>
+<td>1 kit</td>
+<td></td>
+</tr>
+<tr>
+<td>Clear Qubit Assay tubes</td>
+<td>0.5 mL thin-walled, polypropylene tubes</td>
+<td>Invitrogen</td>
+<td>98</td>
+<td>Must be correct tubes to allow for fluorometer to read
+concentration</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Description: E.g., “filter”.</li>
+<li>Product Name and Model: Provide the official name of the
+product.</li>
+<li>Manufacturer: Provide the name of the manufacturer of the
+product.</li>
+<li>Quantity: Provide quantities necessary for one application of the
+standard operating procedure (e.g., number of filters).</li>
+<li>Remark: For example, some of the consumable may need to be
+sterilized, some commercial solution may need to be diluted or shielded
+from light during the operating procedure.</li>
+</ul>
+<h2 id="standard-operating-procedure">STANDARD OPERATING PROCEDURE</h2>
+<h3 id="protocol">Protocol</h3>
+<h4 id="preparation">Preparation</h4>
+<ol type="1">
+<li>Dilute primers from 100 uM to 10 uM if not already at 10 uM.</li>
+<li>Set up PCR under hood by wiping off all surfaces, pipettes, and
+racks with RNase AWAY and UV sterilizing for 5-10 mins.</li>
+<li>Map out order of samples on 96-well PCR plate. Make sure to leave a
+space for a no template control (NTC) and positive control.</li>
+</ol>
+<h4 id="pcr">PCR</h4>
+<ol type="1">
+<li>Make PCR master mix and add 24 ul to each well of PCR plate -
+possible use on Opentrons OT2 Pipetting Robot.</li>
+</ol>
+<ul>
+<li>12.5 ul AmpliTaq Gold PCR Mix</li>
+<li>9.5 ul molecular water</li>
+<li>1 ul Fwd primer (10 μM) - 515 F</li>
+<li>1 ul Rev primer (10 μM) - 926 R</li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>PCR Primer Name</th>
+<th>Direction</th>
+<th>Sequence (5’ -&gt; 3’)</th>
+<th>Sequence (5’ -&gt; 3’) with Fluidigm Adapters</th>
+<th>Fluidigm Adapter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>515 F</td>
+<td>forward</td>
+<td>GTGYCAGCMGCCGCGGTAA</td>
+<td>ACACTGACGACATGGTTCTACA xxx GTGYCAGCMGCCGCGGTAA</td>
+<td>CS1-TS-F</td>
+</tr>
+<tr>
+<td>926 R</td>
+<td>reverse</td>
+<td>CCGYCAATTYMTTTRAGTTT</td>
+<td>TACGGTAGCAGAGACTTGGTCT xxx CCGYCAATTYMTTTRAGTTT</td>
+<td>CS2-TS-R</td>
+</tr>
+</tbody>
+</table>
+<ol start="2" type="1">
+<li>Add 1 ul of sample DNA (or molecular water for NTC) to respective
+wells for a total reaction volume of 25 ul per well. Pipette up and down
+or vortex to fully distribute DNA into master mix.</li>
+<li>Seal plate with PCR plate seal or strip caps.</li>
+<li>Load plate onto thermal cycler and select program to run the
+following steps:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>PCR step</th>
+<th>Temperature</th>
+<th>Duration</th>
+<th>Repetition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Initial Denaturation</td>
+<td>95°C</td>
+<td>180s</td>
+<td>1x</td>
+</tr>
+<tr>
+<td>Denaturation</td>
+<td>95°C</td>
+<td>45s</td>
+<td>30x</td>
+</tr>
+<tr>
+<td>Annealing</td>
+<td>50°C</td>
+<td>45s</td>
+<td>30x</td>
+</tr>
+<tr>
+<td>Extension</td>
+<td>72°C</td>
+<td>90s</td>
+<td>30x</td>
+</tr>
+<tr>
+<td>Final Extension</td>
+<td>72°C</td>
+<td>10min</td>
+<td>1x</td>
+</tr>
+<tr>
+<td>Hold</td>
+<td>4°C</td>
+<td>∞</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="quality-control-pcr-clean-up">Quality control, PCR clean-up</h4>
+<p>2% Agarose Gel Following PCR amplification, run products through 2%
+agarose gel to confirm presence of target bands: 1. Make stock solution
+of TBE buffer (1x) in a 1-L glass container by adding 100 ml of stock
+TBE buffer (10x) to 900 ml DI water. 2. For a 5.5in x 5.5in gel tray,
+mix 200 ml of TBE buffer (1x) and 4 g of agarose in a flask. Use scale
+to weigh agarose. 3. Microwave mixture for 1 minute, followed by 15-30
+second intervals. Watch carefully after 1 minute - mixture can bubble
+out of flask! The agarose should be fully dissolved so that the solution
+is mostly clear. Wear a protective glove when handling flask as the
+mixture will be hot. 4. Allow for gel mixture to cool in flask for 5-10
+min. While cooling, set up gel tray (5.5in x 5.5in) in gel box. Make
+sure the tray is oriented properly and sealed tight for gel pouring. Add
+two gel combs for 20 wells each lane - total of 40 wells. 5. Once cooled
+to 50°C, add 20 ul of SYBR safe to the mixture and swirl the flask
+gently to mix (don’t create bubbles!). SYBR safe is light sensitive so
+after adding to mixture, immediately close the vial and store in the
+dark. 6. Pour the gel mixture and remove any bubbles using a pipette
+tip. 7. Allow gel to set for 30-45 min. 8. Cut large strips of parafilm
+or use 8-strip tubes and label each sample as a position on the
+parafilm/tubes. 9. Pipette 1 ul of blue loading dye onto each sample
+position or into each tube. 10. Pipette 5 ul of DNA sample into loading
+dye and pipette to mix 2-3 times. 11. Once the gel is set, fill the gel
+box with enough TBE buffer (1x) to fully submerge the gel beneath ~1cm
+of buffer. 12. Carefully add samples (6 ul each) to gel and write down
+their positions. 13. Add 6 ul of ladder dye (green) to gel. 14. Run gel
+at 100 V for 40-50 min then visualize on gel reader machine.</p>
+<p>(OPTIONAL) Purify PCR products using AMPure beads protocol (optimized
+for Opentrons)</p>
+<ol type="1">
+<li>Follow along with AMPure XP beads manufacturer protocol (begins on
+page 5 of manual - <a
+href="https://www.beckmancoulter.com/wsrportal/techdocs?docname=B37419"
+class="uri">https://www.beckmancoulter.com/wsrportal/techdocs?docname=B37419</a>).</li>
+<li>Will need magnetic plate and fresh 70% ethanol.</li>
+<li>Adjust bead ratio - 0.8x beads to sample volume for 16S.</li>
+<li>End product will be ~40 ul of cleaned DNA eluted in molecular grade
+water.</li>
+</ol>
+<p>(OPTIONAL) Run Qubit on final PCR Products</p>
+<ol type="1">
+<li>Follow manufacturer protocol for running Qubit: <a
+href="https://tools.thermofisher.com/content/sfs/manuals/Qubit_dsDNA_HS_Assay_UG.pdf"
+class="uri">https://tools.thermofisher.com/content/sfs/manuals/Qubit_dsDNA_HS_Assay_UG.pdf</a>.</li>
+</ol>
+<p>(OPTIONAL) Run Second 2% Agarose Gel on Purified PCR Products</p>
+<ol type="1">
+<li>Follow along with previous gel instructions.</li>
+</ol>
+<h3 id="quality-control">Quality control</h3>
+<p>The inclusion of a negative control for PCR is to confirm the absence
+of contamination during the process. The inclusion of a positive control
+(mock community) is to confirm the PCR is amplifying DNA. There are
+several optional steps at the end of the process to confirm the presence
+and concentration of amplified DNA.</p>
+<h3 id="basic-troubleshooting-guide">Basic troubleshooting guide</h3>
+<p>Low Volume Post-PCR</p>
+<ul>
+<li>If using strip-caps, ensure they are tightly fitting on wells. Any
+gap in the lid will allow for some volume to evaporate during the PCR
+process on the thermal cycler. If using PCR plate seals, spin down the
+plate after taking it off the thermal cycler to ensure all condensation
+is drawn back into the well.</li>
+</ul>
+<p>Contamination</p>
+<ul>
+<li>If there are contamination bands appearing on the gel, run another
+PCR ensuring full sterilization of work spaces and equipment under the
+hood and use new vials of AmpliTaq Gold and molecular water. If diluted
+primers are contaminated, use freshly-made aliquot of primers.</li>
+</ul>
+<p>Weak Amplification</p>
+<ul>
+<li>If you are seeing weak amplification bands on the gel, ensure the
+master mix and DNA is being fully mixed. You can also increase the
+concentration of primers or tweak the PCR process on the thermal cycler
+(increasing # of cycles of PCR or optimize annealing temperature). The
+addition of Bovine Serum Albumin (BSA) to master mix is also useful in
+some cases.</li>
+</ul>
+<h2 id="references">REFERENCES</h2>
+<p>Furman Lab 515F-926R 16S rRNA Gene Sequencing Protocol V.2 <a
+href="https://www.protocols.io/view/fuhrman-lab-515f-926r-16s-and-18s-rrna-gene-sequen-j8nlkpd1g5r7/v2?step=9"
+class="uri">https://www.protocols.io/view/fuhrman-lab-515f-926r-16s-and-18s-rrna-gene-sequen-j8nlkpd1g5r7/v2?step=9</a></p>
+<p>AMPure Beads Protocol (Beckman Coulter) <a
+href="https://www.beckmancoulter.com/wsrportal/techdocs?docname=B37419"
+class="uri">https://www.beckmancoulter.com/wsrportal/techdocs?docname=B37419</a></p>
+<p>Qubit Protocol (Thermo Fisher) <a
+href="https://tools.thermofisher.com/content/sfs/manuals/Qubit_dsDNA_HS_Assay_UG.pdf"
+class="uri">https://tools.thermofisher.com/content/sfs/manuals/Qubit_dsDNA_HS_Assay_UG.pdf</a></p>

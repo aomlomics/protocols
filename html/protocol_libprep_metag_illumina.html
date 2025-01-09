@@ -1,0 +1,811 @@
+<h1
+id="noaaaoml-metagenome-library-prep-protocol-illumina-dna-prep">NOAA/AOML
+Metagenome Library Prep Protocol (Illumina DNA Prep)</h1>
+<h2 id="protocol-information">PROTOCOL INFORMATION</h2>
+<h3 id="minimum-information-about-an-omics-protocol-miop">Minimum
+Information about an Omics Protocol (MIOP)</h3>
+<ul>
+<li>MIOP terms are listed in the YAML frontmatter of this page.</li>
+<li>See <a
+href="https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml"
+class="uri">https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml</a>
+for list and definitions.</li>
+</ul>
+<h3 id="authors">Authors</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>PREPARED BY</th>
+<th>AFFILIATION</th>
+<th>ORCID</th>
+<th>DATE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alyse Larkin</td>
+<td>UCI</td>
+<td><a href="https://orcid.org/0000-0003-4466-0791"
+class="uri">https://orcid.org/0000-0003-4466-0791</a></td>
+<td>2023-05-26</td>
+</tr>
+<tr>
+<td>Eric Adams et al.</td>
+<td>UCI</td>
+<td></td>
+<td>2020-10-21</td>
+</tr>
+<tr>
+<td>Luke Thompson</td>
+<td>NOAA/AOML, MSU/NGI</td>
+<td><a href="https://orcid.org/0000-0002-3911-1280"
+class="uri">https://orcid.org/0000-0002-3911-1280</a></td>
+<td>2024-09-05</td>
+</tr>
+<tr>
+<td>Sammy Harding</td>
+<td>NOAA/AOML, MSU/NGI</td>
+<td><a href="https://orcid.org/0009-0008-8885-6140"
+class="uri">https://orcid.org/0009-0008-8885-6140</a></td>
+<td>2024-09-05</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>All authors known to have contributed to the preparation of this
+protocol should be listed, including those who filled in the
+template.</li>
+<li>Visit <a href="https://orcid.org/"
+class="uri">https://orcid.org/</a> to register for an ORCID.</li>
+</ul>
+<h3 id="protocol-revision-record">Protocol Revision Record</h3>
+<table>
+<thead>
+<tr>
+<th>VERSION</th>
+<th>RELEASE DATE</th>
+<th>DESCRIPTION OF REVISIONS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0.0</td>
+<td>2024-09-05</td>
+<td>Initial release</td>
+</tr>
+<tr>
+<td>1.0.1</td>
+<td>2024-10-23</td>
+<td>Formatting edits</td>
+</tr>
+<tr>
+<td>1.1.0</td>
+<td>2024-11-16</td>
+<td>Addition of FAIR eDNA terms in YAML frontmatter</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Version numbers start at 1.0.0 when the protocol is first completed
+and will increase when changes that impact the outcome of the procedure
+are made (patches: 1.0.1; minor changes: 1.1.0; major changes:
+2.0.0).</li>
+<li>Release date is the date when a given protocol version was
+finalised.</li>
+<li>Description of revisions includes a brief description of what was
+changed relative to the previous version.</li>
+</ul>
+<h3 id="related-external-protocols">Related External Protocols</h3>
+<p>This protocol follows <a
+href="https://www.protocols.io/view/low-volume-methodology-for-nextera-dna-flex-librar-be6rjhd6">Low
+Volume Methodology for Nextera DNA Flex Library Prep Kit (96
+Samples)</a>. with minor modifications:</p>
+<ul>
+<li>Step 8: We use 56ul IPB and 29ul of nuclease free water instead of
+54 and 48.</li>
+<li>Step 9: We think there is a mistake in the protocol; it is transfer
+at least 10ng of genomic DNA and not 100ng.</li>
+<li>Step 50: We use 12uL of IPB (undiluted stock) instead of 14.4uL.
+This step is to get the good fragment size in your library. We chose
+12uL based on the paper (Bruinsma et al. 2018). Bead-linked transposomes
+enable anormalization-free workflow for NGS librarypreparation). Claudia
+also used 12uL and it worked great for me with an average fragment size
+of 337bp.</li>
+</ul>
+<h3 id="acronyms-and-abbreviations">Acronyms and Abbreviations</h3>
+<table>
+<thead>
+<tr>
+<th>ACRONYM / ABBREVIATION</th>
+<th>DEFINITION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NOAA</td>
+<td>National Oceanographic and Atmospheric Administration</td>
+</tr>
+<tr>
+<td>AOML</td>
+<td>Atlantic Oceanographic and Meteorological Laboratory</td>
+</tr>
+<tr>
+<td>MSU</td>
+<td>Mississippi State University</td>
+</tr>
+<tr>
+<td>NGI</td>
+<td>Northern Gulf Institute</td>
+</tr>
+<tr>
+<td>PCR</td>
+<td>Polymerase chain reaction</td>
+</tr>
+<tr>
+<td>eDNA</td>
+<td>environmental DNA</td>
+</tr>
+<tr>
+<td>NTC</td>
+<td>No template control</td>
+</tr>
+<tr>
+<td>EtOH</td>
+<td>Ethanol</td>
+</tr>
+<tr>
+<td>BLT</td>
+<td>Bead-Linked Transposomes</td>
+</tr>
+<tr>
+<td>TB1</td>
+<td>Tagmentation Buffer</td>
+</tr>
+<tr>
+<td>TSB</td>
+<td>Tagmentation Stop Buffer</td>
+</tr>
+<tr>
+<td>TWB</td>
+<td>Tagmentation Wash Buffer</td>
+</tr>
+<tr>
+<td>IPB</td>
+<td>Illumina Purification Beads</td>
+</tr>
+<tr>
+<td>RSB</td>
+<td>Resuspension Buffer</td>
+</tr>
+</tbody>
+</table>
+<h2 id="background">BACKGROUND</h2>
+<h3 id="summary">Summary</h3>
+<p>This protocol has been used by NOAA’s AOML Omics Lab to library prep
+eDNA seawater samples from the Bio-GO-SHIP project for whole genome
+sequencing using the Illumina DNA Prep Kit (formerly Nextera DNA Flex
+Library Prep Kit). This is a low volume methodology that allows for the
+number of sequencing libraries that can be generated from each Illumina
+DNA Prep kit to more than double from 384 samples (4 x 96-wells) to 864
+samples (9 x 96-wells). The minimum required amount of DNA per sample is
+25ng (5 ng/uL) - quality of concentration yield and sequence reads drops
+off if input DNA is lower than 25ng. This protocol closely follows along
+with the following protocol with minor changes: <a
+href="https://www.protocols.io/view/low-volume-methodology-for-nextera-dna-flex-librar-dm6gpr2r8vzp/v1"
+class="uri">https://www.protocols.io/view/low-volume-methodology-for-nextera-dna-flex-librar-dm6gpr2r8vzp/v1</a>.</p>
+<h3 id="method-description-and-rationale">Method description and
+rationale</h3>
+<p>Advantages to this protocol include enzymatic fragmentation instead
+of mechanical, compatibility with a wide range of DNA input quantities
+(25ng-500ng) and production of normalized library yields. This
+protocol’s steps include: <em>thermal cycler and reagent preparation,
+DNA tagmentation</em>, <em>post tagmentation cleanup, tagmented DNA
+amplification</em>, <em>post-pcr library clean up</em> and <em>quality
+control</em>. Genomic DNA is fragmented and tagged at the same time
+using bead-linked transposomes (BLTs). After tagmentation, a tagment
+stop buffer (TSA) is added and two rounds of wash steps are performed
+using tagment wash buffer (TWB). Tagmented DNA is combined with a PCR
+master mix and dual index adapters and amplified. Amplified DNA library
+concentrations are quantified using Qubit or Quant-It and pooled
+according to DNA concentration. The final pool is cleaned up by binding
+DNA to illumina purification beads (SPB), washing the beads then eluting
+DNA back into the solution using resuspension buffer (RSB). The final
+pool is then sent off for sequencing on an Illumina MiSeq System.</p>
+<h3 id="spatial-coverage-and-environments-of-relevance">Spatial coverage
+and environment(s) of relevance</h3>
+<p>According to the Illumina DNA Prep Kit (formerly known as Nextera DNA
+Flex) manual, this kit can be used for whole-genome sequencing of a wide
+range of genome sizes; for example, entire human genomes, large or
+complex genomes and small genomes.</p>
+<h2 id="personnel-required">PERSONNEL REQUIRED</h2>
+<p>One person with molecular biology experience.</p>
+<h3 id="safety">Safety</h3>
+<p>There are no hazardous chemicals or materials involved in this
+protocol. Standard lab safety techniques should still be used such as
+wearing PPE to avoid skin or eye contact.</p>
+<h3 id="training-requirements">Training requirements</h3>
+<p>Basic molecular biology training is sufficient for this protocol
+including sterile technique, pipetting small volumes and
+programming/running PCR thermal cyclers.</p>
+<h3 id="time-needed-to-execute-the-procedure">Time needed to execute the
+procedure</h3>
+<p>This protocol takes about 4-5 hours to execute. There is a
+safe-stopping point after the amplification of tagmented DNA (step #38)
+- plate can be stored overnight at 4°C (on thermal cyler or in 4°C
+fridge).</p>
+<h2 id="equipment">EQUIPMENT</h2>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>DESCRIPTION</th>
+<th>PRODUCT NAME AND MODEL</th>
+<th>MANUFACTURER</th>
+<th>QUANTITY</th>
+<th>REMARK</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Durable equipment</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Thermal cycler</td>
+<td>Mastercycler Nexus Thermal Cycler</td>
+<td>Eppendorf</td>
+<td>1</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td>Vortex</td>
+<td>Vortex Genie</td>
+<td>Scientific Industries</td>
+<td>1</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td>PCR Plate Centrifuge</td>
+<td>Microplate Centrifuge</td>
+<td>Generic Brand</td>
+<td>1</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td>Mag Stand</td>
+<td>96-Well Magnetic Separator</td>
+<td>Generic Brand</td>
+<td>1</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td>0.5-10 ul Pipette</td>
+<td>Eppendorf Research Plus Adjustable-Volume Pipette</td>
+<td>Eppendorf</td>
+<td>1</td>
+<td>Can be substituted with any accurate pipette</td>
+</tr>
+<tr>
+<td>100-1000 ul Pipette</td>
+<td>Eppendorf Research Plus Adjustable-Volume Pipette</td>
+<td>Eppendorf</td>
+<td>1</td>
+<td>Can be substituted with any accurate pipette</td>
+</tr>
+<tr>
+<td>10-100 ul Pipette</td>
+<td>Eppendorf Research Plus Adjustable-Volume Pipette</td>
+<td>Eppendorf</td>
+<td>1</td>
+<td>Can be substituted with any accurate pipette</td>
+</tr>
+<tr>
+<td>10-100 ul 8-Channel Pipette</td>
+<td>Eppendorf Research Plus 8 Channel Pipette</td>
+<td>Eppendorf</td>
+<td>1</td>
+<td>Can be substituted with any accurate pipette</td>
+</tr>
+<tr>
+<td>0.5-10 uL 8-Channel Pipette</td>
+<td>Eppendorf Research Plus 8 Channel Pipette</td>
+<td>Eppendorf</td>
+<td>1</td>
+<td>Can be substituted with any accurate pipette</td>
+</tr>
+<tr>
+<td>Serological Pipette</td>
+<td>Eppendorf Easypet 3 Pipette</td>
+<td>Eppendorf</td>
+<td>1</td>
+<td>Can be substituted with any accurate pipette</td>
+</tr>
+<tr>
+<td><strong>Consumable equipment</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>96-well PCR plate</td>
+<td>Armadillo PCR Plate, 96-well, clear, clear wells</td>
+<td>ThermoFisher</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>Aluminum Foil Sealing Tape</td>
+<td>AlumaSeal II Sealing Foils for PCR and Cold Storage</td>
+<td>VWR</td>
+<td>7</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td>8-Strip Tubes</td>
+<td>0.2 mL 8-Strip PCR Tubes</td>
+<td>Generic Brand</td>
+<td>5</td>
+<td>tubes without caps attached are better</td>
+</tr>
+<tr>
+<td>Microcentrifuge Tubes</td>
+<td>2.0 mL Microcentrifuge Tube</td>
+<td>Generic Brand</td>
+<td>8</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td>1000µL Filter Tips</td>
+<td>OT-2 Filter Tips, 1000µL</td>
+<td>Opentrons</td>
+<td>1 box</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td>200µL Filter Tips</td>
+<td>OT-2 Filter Tips, 200µL</td>
+<td>Opentrons</td>
+<td>7 boxes</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td>10 ul Filter tips</td>
+<td>TipOne Pipette Tips, 10 uL</td>
+<td>TipOne</td>
+<td>9 boxes</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td>25 mL Trough</td>
+<td>Reagent Reservoirs - 25 mL Disposable</td>
+<td>1 box</td>
+<td>Can be substituted with generic</td>
+<td></td>
+</tr>
+<tr>
+<td>10 mL Serological Pipette Tip</td>
+<td>10 mL Serological Pipette Tip</td>
+<td>Eppendorf</td>
+<td>1</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td>Gloves</td>
+<td>Nitrile Gloves, Exam Grade, Powder-free</td>
+<td>ULINE</td>
+<td>1 box</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td>Kim Wipes</td>
+<td>KimWipe Delicate Task Wipers</td>
+<td>KimTech</td>
+<td>1 box</td>
+<td>Can be substituted with generic</td>
+</tr>
+<tr>
+<td><strong>Chemicals</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>80% Ethanol</td>
+<td>Molecular biology grade ethanol</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Proteinase K</td>
+<td>Proteinase K, recombinant, PCR grade</td>
+<td>ThermoFisher Scientific</td>
+<td>1 mL vial</td>
+<td></td>
+</tr>
+<tr>
+<td>Nuclease-free water</td>
+<td>Nuclease-Free Water (not DEPC-Treated)</td>
+<td>ThermoFisher Scientific</td>
+<td>1 ml vial</td>
+<td></td>
+</tr>
+<tr>
+<td>Illumina DNA Prep Kit</td>
+<td>Illumina DNA Prep, (M) Tagmentation (24 samples, IPB)</td>
+<td>Illumina</td>
+<td>1 kit</td>
+<td>Kit includes Bead-Leaded Transposomes (BLT), Tagmentation Buffer
+(TB1), Tagmentation Stop Buffer (TSB), Tagmentation Wash Buffer (TWB),
+Illumina Purification Beads (IPB), Resuspension Buffer (RSB) -
+previously named Nextera DNA Flex Kit</td>
+</tr>
+<tr>
+<td>Kapa Hifi Hotstart Kit</td>
+<td>KAPA Hifi Hotstart Library Amplification Kit with Primer Mix</td>
+<td>Roche</td>
+<td>1 kit</td>
+<td>Kit includes KAPA Amplification Primer Mix (KAPA-PCR-F /
+KAPA-PCR-R), KAPA Hifi Hotstart ReadyMix</td>
+</tr>
+<tr>
+<td>Dual Indexes - Set A, B, C</td>
+<td>IDT for Illumina DNA/RNA UD Indexes Sets A-C (20027213, 20027214,
+20042666)</td>
+<td>Illumina</td>
+<td>1 set</td>
+<td>Product will be discontinued Jan 2025 - switch to Illumina DNA/RNA
+UD Indexes Sets A-C (20091654, 20091656, 20091658)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Description: E.g., “filter”.</li>
+<li>Product Name and Model: Provide the official name of the
+product.</li>
+<li>Manufacturer: Provide the name of the manufacturer of the
+product.</li>
+<li>Quantity: Provide quantities necessary for one application of the
+standard operating procedure (e.g., number of filters).</li>
+<li>Remark: For example, some of the consumable may need to be
+sterilized, some commercial solution may need to be diluted or shielded
+from light during the operating procedure.</li>
+</ul>
+<h2 id="standard-operating-procedure">STANDARD OPERATING PROCEDURE</h2>
+<h3 id="protocol">Protocol</h3>
+<h4 id="prepare-thermal-cycler-settings">Prepare Thermal Cycler
+Settings</h4>
+<ol type="1">
+<li><p>Enter and save the TAGflex tagmentation protocol on the thermal
+cyclers:</p>
+<ul>
+<li>Enable the heated lid (to 100°C if the option is available)</li>
+<li>55°C for 15m followed by a hold at 10°C</li>
+</ul></li>
+<li><p>Enter and save the TAGstop tagmentation stop protocol on the
+thermal cyclers:</p>
+<ul>
+<li>Enable the heated lid (to 100°C if the option is available)</li>
+<li>37°C for 15m followed by a hold at 10°C</li>
+</ul></li>
+<li><p>Enter and save the flexPCR protocol on the thermal cyclers:</p>
+<ul>
+<li>72°C for 3m</li>
+<li>98°C for 3m</li>
+<li>12 cycles of:
+<ul>
+<li>98°C for 45s</li>
+<li>62°C for 30s</li>
+<li>72°C for 2m</li>
+</ul></li>
+<li>72°C for 1m</li>
+<li>4°C hold</li>
+</ul></li>
+<li><p>Enter and save the protK protocol on the thermal cyclers:</p>
+<ul>
+<li>37°C for 30m</li>
+<li>68°C for 10m</li>
+<li>4°C hold</li>
+</ul></li>
+</ol>
+<h4 id="prepare-reagents">Prepare Reagents</h4>
+<ol type="1">
+<li><p>Equilibrate the following reagents at room temperature for 30
+minutes:</p>
+<ul>
+<li>Bead-Linked Transposomes (<strong>BLT</strong>)</li>
+<li>Tagmentation Buffer (<strong>TB1</strong>)</li>
+<li>Tagment Stop Buffer (<strong>TSB</strong>)</li>
+<li>Tagment Wash Buffer (<strong>TWB</strong>)</li>
+<li>Illumina Purification Beads (<strong>IPB</strong>)</li>
+</ul></li>
+<li><p>Thaw the <strong>Resuspension Buffer (RSB)</strong> and bring to
+room temperature, then vortex to mix.</p></li>
+<li><p>Prepare a <strong>proteinase K</strong> solution at 300
+μg/mL:</p>
+<ul>
+<li>For a 1mL solution: add 15μL of 20mg/mL proteinase K to 985μL of
+nuclease-free water.</li>
+</ul></li>
+<li><p>Thaw <strong>KAPA HiFi HotStart ReadyMix (2X)</strong> on
+ice</p></li>
+<li><p>Thaw <strong>index Set A, B or C</strong> at room temperature</p>
+<ul>
+<li>Index plates: spin down to ensure no droplets remain on the plate
+cover.</li>
+<li>Index stocks should be diluted to 10 Micromolar (µM) working stocks
+(most indexes are already 10 Micromolar)</li>
+</ul></li>
+<li><p>Prepare a <strong>Tagmentation Master Mix (TMM)</strong>:</p>
+<ul>
+<li>Vortex BLT vigorously before use and ensure the beads are evenly
+resuspended</li>
+<li>TMM contains 1μL BLT and 1μL TB1 per reaction so for 96 wells, make
+a 110X mix:</li>
+<li>110 µl TB1 + 110 µl BLT</li>
+<li>Vortex to mix</li>
+</ul></li>
+<li><p>Prepare <strong>PCR Master Mix (PCR MM)</strong> on ice:</p>
+<ul>
+<li>PCR MM contains 2.75μL nuclease-free water, 0.5μL KAPA-PCR-F primer,
+0.5μL KAPA-PCR-R primer, and 6.25μL KAPA HiFi HotStart ReadyMix (2X) per
+reaction (KAPA primer stocks should be diluted to 10 Micromolar
+(µM))</li>
+<li>Make a 110X mix: 302.5 µl nuclease-free water + 55 µl KAPA-PCR-F +
+55 µl KAPA-PCR-R + 687.5 µl KAPA HiFi HotStart ReadyMix (2X)</li>
+<li>Vortex to mix and briefly spin down</li>
+</ul></li>
+<li><p>Prepare a diluted <strong>IPB Master Mix (IPB MM)</strong>:</p>
+<ul>
+<li>56 µl IPB + 29 µl nuclease-free water</li>
+</ul></li>
+</ol>
+<h4 id="pcr">PCR</h4>
+<h5 id="well-dna-tagmentation">96-Well DNA Tagmentation</h5>
+<ol start="9" type="1">
+<li><p>Transfer at least 25ng genomic DNA (up to 500ng) into each well
+of a 96-well PCR plate in 1-5μL</p></li>
+<li><p>Adjust the volume of each well to 5 µl total volume using
+nuclease-free water</p></li>
+<li><p>Load 27 µl <strong>TMM</strong> into each tube of an 8-strip of
+PCR tubes</p>
+<ul>
+<li>Vortex TMM thoroughly before use and ensure the beads remain evenly
+suspended while being aliquoted into the 96-well plate</li>
+</ul></li>
+<li><p>Add 2 µl <strong>TMM</strong> to each well using an 8-channel
+pipette</p>
+<ul>
+<li>Thoroughly mix by gentle pipetting</li>
+<li>If beads are adhered to the top or side of the 96-well plate,
+briefly centrifuge and fully resuspend the bead pellet by pipetting
+until thoroughly mixed</li>
+</ul></li>
+<li><p>Seal the plate with a PCR plate cover, place in a thermal cycler,
+and run the <strong>TAGflex</strong> program</p>
+<ul>
+<li>It is especially important to be able to remove the plate seal as
+easily as possible to prevent cross contamination</li>
+<li>Proceed <strong>immediately</strong> to the next steps upon
+completion of the TAGflex cycle</li>
+</ul></li>
+</ol>
+<h5 id="post-tagmentation-cleanup">Post Tagmentation Cleanup</h5>
+<ol start="14" type="1">
+<li><p>Load 15 µl <strong>TSB</strong> per tube in an 8-strip of PCR
+tubes</p></li>
+<li><p>Gently remove the plate seal and add 1 µl <strong>TSB</strong>
+into each tagmentation reaction using an 8-channel pipette</p>
+<ul>
+<li>Mix by gently pipetting the entire volume, ensuring the beads are
+fully resuspend</li>
+</ul></li>
+<li><p>Seal the plate, place in a thermal cycler, and run the
+<strong>TAGstop</strong> program</p></li>
+<li><p>Remove the seal and place the plate on a 96-well magnetic plate
+stand for 3 minutes or until solution is clear</p></li>
+<li><p>Carefully remove the supernatant using an 8-channel pipette
+without disturbing the beads</p></li>
+<li><p>Load 6 mL <strong>TWB</strong> into a sterile trough to pipette
+from</p></li>
+<li><p>Remove the plate from the magnetic stand and add 20 µl
+<strong>TWB</strong> to each well using an 8-channel pipette</p>
+<ul>
+<li>Mix by gently pipetting (slowly, to minimize foaming) until beads
+are fully resuspended</li>
+</ul></li>
+<li><p>Place the plate on the magnetic stand for 3 minutes or until
+solution is clear</p></li>
+<li><p>Carefully remove the supernatant using an 8-channel pipette
+without disturbing the beads</p></li>
+<li><p>Repeat steps 20-22 one more time for a total of 2 washes</p></li>
+<li><p>Remove the plate from the magnetic stand and add 20 µl
+<strong>TWB</strong> to each well</p>
+<ul>
+<li>Gently pipette until beads are fully resuspended</li>
+</ul></li>
+<li><p>Seal the plate and place on the magnetic stand to incubate until
+needed in the next section</p>
+<ul>
+<li>Keeping the pellet in TWB helps prevent over-drying of the
+beads</li>
+</ul></li>
+</ol>
+<h5 id="amplify-tagmented-dna">Amplify Tagmented DNA</h5>
+<ol start="26" type="1">
+<li><p>Load 135 µl <strong>PCR MM</strong> per tube into an 8-strip of
+PCR tubes (store on ice until needed)</p></li>
+<li><p>Carefully remove the <strong>TWB</strong> supernatant from the
+samples while on the magnetic stand</p>
+<ul>
+<li>Any remaining foam on the well walls should not adversely affect the
+library</li>
+</ul></li>
+<li><p>Remove the plate from the magnetic stand and proceed immediately
+to the next step to prevent excessive drying of the beads</p></li>
+<li><p>Add 10 µl <strong>PCR MM</strong> to each sample and pipette the
+mix to ensure the beads are thoroughly resuspended</p>
+<ul>
+<li>Pipette with moderate force as the beads can be difficult to fully
+resuspend</li>
+</ul></li>
+<li><p>Seal the plate and spin down briefly up to 1000 rpm</p></li>
+<li><p>Using an 8-channel pipette, add 2.5 µl of each well of
+<strong>Index Set A, B or C</strong> to their respective wells</p></li>
+<li><p>Pipette to mix a minimum of 10 times, then seal the plate and
+briefly spin up to 1000 rpm</p></li>
+<li><p>Place the plate in a thermal cycler and run the
+<strong>flexPCR</strong> program</p></li>
+<li><p>Remove the plate from the thermal cycler and spin down for 1
+minute at 280 x g</p></li>
+<li><p>Load 35 µl of 300 μg/mL <strong>proteinase K</strong> per tube
+into an 8-strip of PCR tubes</p></li>
+<li><p>Remove the plate seal and add 2.5 µl <strong>proteinase
+K</strong> to each PCR reaction using an 8-channel pipette</p>
+<ul>
+<li>Mix the wells by pipetting a 10uL volume at least ten times</li>
+</ul></li>
+<li><p>Seal the plate, place in a thermal cycler, and run the
+<strong>protK</strong> program</p></li>
+<li><p>If stopping, keep the plate sealed and store at 4°C for up to 3
+days. Otherwise, continue with the next section</p></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>PCR Primer Name</th>
+<th>Direction</th>
+<th>Sequence (5’ -&gt; 3’)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KAPA-PCR-F</td>
+<td>forward</td>
+<td>AATGATACGGCGACCACCG*A</td>
+</tr>
+<tr>
+<td>KAPA-PCR-R</td>
+<td>reverse</td>
+<td>CAAGCAGAAGACGGCATACG*A</td>
+</tr>
+</tbody>
+</table>
+<p>The * is a phosphorothioate bond that prevents polymerases with 3’-5’
+proof-reading activity from chewing back the oligos.</p>
+<h4 id="quality-control-pcr-clean-up">Quality control &amp; PCR
+clean-up</h4>
+<h5 id="post-pcr-library-clean-up">Post-PCR Library Clean Up</h5>
+<ol start="39" type="1">
+<li><p>Remove the seal and place the plate on the magnetic stand for 5
+minutes or until the supernatant is clear</p></li>
+<li><p>Using an 8-channel pipette, transfer 2 µl <strong>PCR
+supernatant</strong> from each well into an 8-strip of PCR
+tubes</p></li>
+<li><p>From the 8-strip of PCR tubes, transfer all samples to a single
+1.5mL Eppendorf tube</p>
+<ul>
+<li>Each tube in the strip should contain ~24μL of pooled sample,
+yielding ~192μL of pooled libraries</li>
+</ul></li>
+<li><p>Vortex and briefly spin down to mix the pooled libraries
+evenly</p></li>
+<li><p>Transfer a 45 µl aliquot of the pooled libraries to a new 1.5mL
+Eppendorf tube</p></li>
+<li><p>Vortex and invert <strong>IPB MM</strong> multiple times to
+ensure full resuspension</p></li>
+<li><p>Add 85 µl <strong>IPB MM</strong> to the pooled library
+aliquot</p>
+<ul>
+<li>Pipette until thoroughly mixed</li>
+<li>Complete mixing is critical to proper size distribution of
+libraries</li>
+</ul></li>
+<li><p>Incubate at Room temperature for 5 minutes</p></li>
+<li><p>Place the Eppendorf tube on a magnetic stand for 5 minutes or
+until the supernatant is clear</p></li>
+<li><p>Transfer 120 µl supernatant into a new 1.5mL tube without
+disturbing the beads</p></li>
+<li><p>Vortex and invert the <strong>IPB</strong> (undiluted stock)
+until thoroughly resuspended</p></li>
+<li><p>Add 12 µl <strong>IPB</strong> (undiluted stock) to the new 1.5mL
+tube containing the supernatant</p></li>
+<li><p>Pipette a 120μL volume until thoroughly mixed</p></li>
+<li><p>Incubate at Room temperature for 5 minutes</p></li>
+<li><p>Place the Eppendorf tube on a magnetic stand for 5 minutes or
+until clear</p></li>
+<li><p>Remove and discard the supernatant without disturbing the
+beads</p></li>
+<li><p>With the tube on the magnetic stand, add 200 µl <strong>80%
+ethanol</strong> without mixing and incubate for 30s</p></li>
+<li><p>Pipette to remove the ethanol without disturbing the
+beads</p></li>
+<li><p>Repeat steps 55-56 one more time for a total of 2 washes</p></li>
+<li><p>Remove any excess liquid from the tube using a pipette without
+disturbing the beads</p></li>
+<li><p>Air-dry beads on the magnetic stand for 5 minutes</p></li>
+<li><p>Warm 35 µl <strong>RSB</strong> at 50 °C to increase final
+library yield</p></li>
+<li><p>Remove the 1.5mL tube from the magnetic stand</p></li>
+<li><p>Add 32 µl <strong>RSB</strong> (warm) to the beads. Pipette mix
+until thoroughly resuspended</p></li>
+<li><p>Incubate on the bench at room temperature for 2 minutes</p></li>
+<li><p>Place the 1.5mL tube back on the magnetic stand for 2 minutes or
+until clear</p></li>
+<li><p>Transfer 30 µl supernatant into a new 1.5mL Eppendorf
+tube</p></li>
+<li><p>Let the tube with the eluted library sit at 50 °C for 5 minutes
+to ensure complete dissolution of the library</p></li>
+</ol>
+<h5 id="quality-control">Quality Control</h5>
+<ol start="67" type="1">
+<li>Quantify the final library using a Qubit fluorometer and determine
+fragment size distribution using a Bioanalyzer OR use a TapeStation to
+quantify the concentration and view peak fragment size.</li>
+</ol>
+<p>OPTIONAL POST-PCR NORMALIZATION STEP</p>
+<ul>
+<li>After step #39, there is the option to normalize the final pooled
+library by quantifying the DNA concentration of individual libraries
+(using Quant-It, Qubit, etc.) in order to pool equimolar amounts of each
+for a final pooled volume of 192 uL.</li>
+</ul>
+<h3 id="basic-troubleshooting-guide">Basic troubleshooting guide</h3>
+<p>Notes</p>
+<ul>
+<li>Use a different index set for each run. Multiple final pools from
+different runs can be pooled together for sequencing as long as they all
+used different index sets.</li>
+<li>A final pooled library DNA concentration of 5-10 ng/uL is sufficient
+and 10-15 ng/uL is ideal.</li>
+</ul>
+<p>Low Final DNA Concentrations of Libraries</p>
+<ul>
+<li>It is recommended that at least one normalization step is included
+to create a final pooled library of quality. One option is to SpeedVac
+samples of lower DNA concentrations (&lt; 5 ng/uL) prior to beginning
+this protocol. Additionally, using 5 uL of initial template DNA (step
+#9) of all samples is ideal. Including the extra post-pcr normalization
+step (listed above) can also help increase final library DNA
+concentration yield.</li>
+</ul>
+<h2 id="references">REFERENCES</h2>
+<p>Low Volume Methodology for Illumina DNA Prep Kit:
+dx.doi.org/10.17504/protocols.io.be6rjhd6.</p>

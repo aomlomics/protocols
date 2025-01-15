@@ -92,7 +92,7 @@ nucl_acid_ext_method_additional: not applicable
 
 ### Summary
 
-This protocol is used for DNA extraction of sea water eDNA samples from sterivex filters using contents of a {{nucl_acid_ext_kit}} and a KingFisher Flex robot. Optional use of Opentrons OT-2 Robot to prepare plates for KingFisher. This protocol is used by the Molecular and Computational Biodiversity group of NOAA's AOML.
+This protocol is used for {{analyses}} of {{environmental_medium}} eDNA samples from sterivex filters using contents of a {{nucl_acid_ext_kit}} and a KingFisher Flex robot. Optional use of Opentrons OT-2 Robot to prepare plates for KingFisher. This protocol is used by the Molecular and Computational Biodiversity group of {{publisher}}.
 
 ### Method description and rationale
 
@@ -100,7 +100,7 @@ This protocol is optimized for high throughput DNA extractions of sterivex filte
 
 ### Spatial coverage and environment(s) of relevance
 
-This protocol has been used to extract DNA from thousands of sea water eDNA samples taken from stations off of South Florida coasts (Atlantic Ocean and Gulf of Mexico). Sample collection depths range from 1m to 200m in the epipelagic zone (marine photic zone [ENVO:00000209]).
+This protocol has been used to extract DNA from thousands of {{environmental_medium}} eDNA samples taken from stations off of South Florida coasts (Atlantic Ocean and Gulf of Mexico). Sample collection depths range from 1m to 200m in the epipelagic zone (marine photic zone [ENVO:00000209]).
 
 ## PERSONNEL REQUIRED
 
@@ -116,7 +116,7 @@ Basic molecular biology training (including sterile technique, pipetting) is req
 
 ### Time needed to execute the procedure
 
-Extracting DNA from 94 sterivex samples takes about 5 hours (300 minutes) including KingFisher run time.
+Extracting DNA from 94 sterivex samples takes about 5 hours ({{time_required}} minutes) including KingFisher run time.
 
 ## EQUIPMENT
 

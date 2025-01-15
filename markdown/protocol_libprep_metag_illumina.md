@@ -102,16 +102,16 @@ with minor modifications:
 
 ### Summary
 
-This protocol has been used by NOAA's AOML Omics Lab to library prep eDNA seawater samples from the Bio-GO-SHIP project for whole genome sequencing using the Illumina DNA Prep Kit (formerly Nextera DNA Flex Library Prep Kit). This is a low volume methodology that allows for the number of sequencing libraries that can be generated from each Illumina DNA Prep kit to more than double from 384 samples (4 x 96-wells) to 864 samples (9 x 96-wells). The minimum required amount of DNA per sample is 25ng (5 ng/uL) - quality of concentration yield and sequence reads drops off if input DNA is lower than 25ng. This protocol closely follows along with the following protocol with minor changes: <https://www.protocols.io/view/low-volume-methodology-for-nextera-dna-flex-librar-dm6gpr2r8vzp/v1>.
+This protocol has been used by {{publisher}} Molecular and Computational Biodiversity group to library prep eDNA seawater samples from the Bio-GO-SHIP project for using the {{seq_kit}} (formerly Nextera DNA Flex Library Prep Kit). This is a low volume methodology that allows for the number of sequencing libraries that can be generated from each {{seq_kit}} to more than double from 384 samples (4 x 96-wells) to 864 samples (9 x 96-wells). The minimum required amount of DNA per sample is 25ng (5 ng/uL) - quality of concentration yield and sequence reads drops off if input DNA is lower than 25ng. This protocol closely follows along with the following protocol with minor changes: <https://www.protocols.io/view/low-volume-methodology-for-nextera-dna-flex-librar-dm6gpr2r8vzp/v1>.
 
 ### Method description and rationale
 
 Advantages to this protocol include enzymatic fragmentation instead of mechanical, compatibility with a wide range of DNA input quantities (25ng-500ng) and production of normalized library yields. This protocol's steps include: _thermal cycler and reagent preparation, DNA tagmentation_, _post tagmentation cleanup, tagmented DNA amplification_, _post-pcr library clean up_ and _quality control_. 
-Genomic DNA is fragmented and tagged at the same time using bead-linked transposomes (BLTs). After tagmentation, a tagment stop buffer (TSA) is added and two rounds of wash steps are performed using tagment wash buffer (TWB). Tagmented DNA is combined with a PCR master mix and dual index adapters and amplified. Amplified DNA library concentrations are quantified using Qubit or Quant-It and pooled according to DNA concentration. The final pool is cleaned up by binding DNA to illumina purification beads (SPB), washing the beads then eluting DNA back into the solution using resuspension buffer (RSB). The final pool is then sent off for sequencing on an Illumina MiSeq System.
+Genomic DNA is fragmented and tagged at the same time using bead-linked transposomes (BLTs). After tagmentation, a tagment stop buffer (TSA) is added and two rounds of wash steps are performed using tagment wash buffer (TWB). Tagmented DNA is combined with a PCR master mix and dual index adapters and amplified. Amplified DNA library concentrations are quantified using Qubit or Quant-It and pooled according to DNA concentration. The final pool is cleaned up by binding DNA to illumina purification beads (SPB), washing the beads then eluting DNA back into the solution using resuspension buffer (RSB). The final pool is then sent off for sequencing on an {{instrument}}.
 
 ### Spatial coverage and environment(s) of relevance
 
-According to the Illumina DNA Prep Kit (formerly known as Nextera DNA Flex) manual, this kit can be used for whole-genome sequencing of a wide range of genome sizes; for example, entire human genomes, large or complex genomes and small genomes. 
+According to the {{seq_kit}} (formerly known as Nextera DNA Flex) manual, this kit can be used for {{target}} of a wide range of genome sizes; for example, entire human genomes, large or complex genomes and small genomes. 
 
 ## PERSONNEL REQUIRED
 
@@ -160,7 +160,7 @@ This protocol takes about 4-5 hours to execute. There is a safe-stopping point a
 | 80% Ethanol | Molecular biology grade ethanol |
 | Proteinase K | Proteinase K, recombinant, PCR grade | ThermoFisher Scientific | 1 mL vial | |
 | Nuclease-free water | Nuclease-Free Water (not DEPC-Treated) | ThermoFisher Scientific | 1 ml vial | |
-| Illumina DNA Prep Kit | Illumina DNA Prep, (M) Tagmentation (24 samples, IPB) | Illumina | 1 kit | Kit includes Bead-Leaded Transposomes (BLT), Tagmentation Buffer (TB1), Tagmentation Stop Buffer (TSB), Tagmentation Wash Buffer (TWB), Illumina Purification Beads (IPB), Resuspension Buffer (RSB) - previously named Nextera DNA Flex Kit |
+| {{seq_kit}} | Illumina DNA Prep, (M) Tagmentation (24 samples, IPB) | Illumina | 1 kit | Kit includes Bead-Leaded Transposomes (BLT), Tagmentation Buffer (TB1), Tagmentation Stop Buffer (TSB), Tagmentation Wash Buffer (TWB), Illumina Purification Beads (IPB), Resuspension Buffer (RSB) - previously named Nextera DNA Flex Kit |
 | Kapa Hifi Hotstart Kit | KAPA Hifi Hotstart Library Amplification Kit with Primer Mix | Roche | 1 kit | Kit includes KAPA Amplification Primer Mix (KAPA-PCR-F / KAPA-PCR-R), KAPA Hifi Hotstart ReadyMix |
 | Dual Indexes - Set A, B, C | IDT for Illumina DNA/RNA UD Indexes Sets A-C (20027213, 20027214, 20042666) | Illumina | 1 set | Product will be discontinued Jan 2025 - switch to Illumina DNA/RNA UD Indexes Sets A-C (20091654, 20091656, 20091658) |
 
@@ -377,4 +377,4 @@ Low Final DNA Concentrations of Libraries
 
 ## REFERENCES
 
-Low Volume Methodology for Illumina DNA Prep Kit: dx.doi.org/10.17504/protocols.io.be6rjhd6.
+Low Volume Methodology for {{seq_kit}}: dx.doi.org/10.17504/protocols.io.be6rjhd6.

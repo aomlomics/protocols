@@ -19,7 +19,7 @@ issued: 2023-05-26
 audience: scientists
 publisher: NOAA's Atlantic Oceanographic and Meteorological Laboratory
 
-# FAIR eDNA terms
+# FAIRe terms
 barcoding_pcr_appr: two-step pcr
 library_id: 
 platform: ILLUMINA

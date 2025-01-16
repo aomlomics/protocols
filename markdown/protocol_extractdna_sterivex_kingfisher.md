@@ -19,7 +19,7 @@ issued: 2024-06-26
 audience: scientists
 publisher: NOAA's Atlantic Oceanographic and Meteorological Laboratory
 
-# FAIR eDNA terms
+# FAIRe terms
 samp_vol_we_dna_ext: 1
 samp_vol_we_dna_ext_unit: mL
 nucl_acid_ext_lysis: physical

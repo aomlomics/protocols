@@ -7,7 +7,7 @@ analyses: PCR [OBI:0000415]
 geographic_location: Atlantic Ocean [GAZ:00000344], Gulf of Mexico [GAZ:00002853]
 broad_scale_environmental_context: marine biome [ENVO:00000447], marine photic zone [ENVO:00000209]
 local_environmental_context: marine biome [ENVO:00000447], marine photic zone [ENVO:00000209]
-environmental_medium: sea water [ENVO:00002149], polymerase chain reaction [OBI:0000415]
+environmental_medium: sea water [ENVO:00002149]
 target: 12S
 creator: Luke Thompson
 materials_required: vortexer [OBI:0400118], PCR instrument [OBI:0000989], agarose gel electrophoresis system [OBI:0001134]
@@ -19,7 +19,7 @@ issued: 2024-08-22
 audience: scientists
 publisher: NOAA's Atlantic Oceanographic and Meteorological Laboratory
 
-# FAIR eDNA terms
+# FAIRe terms
 pcr_0_1: 1
 thermocycler: Eppendorf Mastercycler Nexus Thermal Cycler
 amplificationReactionVolume: 25
@@ -45,7 +45,7 @@ probeQuencher: not applicable
 probe_seq: not applicable
 probe_ref: not applicable
 probe_conc: not applicable
-commercial_mm: AmpliTaq Gold 360 Master Mix, Thermo Fisher Scientific
+commercial_mm: AmpliTaq Gold 360 Master Mix
 custom_mm: PCR reactions were run in 25 uL reaction volumes, with 1.0 uL of DNA, 12.5 uL of AmpliTaq Gold, 9.5 uL of water, and 1.0 uL of each primer (10 uM).
 pcr_dna_vol: 1.0
 pcr_rep: 1.0
@@ -113,7 +113,7 @@ pcr_method_additional: not provided
 
 ### Summary
 
-This protocol describes steps for performing PCR for 12S marker gene regions using eDNA extracted from Sterivex at NOAA's AOML. There are several optional steps at the end of the protocol including using AMPure beads to clean up PCR products. Some steps (e.g. PCR plate preparation, AMPure bead cleanup, sequencing plate dilutions) have been or can be optimized for use with the Opentrons OT2 robot. This protocol closely follows along with the following protocol: <https://www.protocols.io/view/environmental-dna-edna-12s-metabarcoding-illumina-kqdg35kqzv25/v2>.
+This protocol describes steps for performing PCR for {{target_gene}} {{target_subfragment}} marker gene regions using eDNA extracted from Sterivex at NOAA's AOML. There are several optional steps at the end of the protocol including using AMPure beads to clean up PCR products. Some steps (e.g. PCR plate preparation, AMPure bead cleanup, sequencing plate dilutions) have been or can be optimized for use with the Opentrons OT2 robot. This protocol closely follows along with the following protocol: <https://www.protocols.io/view/environmental-dna-edna-12s-metabarcoding-illumina-kqdg35kqzv25/v2>.
 
 ### Method description and rationale
 
@@ -133,11 +133,11 @@ There are no hazardous chemicals or materials involved in this protocol. Standar
 
 ### Training requirements
 
-Basic molecular biology training is sufficient for this protocol including sterile technique, pipetting small volumes and programming/running PCR thermal cyclers.
+Basic molecular biology training is sufficient for this protocol including sterile technique, pipetting small volumes and programming/running {{purpose}} thermal cyclers.
 
 ### Time needed to execute the procedure
 
-Protocol takes about 4 hours (240 minutes) including thermal cycler run time.
+Protocol takes about 4 hours ({{time_required}} minutes) including thermal cycler run time.
 
 ## EQUIPMENT
 
@@ -160,7 +160,7 @@ For 96-well Plate:
 | **Consumable equipment** |
 | Gloves | Nitrile Gloves, Exam Grade, Powder-free | ULINE | 1 box | Can be substituted with generic |
 | Kim Wipes | KimWipe Delicate Task Wipers | KimTech | 1 box | Can be substituted with generic |
-| 96-well PCR Plate | | Armadillo PCR Plate, 96-well, clear, clear wells | ThermoFisher | 3 | |
+| 96-well {{purpose}} Plate | | Armadillo PCR Plate, 96-well, clear, clear wells | ThermoFisher | 3 | |
 | PCR Plate Seal | AlumaSeal II Sealing Foils for PCR and Cold Storage | VWR | 2 | Can be substituted with generic, can use tightly-fitted strip caps in place of seal |
 | 1000µL Filter Tips | OT-2 Filter Tips, 1000µL | Opentrons | 1 box | Can be substituted with generic |
 | 200µL Filter Tips | OT-2 Filter Tips, 200µL | Opentrons | 2 boxes | Can be substituted with generic |
@@ -206,17 +206,17 @@ For 96-well Plate:
 
 1. Make PCR master mix and add 24 ul to each well of PCR plate - possible use on Opentrons OT2 Pipetting Robot. Account for triplicate reactions.
 
-- 12.5 ul AmpliTaq Gold PCR Mix
+- 12.5 ul {{commercial_mm}}
 - 9.5 ul molecular water
 - 1 ul Fwd primer (10 μM) - MiFish F V2
 - 1 ul Rev primer (10 μM) - MiFish R
 
 | PCR Primer Name | Direction | Sequence (5’ -> 3’) | Sequence (5’ -> 3’) with Fluidigm Adapters | Fluidigm Adapter |
 | ----- | ----- | ----- |----|----|
-| 12S MiFish F V2 | forward | GCCGGTAAAACTCGTGCCAGC | ACACTGACGACATGGTTCTACA xxx GCCGGTAAAACTCGTGCCAGC | CS1-TS-F |
-| 12S MiFish R | reverse | CATAGTGGGGTATCTAATCCCAGTTTG | TACGGTAGCAGAGACTTGGTCT xxx CATAGTGGGGTATCTAATCCCAGTTTG | CS2-TS-R |
+| 12S MiFish F V2 | forward | {{pcr_primer_forward}} | ACACTGACGACATGGTTCTACA xxx {{pcr_primer_forward}} | CS1-TS-F |
+| 12S MiFish R | reverse | {{pcr_primer_reverse}} | TACGGTAGCAGAGACTTGGTCT xxx {{pcr_primer_reverse}} | CS2-TS-R |
 
-2. Add 1 ul of sample DNA (or molecular water for NTC) to respective triplicate wells for a total reaction volume of 25 ul per well. Pipette up and down or vortex to fully distribute DNA into master mix.
+2. Add 1 ul of sample DNA (or molecular water for NTC) to respective triplicate wells for a total reaction volume of {{amplificationReactionVolume}} ul per well. Pipette up and down or vortex to fully distribute DNA into master mix.
 3. Seal plate with PCR plate seal or strip caps.
 4. Load plate onto thermal cycler and select "MBARI 12S Touchdown" program to run the following steps:
 

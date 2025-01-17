@@ -19,22 +19,8 @@ issued: 2024-08-15
 audience: scientists
 publisher: NOAA's Atlantic Oceanographic and Meteorological Laboratory
 
-# FAIR eDNA terms
+# FAIRe terms
 samp_category: sample
-decimalLatitude: 
-decimalLongitude: 
-verbatimLatitude: 
-verbatimLongitude: 
-verbatimCoordinateSystem: 
-verbatimSRS: 
-geo_loc_name: 
-eventDate: 
-eventDurationValue: 
-eventDurationUnit: 
-verbatimEventDate: 
-verbatimEventTime: 
-verbatimDateEnd: 
-verbatimTimeEnd: 
 env_broad_scale: marine biome [ENVO:00000447]
 env_local_scale: marine photic zone [ENVO:00000209]
 env_medium: sea water [ENVO:00002149]
@@ -102,11 +88,11 @@ samp_size_unit: mL
 
 ### Summary
 
-This protocol describes collection and filtration of marine eDNA samples using Sterivex cartridge filters and can be adapted to collect water samples from individual Niskin bottles, CTD Niskin rosettes, or flow through systems. This protocol is used by NOAA's AOML GO-SHIP collaborators.
+This protocol describes collection and filtration of marine {{target}} samples using Sterivex cartridge filters and can be adapted to collect water samples from individual {{samp_collect_device}}, {{samp_collect_method}}, or flow through systems. This protocol is used by {{publisher}} GO-SHIP collaborators.
 
 ### Method description and rationale
 
-This protocol is used to pump sea water samples collected via Niskin bottle, CTD Niskin rosettes or flow through systems and pump it through a 0.22 uM Sterivex filter using a peristaltic pump. Sterivex filters are loaded with Zymo ZR BashingBeads prior to pumping and DNA/RNA preservative is immediately added post-pumping to better preserve eDNA and expedite DNA extraction upon processing in the lab. The recommended filtration volume for GO-SHIP samples is ~8 liters, which takes ~2 hours. Precautions are taken to minimize contamination of samples by thoroughly sterilizing all equipment prior to use. 
+This protocol is used to pump {{environmental_medium}} samples collected via {{samp_collect_device}}, {{samp_collect_method}} or flow through systems and pump it through a 0.22 uM Sterivex filter using a peristaltic pump. Sterivex filters are loaded with Zymo ZR BashingBeads prior to pumping and DNA/RNA preservative is immediately added post-pumping to better preserve {{target}} and expedite DNA extraction upon processing in the lab. The recommended filtration volume for GO-SHIP samples is ~8 liters, which takes ~2 hours. Precautions are taken to minimize contamination of samples by thoroughly sterilizing all equipment prior to use. 
 
 ### Spatial coverage and environment(s) of relevance
 
@@ -126,7 +112,7 @@ Standard moleculary biology training including sterile technique and pipetting t
 
 ### Time needed to execute the procedure
 
-The process of setting up sampling equipment and filtering seawater will take ~2 hours (depending on number of samples).
+The process of setting up sampling equipment and filtering seawater will take ~2 hours ({{time_required}} minutes) depending on number of samples.
 
 ## EQUIPMENT
 
@@ -226,14 +212,6 @@ Clogged Filter
 
 - If a filter is clogged, turn valves and connections off and attempt to clear obstructions (i.e. large chunks of sediment or algae). Make note of any abnormal conditions and try to pump the full volume of seawater through the filter. In more productive areas, especially surface samples, we would frequently have filters that could not take the full volume. Since there are only two pumps and multiple sample depths at one time, it was common for us to use a cut-off time before starting next sample (~45 min).
 
-
-## REFERENCES
-
-Insert all references cited in the document.
-Please insert full DOI address when available, e.g. <http://doi.dx.org/10.1007/s11258-014-0404-1>.
-
 ## APPENDIX A: DATASHEETS
-
-Link templates (e.g. preformatted spreadsheets) used to record measurements and report on the quality of the data as well as any documents such as manufacturer specifications, images, etc that support this protocol. Please include a short note describing the document's relevance. 
 
 Link to youtube video demonstrating eDNA Sampling for GO-SHIP: <https://www.youtube.com/watch?v=RjJ_bpb1z04>.

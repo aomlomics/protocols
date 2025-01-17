@@ -19,7 +19,7 @@ issued: 2021-02-08
 audience: scientists
 publisher: NOAA's Atlantic Oceanographic and Meteorological Laboratory
 
-# FAIR eDNA terms
+# FAIRe terms
 pcr_0_1: 1
 thermocycler: Eppendorf Mastercycler Nexus Thermal Cycler
 amplificationReactionVolume: 25
@@ -45,7 +45,7 @@ probeQuencher: not applicable
 probe_seq: not applicable
 probe_ref: not applicable
 probe_conc: not applicable
-commercial_mm: AmpliTaq Gold 360 Master Mix, Thermo Fisher Scientific
+commercial_mm: AmpliTaq Gold 360 Master Mix
 custom_mm: PCR reactions were run in 25 uL reaction volumes, with 1.0 uL of DNA, 12.5 uL of AmpliTaq Gold, 9.5 uL of water, and 1.0 uL of each primer (10 uM).
 pcr_dna_vol: 1.0
 pcr_rep: 1
@@ -113,15 +113,15 @@ pcr_method_additional: not provided
 
 ### Summary
 
-This protocol describes steps for performing PCR for 16S marker gene regions using eDNA extracted from Sterivex at NOAA's AOML. There are several optional steps at the end of the protocol including using AMPure beads to clean up PCR products. Some steps (e.g. PCR plate preparation, AMPure bead cleanup, sequencing plate dilutions) have been or can be optimized for use with the Opentrons OT2 robot. This protocol closely aligns with the following 16S protocol: <https://www.protocols.io/view/fuhrman-lab-515f-926r-16s-and-18s-rrna-gene-sequen-j8nlkpd1g5r7/v2?step=102>.
+This protocol describes steps for performing PCR for {{target_gene}} {{target_subfragment}} marker gene regions using eDNA extracted from Sterivex at NOAA's AOML. There are several optional steps at the end of the protocol including using AMPure beads to clean up PCR products. Some steps (e.g. PCR plate preparation, AMPure bead cleanup, sequencing plate dilutions) have been or can be optimized for use with the Opentrons OT2 robot. This protocol closely aligns with the following 16S protocol: <https://www.protocols.io/view/fuhrman-lab-515f-926r-16s-and-18s-rrna-gene-sequen-j8nlkpd1g5r7/v2?step=102>.
 
 ### Method description and rationale
 
-This protocol is used for PCR amplifying the 16S V4-V5 marker gene regions of environmental DNA. Fluidigm adapter are already present on the primers described in the following protocol. It is highly reproducible and can easily be adapted for any number of samples (i.e. a full 96-well plate or a few samples).
+This protocol is used for PCR amplifying the {{target_gene}} {{target_subfragment}} marker gene regions of environmental DNA. Fluidigm adapter are already present on the primers described in the following protocol. It is highly reproducible and can easily be adapted for any number of samples (i.e. a full 96-well plate or a few samples).
 
 ### Spatial coverage and environment(s) of relevance
 
-This protocol can be used to amplify the 16S marker gene region of any eDNA sample.
+This protocol can be used to amplify the {{target_gene}} marker gene region of any eDNA sample.
 
 ## PERSONNEL REQUIRED
 
@@ -137,7 +137,7 @@ Basic molecular biology training is sufficient for this protocol including steri
 
 ### Time needed to execute the procedure
 
-Protocol takes about 4 hours (240 minutes) including thermal cycler run time.
+Protocol takes about 4 hours ({{time_required}} minutes) including thermal cycler run time.
 
 ## EQUIPMENT
 
@@ -206,17 +206,17 @@ For 96-well Plate:
 
 1. Make PCR master mix and add 24 ul to each well of PCR plate - possible use on Opentrons OT2 Pipetting Robot.
 
-- 12.5 ul AmpliTaq Gold PCR Mix
+- 12.5 ul {{commercial_mm}}
 - 9.5 ul molecular water 
 - 1 ul Fwd primer (10 μM) - 515 F
 - 1 ul Rev primer (10 μM) - 926 R
 
 | PCR Primer Name | Direction | Sequence (5’ -> 3’)| Sequence (5’ -> 3’) with Fluidigm Adapters | Fluidigm Adapter |
 | ----- | ----- | ----- | ----- | ----- |
-| 515 F | forward | GTGYCAGCMGCCGCGGTAA | ACACTGACGACATGGTTCTACA xxx GTGYCAGCMGCCGCGGTAA | CS1-TS-F |
-| 926 R | reverse | CCGYCAATTYMTTTRAGTTT | TACGGTAGCAGAGACTTGGTCT xxx CCGYCAATTYMTTTRAGTTT | CS2-TS-R |
+| {{pcr_primer_name_forward}} | forward | {{pcr_primer_forward}} | ACACTGACGACATGGTTCTACA xxx {{pcr_primer_forward}} | CS1-TS-F |
+| {{pcr_primer_name_reverse}} | reverse | {{pcr_primer_reverse}} | TACGGTAGCAGAGACTTGGTCT xxx {{pcr_primer_reverse}} | CS2-TS-R |
 
-2. Add 1 ul of sample DNA (or molecular water for NTC) to respective wells for a total reaction volume of 25 ul per well. Pipette up and down or vortex to fully distribute DNA into master mix.
+2. Add {{pcr_dna_vol}} ul of sample DNA (or molecular water for NTC) to respective wells for a total reaction volume of {{amplificationReactionVolume}} ul per well. Pipette up and down or vortex to fully distribute DNA into master mix.
 3. Seal plate with PCR plate seal or strip caps.
 4. Load plate onto thermal cycler and select program to run the following steps:
 
@@ -275,7 +275,7 @@ Low Volume Post-PCR
 
 Contamination
 
-- If there are contamination bands appearing on the gel, run another PCR ensuring full sterilization of work spaces and equipment under the hood and use new vials of AmpliTaq Gold and molecular water. If diluted primers are contaminated, use freshly-made aliquot of primers. 
+- If there are contamination bands appearing on the gel, run another PCR ensuring full sterilization of work spaces and equipment under the hood and use new vials of {{commercial_mm}} and molecular water. If diluted primers are contaminated, use freshly-made aliquot of primers. 
 
 Weak Amplification
 

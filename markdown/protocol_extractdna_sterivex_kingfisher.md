@@ -92,11 +92,11 @@ nucl_acid_ext_method_additional: not applicable
 
 ### Summary
 
-This protocol is used for {{analyses}} of {{environmental_medium}} eDNA samples from sterivex filters using contents of a {{nucl_acid_ext_kit}} and a KingFisher Flex robot. Optional use of Opentrons OT-2 Robot to prepare plates for KingFisher. This protocol is used by the Molecular and Computational Biodiversity group of {{publisher}}.
+This protocol is used for {{analyses}} of {{environmental_medium}} eDNA samples from Sterivex filters using contents of a {{nucl_acid_ext_kit}} and a KingFisher Flex robot. Optional use of Opentrons OT-2 Robot to prepare plates for KingFisher. This protocol is used by the Molecular and Computational Biodiversity group of {{publisher}}.
 
 ### Method description and rationale
 
-This protocol is optimized for high throughput DNA extractions of sterivex filters. It is easily reproducible and generates sufficient DNA yields while minimizing contamination and time requirements through the use of a KingFisher and optional use of an Opentrons OT-2 Pipetting Robot.
+This protocol is optimized for high throughput DNA extractions of Sterivex filters. It is easily reproducible and generates sufficient DNA yields while minimizing contamination and time requirements through the use of a KingFisher and optional use of an Opentrons OT-2 Pipetting Robot.
 
 ### Spatial coverage and environment(s) of relevance
 
@@ -116,7 +116,7 @@ Basic molecular biology training (including sterile technique, pipetting) is req
 
 ### Time needed to execute the procedure
 
-Extracting DNA from 94 sterivex samples takes about 5 hours ({{time_required}} minutes) including KingFisher run time.
+Extracting DNA from 94 Sterivex samples takes about 5 hours ({{time_required}} minutes) including KingFisher run time.
 
 ## EQUIPMENT
 
@@ -135,8 +135,8 @@ Extracting DNA from 94 sterivex samples takes about 5 hours ({{time_required}} m
 | Wash bottles | Safety wash bottles 500 mL for EtOH | Generic | 1 | Can be substituted with generic |
 | **Consumable equipment** |
 | Sterivex Filter | Millipore Sterivex-GP Pressure Filter Unit, 0.22µm pore size | Millipore Sigma | 94 | |
-| DNA/RNA Shield | Zymo DNA/RNA Shield | Zymo Research | 94 mL | only required if sterivex are not pre-loaded or for adding an extraction blank |
-| Zirconia Beads | Zymo ZR BashingBead Lysis Tubes (0.1 & 0.5 mm) | Zymo Research | 94 | only required if sterivex are not pre-loaded or for adding an extraction blank |
+| DNA/RNA Shield | Zymo DNA/RNA Shield | Zymo Research | 94 mL | only required if Sterivex are not pre-loaded or for adding an extraction blank |
+| Zirconia Beads | Zymo ZR BashingBead Lysis Tubes (0.1 & 0.5 mm) | Zymo Research | 94 | only required if Sterivex are not pre-loaded or for adding an extraction blank |
 | Filter Cap (Male) | MasterFlex Male Luer Lock Plug | VWR | 94 | Can be substituted with generic |
 | Filter Cap (Female) | MasterFlex Female Luer Thread Style Cap | VWR | 94 | Can be substituted with generic |
 | Parafilm | Parafilm M Lab Film | Generic | 1 roll | Can substitute with generic brand |
@@ -160,7 +160,7 @@ Extracting DNA from 94 sterivex samples takes about 5 hours ({{time_required}} m
 | **Chemicals** |
 | 70% EtOH | Molecular bio grade ethanol | Generic | 1 Wash Bottle | only used for cleaning lab surfaces |
 | **ZymoBIOMICS 96 MagBead DNA Kit** |
-| Lysis Solution | ZymoBIOMICS Lysis Solution | Zymo Research | 94 mL | can be used in place of DNA/RNA Shield, only required if sterivex are not pre-loaded or for adding an extraction blank |
+| Lysis Solution | ZymoBIOMICS Lysis Solution | Zymo Research | 94 mL | can be used in place of DNA/RNA Shield, only required if Sterivex are not pre-loaded or for adding an extraction blank |
 | MagBinding Buffer | ZymoBIOMICS MagBinding Buffer | Zymo Research | 57.6 mL | |
 | MagBinding Beads | ZymoBIOMICS MagBinding Beads | Zymo Research | 2.4 mL | |
 | MagWash 1 | ZymoBIOMICS MagWash 1 | Zymo Research | 48 mL | |
@@ -252,7 +252,7 @@ OR
 ### Basic troubleshooting guide
 
 - Issue 1: There have been issues with cracks in the ring around the inlet ports of Sterivex (usually only one side) and leaks occurring after thawing.
-   - Solution: To make the Sterivex usable, wipe off excess leakage/condensation on the outside of the sterivex using a KimWipe and firmly press putty into the concave ring surrounding the inlet ports of the Sterivex. Then use parafilm to tightly wrap the areas where putty was applied. 
+   - Solution: To make the Sterivex usable, wipe off excess leakage/condensation on the outside of the Sterivex using a KimWipe and firmly press putty into the concave ring surrounding the inlet ports of the Sterivex. Then use parafilm to tightly wrap the areas where putty was applied. 
 - Issue 2: Depending on the type of bracket used on Vortex Genies, Sterivex may fall out of the brackets as soon as vortexes are turned on.
    - Solution: Use a KimWipe to wipe off excess condensation on the Sterivex then wrap a small strip of parafilm around the outside of the Sterivex and clip back into the bracket.
 - Issue 3: (Opentrons OT-2 Robot) Occasionally the Opentrons OT-2 Robot will have an issue with dispensing liquid because of bubbling occurring inside the tips dispensing MagBinding buffer due to the "soapy" nature of the solution. 

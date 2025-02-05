@@ -18,6 +18,9 @@ language: en
 issued: 2024-06-26
 audience: scientists
 publisher: NOAA's Atlantic Oceanographic and Meteorological Laboratory
+hasVersion: 1
+license: CC0 1.0 Universal
+maturity level: mature
 
 # FAIRe terms
 samp_vol_we_dna_ext: 1
@@ -53,8 +56,17 @@ nucl_acid_ext_method_additional: not applicable
 | Sean Anderson | NOAA/AOML, MSU/NGI | <https://orcid.org/0000-0003-3096-1120> | 2021-09-13 |
 | Sammy Harding | NOAA/AOML, MSU/NGI | <https://orcid.org/0009-0008-8885-6140> | 2024-06-26 |
 
-- All authors known to have contributed to the preparation of this protocol should be listed, including those who filled in the template.
-- Visit <https://orcid.org/> to register for an ORCID.
+## RELATED PROTOCOLS IN YOUR FOLDER
+
+| PROTOCOL NAME | LINK  | VERSION | RELEASE DATE|
+| ------------- | ------------- | ------------- | ------------- |
+| Content Cell  | Content Cell  | yyyy-mm-dd  |
+
+## RELATED EXTERNAL PROTOCOLS
+
+| EXTERNAL PROTOCOL NAME AND LINK  | ISSUER / AUTHOR | ACCESS DATE |
+| ------------- | ------------- | ------------- |
+| Content Cell  | Content Cell  | yyyy-mm-dd  |
 
 ### Protocol Revision Record
 
@@ -62,10 +74,6 @@ nucl_acid_ext_method_additional: not applicable
 | ------------- | ------------- | ------------- |
 | 1.0.0 | 2024-06-26 | Initial release |
 | 1.1.0 | 2024-11-16 | Addition of FAIR eDNA terms in YAML frontmatter |
-
-- Version numbers start at 1.0.0 when the protocol is first completed and will increase when changes that impact the outcome of the procedure are made (patches: 1.0.1; minor changes: 1.1.0; major changes: 2.0.0).
-- Release date is the date when a given protocol version was finalised.
-- Description of revisions includes a brief description of what was changed relative to the previous version.
 
 ### Acronyms and Abbreviations
 
@@ -135,11 +143,11 @@ Extracting DNA from 94 Sterivex samples takes about 5 hours ({{time_required}} m
 | Wash bottles | Safety wash bottles 500 mL for EtOH | Generic | 1 | Can be substituted with generic |
 | **Consumable equipment** |
 | Sterivex Filter | Millipore Sterivex-GP Pressure Filter Unit, 0.22µm pore size | Millipore Sigma | 94 | |
-| DNA/RNA Shield | Zymo DNA/RNA Shield | Zymo Research | 94 mL | only required if Sterivex are not pre-loaded or for adding an extraction blank |
+| DNA/RNA Shield | Zymo DNA/RNA Shield | Zymo Research | 94 | (mL) only required if Sterivex are not pre-loaded or for adding an extraction blank |
 | Zirconia Beads | Zymo ZR BashingBead Lysis Tubes (0.1 & 0.5 mm) | Zymo Research | 94 | only required if Sterivex are not pre-loaded or for adding an extraction blank |
 | Filter Cap (Male) | MasterFlex Male Luer Lock Plug | VWR | 94 | Can be substituted with generic |
 | Filter Cap (Female) | MasterFlex Female Luer Thread Style Cap | VWR | 94 | Can be substituted with generic |
-| Parafilm | Parafilm M Lab Film | Generic | 1 roll | Can substitute with generic brand |
+| Parafilm | Parafilm M Lab Film | Generic | 1 | (roll) Can substitute with generic brand |
 | Syringes | BD Disposable Syringes with Luer-Lock Tips, 5 mL | Fisher Scientific | 94 | Can be substituted with generic as long as they twist onto Sterivex |
 | Microcentrifuge Tubes | NEST 2.0 mL Microcentrifuge Tube | Opentrons | 94 | Can be substituted with generic|
 | KingFisher 96 deep-well plate | KingFisher Plastics for 96 deep-well format | ThermoFisher | 7 | |
@@ -147,25 +155,25 @@ Extracting DNA from 94 Sterivex samples takes about 5 hours ({{time_required}} m
 | KingFisher 96 tip comb for deep-well magnets | Kingfisher Flex 96 Deep-Well Tip Combs | ThermoFisher | 1 | |
 | 96-well PCR plate | Armadillo PCR Plate, 96-well, clear, clear wells | ThermoFisher | 3 | |
 | Aluminum Foil Sealing Tape | AlumaSeal II Sealing Foils for PCR and Cold Storage | VWR | 3 | Can be substituted with generic |
-| 1000µL Filter Tips | OT-2 Filter Tips, 1000µL | Opentrons | 2 boxes | Can be substituted with generic |
-| 200µL Filter Tips | OT-2 Filter Tips, 200µL | Opentrons | 1 box | Can be substituted with generic |
-| 2.5 mL Combitips | Combitips advanced, 2.5 mL, green, colorless tips | Eppendorf | 1 tip | optional for MagBinding Beads with repeater pipette |
-| 10 mL Combitips | Combitips advanced, 10 mL, orange, colorless tips | Eppendorf | 3 tips | optional for KF plate prep with repeater pipette |
-| Gloves | Nitrile Gloves, Exam Grade, Powder-free | ULINE | 1 box | Can be substituted with generic |
-| Kim Wipes | KimWipe Delicate Task Wipers | KimTech | 1 box | Can be substituted with generic |
+| 1000µL Filter Tips | OT-2 Filter Tips, 1000µL | Opentrons | 2 | (boxes) Can be substituted with generic |
+| 200µL Filter Tips | OT-2 Filter Tips, 200µL | Opentrons | 1 | (box) Can be substituted with generic |
+| 2.5 mL Combitips | Combitips advanced, 2.5 mL, green, colorless tips | Eppendorf | 1 | (tip) Optional for MagBinding Beads with repeater pipette |
+| 10 mL Combitips | Combitips advanced, 10 mL, orange, colorless tips | Eppendorf | 3 | (tips) Optional for KF plate prep with repeater pipette |
+| Gloves | Nitrile Gloves, Exam Grade, Powder-free | ULINE | 1 | (box) Can be substituted with generic |
+| Kim Wipes | KimWipe Delicate Task Wipers | KimTech | 1 | (box) Can be substituted with generic |
 | **Opentrons Consumables** |
 | 12-Well Reservoir, 15 mL | NEST 12-Well Reservoir, 15 mL | Opentrons | 1 | optional for KF plate prep on OT-2 Robot |
 | Deep Single-Well Reservoir, 300 mL | Nalgene Disposable Polypropylene Robotic Reservoirs | ThermoFisher | 2 | optional for KF plate prep on OT-2 Robot |
-| 200µL Filter Tips | OT-2 Filter Tips, 200µL | Opentrons | 1 box | optional for KF plate prep on OT-2 Robot |
+| 200µL Filter Tips | OT-2 Filter Tips, 200µL | Opentrons | 1 | (box) Optional for KF plate prep on OT-2 Robot |
 | **Chemicals** |
-| 70% EtOH | Molecular bio grade ethanol | Generic | 1 Wash Bottle | only used for cleaning lab surfaces |
+| 70% EtOH | Molecular bio grade ethanol | Generic | 1 | (Wash Bottle) only used for cleaning lab surfaces |
 | **ZymoBIOMICS 96 MagBead DNA Kit** |
-| Lysis Solution | ZymoBIOMICS Lysis Solution | Zymo Research | 94 mL | can be used in place of DNA/RNA Shield, only required if Sterivex are not pre-loaded or for adding an extraction blank |
-| MagBinding Buffer | ZymoBIOMICS MagBinding Buffer | Zymo Research | 57.6 mL | |
-| MagBinding Beads | ZymoBIOMICS MagBinding Beads | Zymo Research | 2.4 mL | |
-| MagWash 1 | ZymoBIOMICS MagWash 1 | Zymo Research | 48 mL | |
-| MagWash 2 | ZymoBIOMICS MagWash 2 | Zymo Research | 86.4 mL | |
-| DNAse/RNAse Free Water | ZymoBIOMICS DNAse/RNAse Free Water | Zymo Research | 14.4 mL | |
+| Lysis Solution | ZymoBIOMICS Lysis Solution | Zymo Research | 94 mL | (mL) Can be used in place of DNA/RNA Shield, only required if Sterivex are not pre-loaded or for adding an extraction blank |
+| MagBinding Buffer | ZymoBIOMICS MagBinding Buffer | Zymo Research | 57.6 | (mL) |
+| MagBinding Beads | ZymoBIOMICS MagBinding Beads | Zymo Research | 2.4 | (mL) |
+| MagWash 1 | ZymoBIOMICS MagWash 1 | Zymo Research | 48 | (mL) |
+| MagWash 2 | ZymoBIOMICS MagWash 2 | Zymo Research | 86.4 | (mL) |
+| DNAse/RNAse Free Water | ZymoBIOMICS DNAse/RNAse Free Water | Zymo Research | 14.4 | (mL) |
 
 - Opentrons Consumables: If using Opentrons OT-2 Robot for KF Plate Prep.
 
@@ -259,10 +267,7 @@ OR
    - Solution: Press the "Pause" button on the computer and replace the bubbly tip manually with gloved hands. Then unpause the run and watch to see if the tip correctly dispenses MagBinding buffer. If a sample plate has empty wells, use a pipette to manually add MagBinding buffer after the plate comes off the Opentrons.
 
 ## REFERENCES
-
-- Insert all references cited in the document.
-- Please insert full DOI address when available.
+1. [Zymo Research. ZymoBIOMICS Manual. Irvine, CA: Zymo Research. Accessed 5 February 2025.](https://files.zymoresearch.com/protocols/_d4302_d4306_d4308_zymobiomics-96_magbead_dna_kit.pdf?_gl=1*4ki6d4*_gcl_au*MTE2MzQ0NTYwMS4xNzM4Nzg5NDk4)
 
 ## APPENDIX A: DATASHEETS
-
-- Link templates (e.g. preformatted spreadsheets) used to record measurements and report on the quality of the data as well as any documents such as manufacturer specifications, images, etc that support this protocol. Please include a short note describing the document's relevance.
+Not applicable.

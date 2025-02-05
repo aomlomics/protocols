@@ -18,6 +18,9 @@ language: en
 issued: 2024-08-15
 audience: scientists
 publisher: NOAA's Atlantic Oceanographic and Meteorological Laboratory
+hasVersion: 1
+license: CC0 1.0 Universal
+maturity level: mature
 
 # FAIRe terms
 samp_category: sample
@@ -50,8 +53,17 @@ samp_size_unit: mL
 | Alyse Larkin | UC-Irvine | <https://orcid.org/0000-0003-4466-0791> | 2023-11-27 |
 | Adam Martiny | UC-Irvine | <https://orcid.org/0000-0003-2829-4314> | 2023-11-27 |
 
-- All authors known to have contributed to the preparation of this protocol should be listed, including those who filled in the template.
-- Visit <https://orcid.org/> to register for an ORCID.
+## RELATED PROTOCOLS
+
+| PROTOCOL NAME | LINK  | VERSION | RELEASE DATE|
+| ------------- | ------------- | ------------- | ------------- |
+| Content Cell  | Content Cell  | yyyy-mm-dd  |
+
+## RELATED EXTERNAL PROTOCOLS
+
+| EXTERNAL PROTOCOL NAME AND LINK  | ISSUER / AUTHOR  | ACCESS DATE |
+| ------------- | ------------- | ------------- |
+| Content Cell  | Content Cell  | yyyy-mm-dd  |
 
 ### Protocol Revision Record
 
@@ -122,26 +134,26 @@ The process of setting up sampling equipment and filtering seawater will take ~2
 | 20 L carboy | 20 L Nalgene carboy | Generic brand | 1 | |
 | 8 L carboy | 8 L Nalgene carboy | Generic brand | 1 | Used to hold bleach solution |
 | Peristaltic pump | Masterflex peristaltic pump | Cole Parmer | 1 | |
-| Pump heads | Masterflex L/S Easy-Load II Pump Heads for Precision Tubing | Avantor | 1-3 | The greater the # of pump heads, the faster the sampling process |
+| Pump heads | Masterflex L/S Easy-Load II Pump Heads for Precision Tubing | Avantor | 3 | The greater the # of pump heads, the faster the sampling process |
 | Pump tubing | Masterflex Precision Pump Tubing, Peroxide-Cured Silicone | EW-96400-24 | Cole Parmer | 3 | Depends on # of pump heads |
 | Hose-barb adapter | Masteflex fitting, Male Luer Lock to Hose Barb Adapter | Cole-Parmer | 3 | Depends on # of pump tubes |
 | Serological pipette | 10 mL Serological Pipette | Generic brand | 3 | Depends on # of pump tubes|
 | 2 L graduated cylinders | Graduated cylinder - 2 L | Generic brand | 3 | Depends on # of samples being pumped at once, can be substituted with carboys which tubing will be directly attached to (no serological pipets) using adapters |
 | -20 °C freezer | -20 °C commercial chest freezer | Generic brand | 1 | |
 | **Consumable equipment** |
-| Sterivex filter | Millipore Sterivex-GP Pressure Filter Unit, 0.22µm pore size | Millipore Sigma | # of samples | account for negative control field blanks |
-| Inlet (male) luer-lock cap | MasterFlex Male Luer Lock Plug | VWR | 1 per Sterivex | depends on # of samples |
-| Outlet (female) luer-lock cap | MasterFlex Female Luer Thread Style Cap | VWR | 1 per Sterivex | depends on # of samples |
-| Pre-printed Cryo-Babies labels | Cryo-Babies LCRY-1700 | Diversified Biotech | 1 label per Sterivex | Depends on # of samples |
-| 60 mL syringe with male luer-lock outlet | Disposable syringe with luer lock - 60 mL | Generic brand | 1 box | |
+| Sterivex filter | Millipore Sterivex-GP Pressure Filter Unit, 0.22µm pore size | Millipore Sigma | 175 | Quantity depends on number of samples desired, remember to account for negative control field blanks |
+| Inlet (male) luer-lock cap | MasterFlex Male Luer Lock Plug | VWR | 175 | Depends on # of samples, one per Sterivex |
+| Outlet (female) luer-lock cap | MasterFlex Female Luer Thread Style Cap | VWR | 175 | Depends on # of samples, one per Sterivex |
+| Pre-printed Cryo-Babies labels | Cryo-Babies LCRY-1700 | Diversified Biotech | 175 | Depends on # of samples, one per Sterivex |
+| 60 mL syringe with male luer-lock outlet | Disposable syringe with luer lock - 60 mL | Generic brand | 1 | Used for sterilizing tubing |
 | Sterile collection bags | Whil-Pak collection bags | Cole Parmer | 1 box | Various sizes can be used for water collection |
-| DNA/RNA Shield | Zymo DNA/RNA Shield | Zymo Research | 1 mL per Sterivex | # mL depends on sample size |
-| Zymo ZR BashingBead Lysis Tubes | Zymo ZR BashingBead Lysis Tubes (0.1 & 0.5 mm) | Zymo Research | 1 tube per Sterivex | # of tubes depends on sample size |
-| Gloves | Powder-free nitrile gloves | Generic brand | 1 box | Can be any generic brand of gloves |
+| DNA/RNA Shield | Zymo DNA/RNA Shield | Zymo Research | 175 |(mL) 1mL required per Sterivex |
+| Zymo ZR BashingBead Lysis Tubes | Zymo ZR BashingBead Lysis Tubes (0.1 & 0.5 mm) | Zymo Research | 175 | 1 tube per Sterivex |
+| Gloves | Powder-free nitrile gloves | Generic brand | 1 | (box) Can be any generic brand of gloves |
 | Field notebook | Hard cover notebook | Generic brand | 1 | Encouraged to keep a digital sample log in addition to written notes |
 | **Chemicals** |
-| 5-9% Sodium hypochlorite | Household bleach | Generic brand | 1 bottle | Dilute 1:20 for lab use |
-| Deionized or Milli-Q water | DI water | Generic brand | At least 8 L | Or use ship's DI water |
+| 5-9% Sodium hypochlorite | Household bleach | Generic brand | 1 | (bottle) Dilute 1:20 for lab use |
+| Deionized or Milli-Q water | DI water | Generic brand | 8 | (L) Can use ship's DI water |
 
 - Description: E.g., "filter".
 - Product Name and Model: Provide the official name of the product.
@@ -205,13 +217,16 @@ Negative field controls are included with every research cruise. After the addit
 ### Basic troubleshooting guide
 
 Leaks
-
 - If there is a leak present in the pump setup, you will notice trouble pulling water through the pump system. Check all seals and re-attach tubing.
 
 Clogged Filter
-
 - If a filter is clogged, turn valves and connections off and attempt to clear obstructions (i.e. large chunks of sediment or algae). Make note of any abnormal conditions and try to pump the full volume of seawater through the filter. In more productive areas, especially surface samples, we would frequently have filters that could not take the full volume. Since there are only two pumps and multiple sample depths at one time, it was common for us to use a cut-off time before starting next sample (~45 min).
 
-## APPENDIX A: DATASHEETS
+## REFERENCES
+Not applicable.
 
-Link to youtube video demonstrating eDNA Sampling for GO-SHIP: <https://www.youtube.com/watch?v=RjJ_bpb1z04>.
+## APPENDIX A: DATASHEETS
+Not applicable.
+
+## APPENDIX B: VIDEO & IMAGE FILES
+[Filtering Video (Youtube): eDNA Sampling for Bio-GO-SHIP](https://www.youtube.com/watch?v=RjJ_bpb1z04)

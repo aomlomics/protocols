@@ -18,6 +18,9 @@ language: en
 issued: 2023-05-26
 audience: scientists
 publisher: NOAA's Atlantic Oceanographic and Meteorological Laboratory
+hasVersion: 1
+license: CC0 1.0 Universal
+maturity level: mature
 
 # FAIRe terms
 barcoding_pcr_appr: two-step pcr
@@ -55,8 +58,17 @@ seq_method_additional: not applicable
 | Luke Thompson | NOAA/AOML, MSU/NGI | <https://orcid.org/0000-0002-3911-1280> | 2024-09-05 |
 | Sammy Harding | NOAA/AOML, MSU/NGI | <https://orcid.org/0009-0008-8885-6140> | 2024-09-05 |
 
-- All authors known to have contributed to the preparation of this protocol should be listed, including those who filled in the template.
-- Visit <https://orcid.org/> to register for an ORCID.
+## RELATED PROTOCOLS
+
+| PROTOCOL NAME | LINK  | VERSION | RELEASE DATE|
+| ------------- | ------------- | ------------- | ------------- |
+| Content Cell  | Content Cell  | yyyy-mm-dd  |
+
+## RELATED EXTERNAL PROTOCOLS
+
+| EXTERNAL PROTOCOL NAME AND LINK  | ISSUER / AUTHOR  | ACCESS DATE |
+| ------------- | ------------- | ------------- |
+| Content Cell  | Content Cell  | yyyy-mm-dd  |
 
 ### Protocol Revision Record
 
@@ -65,10 +77,6 @@ seq_method_additional: not applicable
 | 1.0.0 | 2024-09-05 | Initial release |
 | 1.0.1 | 2024-10-23 | Formatting edits |
 | 1.1.0 | 2024-11-16 | Addition of FAIR eDNA terms in YAML frontmatter |
-
-- Version numbers start at 1.0.0 when the protocol is first completed and will increase when changes that impact the outcome of the procedure are made (patches: 1.0.1; minor changes: 1.1.0; major changes: 2.0.0).
-- Release date is the date when a given protocol version was finalised.
-- Description of revisions includes a brief description of what was changed relative to the previous version.
 
 ### Related External Protocols
 
@@ -149,20 +157,20 @@ This protocol takes about 4-5 hours to execute. There is a safe-stopping point a
 | Aluminum Foil Sealing Tape | AlumaSeal II Sealing Foils for PCR and Cold Storage | VWR | 7 | Can be substituted with generic | 
 | 8-Strip Tubes | 0.2 mL 8-Strip PCR Tubes | Generic Brand | 5 | tubes without caps attached are better |
 | Microcentrifuge Tubes | 2.0 mL Microcentrifuge Tube | Generic Brand | 8 | Can be substituted with generic|
-| 1000µL Filter Tips | OT-2 Filter Tips, 1000µL | Opentrons | 1 box | Can be substituted with generic |
-| 200µL Filter Tips | OT-2 Filter Tips, 200µL | Opentrons | 7 boxes | Can be substituted with generic |
-| 10 ul Filter tips | TipOne Pipette Tips, 10 uL | TipOne | 9 boxes | Can be substituted with generic |
-| 25 mL Trough | Reagent Reservoirs - 25 mL Disposable | 1 box | Can be substituted with generic |
+| 1000µL Filter Tips | OT-2 Filter Tips, 1000µL | Opentrons | 1 | (box) Can be substituted with generic |
+| 200µL Filter Tips | OT-2 Filter Tips, 200µL | Opentrons | 7 | (boxes) Can be substituted with generic |
+| 10 ul Filter tips | TipOne Pipette Tips, 10 uL | TipOne | 9 | (boxes) Can be substituted with generic |
+| 25 mL Trough | Reagent Reservoirs - 25 mL Disposable | 1 | (box) Can be substituted with generic |
 | 10 mL Serological Pipette Tip | 10 mL Serological Pipette Tip | Eppendorf | 1 | Can be substituted with generic |
-| Gloves | Nitrile Gloves, Exam Grade, Powder-free | ULINE | 1 box | Can be substituted with generic |
-| Kim Wipes | KimWipe Delicate Task Wipers | KimTech | 1 box | Can be substituted with generic |
+| Gloves | Nitrile Gloves, Exam Grade, Powder-free | ULINE | 1 | (box) Can be substituted with generic |
+| Kim Wipes | KimWipe Delicate Task Wipers | KimTech | 1 | (box) Can be substituted with generic |
 | **Chemicals** |
 | 80% Ethanol | Molecular biology grade ethanol |
-| Proteinase K | Proteinase K, recombinant, PCR grade | ThermoFisher Scientific | 1 mL vial | |
-| Nuclease-free water | Nuclease-Free Water (not DEPC-Treated) | ThermoFisher Scientific | 1 ml vial | |
-| {{seq_kit}} | Illumina DNA Prep, (M) Tagmentation (24 samples, IPB) | Illumina | 1 kit | Kit includes Bead-Leaded Transposomes (BLT), Tagmentation Buffer (TB1), Tagmentation Stop Buffer (TSB), Tagmentation Wash Buffer (TWB), Illumina Purification Beads (IPB), Resuspension Buffer (RSB) - previously named Nextera DNA Flex Kit |
-| Kapa Hifi Hotstart Kit | KAPA Hifi Hotstart Library Amplification Kit with Primer Mix | Roche | 1 kit | Kit includes KAPA Amplification Primer Mix (KAPA-PCR-F / KAPA-PCR-R), KAPA Hifi Hotstart ReadyMix |
-| Dual Indexes - Set A, B, C | IDT for Illumina DNA/RNA UD Indexes Sets A-C (20027213, 20027214, 20042666) | Illumina | 1 set | Product will be discontinued Jan 2025 - switch to Illumina DNA/RNA UD Indexes Sets A-C (20091654, 20091656, 20091658) |
+| Proteinase K | Proteinase K, recombinant, PCR grade | ThermoFisher Scientific | 1 | (mL vial) |
+| Nuclease-free water | Nuclease-Free Water (not DEPC-Treated) | ThermoFisher Scientific | 1 | (mL vial) |
+| {{seq_kit}} | Illumina DNA Prep, (M) Tagmentation (24 samples, IPB) | Illumina | 1 | (kit) Kit includes Bead-Leaded Transposomes (BLT), Tagmentation Buffer (TB1), Tagmentation Stop Buffer (TSB), Tagmentation Wash Buffer (TWB), Illumina Purification Beads (IPB), Resuspension Buffer (RSB) - previously named Nextera DNA Flex Kit |
+| Kapa Hifi Hotstart Kit | KAPA Hifi Hotstart Library Amplification Kit with Primer Mix | Roche | 1 | (kit) Kit includes KAPA Amplification Primer Mix (KAPA-PCR-F / KAPA-PCR-R), KAPA Hifi Hotstart ReadyMix |
+| Dual Indexes - Set A, B, C | Illumina DNA/RNA UD Indexes Sets A-C (20091654, 20091656, 20091658) | Illumina | 1 | (set) |
 
 - Description: E.g., "filter".
 - Product Name and Model: Provide the official name of the product.
@@ -376,5 +384,8 @@ Low Final DNA Concentrations of Libraries
 - It is recommended that at least one normalization step is included to create a final pooled library of quality. One option is to SpeedVac samples of lower DNA concentrations (< 5 ng/uL) prior to beginning this protocol. Additionally, using 5 uL of initial template DNA (step #9) of all samples is ideal. Including the extra post-pcr normalization step (listed above) can also help increase final library DNA concentration yield.
 
 ## REFERENCES
+1. [Adams, E. et al. (2020). Low Volume Methodology for Nextera DNA Flex Library Prep Kit (96 Samples). protocols.io. Accessed 5 February 2025.](dx.doi.org/10.17504/protocols.io.be6rjhd6)
 
-Low Volume Methodology for {{seq_kit}}: dx.doi.org/10.17504/protocols.io.be6rjhd6.
+## APPENDIX A: DATASHEETS
+Not applicable.
+

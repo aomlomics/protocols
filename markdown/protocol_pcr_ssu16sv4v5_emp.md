@@ -18,6 +18,9 @@ language: en
 issued: 2021-02-08
 audience: scientists
 publisher: NOAA's Atlantic Oceanographic and Meteorological Laboratory
+hasVersion: 1
+license: CC0 1.0 Universal
+maturity level: mature
 
 # FAIRe terms
 pcr_0_1: 1
@@ -74,8 +77,17 @@ pcr_method_additional: not provided
 | Sean Anderson | NOAA/AOML, MSU/NGI | <https://orcid.org/0000-0003-3096-1120> | 2021-02-28 |
 | Sammy Harding | NOAA/AOML, MSU/NGI | <https://orcid.org/0009-0008-8885-6140> | 2024-08-19 |
 
-- All authors known to have contributed to the preparation of this protocol should be listed, including those who filled in the template.
-- Visit <https://orcid.org/> to register for an ORCID.
+## RELATED PROTOCOLS
+
+| PROTOCOL NAME | LINK  | VERSION | RELEASE DATE|
+| ------------- | ------------- | ------------- | ------------- |
+| Content Cell  | Content Cell  | yyyy-mm-dd  |
+
+## RELATED EXTERNAL PROTOCOLS
+
+| EXTERNAL PROTOCOL NAME AND LINK  | ISSUER / AUTHOR  | ACCESS DATE |
+| ------------- | ------------- | ------------- |
+| Content Cell  | Content Cell  | yyyy-mm-dd  |
 
 ### Protocol Revision Record
 
@@ -84,10 +96,6 @@ pcr_method_additional: not provided
 | 1.0.0 | 2021-02-28 | Initial release |
 | 1.0.1 | 2024-10-23 | Formatting edits |
 | 1.1.0 | 2024-11-16 | Addition of FAIR eDNA terms in YAML frontmatter |
-
-- Version numbers start at 1.0.0 when the protocol is first completed and will increase when changes that impact the outcome of the procedure are made (patches: 1.0.1; minor changes: 1.1.0; major changes: 2.0.0).
-- Release date is the date when a given protocol version was finalised.
-- Description of revisions includes a brief description of what was changed relative to the previous version.
 
 ### Acronyms and Abbreviations
 
@@ -158,32 +166,32 @@ For 96-well Plate:
 | Gel Tray & Box | Gel Electrophoresis Box and Tray | Generic Brand | 1 | Can be substituted with generic |
 | Gel Combs | Gel Electrophoresis Combs | Generic Brand | 2 | Can be substituted with generic |
 | **Consumable equipment** |
-| Gloves | Nitrile Gloves, Exam Grade, Powder-free | ULINE | 1 box | Can be substituted with generic |
-| Kim Wipes | KimWipe Delicate Task Wipers | KimTech | 1 box | Can be substituted with generic |
+| Gloves | Nitrile Gloves, Exam Grade, Powder-free | ULINE | 1 | (box) Can be substituted with generic |
+| Kim Wipes | KimWipe Delicate Task Wipers | KimTech | 1 | (box) Can be substituted with generic |
 | 96-well PCR Plate | | Armadillo PCR Plate, 96-well, clear, clear wells | ThermoFisher | 3 | |
 | PCR Plate Seal | AlumaSeal II Sealing Foils for PCR and Cold Storage | VWR | 2 | Can be substituted with generic, can use tightly-fitted strip caps in place of seal |
-| 1000µL Filter Tips | OT-2 Filter Tips, 1000µL | Opentrons | 1 box | Can be substituted with generic |
-| 200µL Filter Tips | OT-2 Filter Tips, 200µL | Opentrons | 2 boxes | Can be substituted with generic |
-| 10 ul Filter tips | TipOne Pipette Tips, 10 uL | TipOne | 2 boxes | Can be substituted with generic |
-| AmpliTaq Gold PCR Mix | AmpliTaq Gold DNA Polymerase 5 mL | ThermoFisher | 1.2 mL | |
-| Molecular water | Invitrogen RT-PCR Grade Water | Fisher Scientific | 0.912 mL | |
-| Forward Primer - 515 F | 16S 515F Fluidigm Primer | IDT | 105 ul (10uM) | Primer must be diluted from 100uM stocks to 10uM |
-| Reverse Primer - 926 R | 16S 926R Fluidigm Primer | IDT | 105 ul (10uM) | Primer must be diluted from 100uM stocks to 10uM |
-| TBE Buffer (10x) | TBE Buffer 10X Solution, Molecular Biology Grade, UltraPure | Thermo Scientific | 100 uL | |
-| Agarose | Agarose LE, Molecular Biology Grade, UltraPure | Thermo Scientific | 4g | |
-| SYBR Safe | SYBR Safe DNA Gel Stain | Invitrogen | 20 uL | Light sensitive - do not expose to light |
-| Gel stain loading dye | DNA Gel Loading Dye (6x) | Thermo Scientific | 480 ul (per plate) | |
-| 100bp DNA Ladder | Generuler 100 bp DNA Ladder | Thermo Scientific | 6 ul per lane on gel | |
-| Parafilm | Parafilm M Lab Film | Generic | 1 roll | Can substitute with generic brand |
+| 1000µL Filter Tips | OT-2 Filter Tips, 1000µL | Opentrons | 1 | (box) Can be substituted with generic |
+| 200µL Filter Tips | OT-2 Filter Tips, 200µL | Opentrons | 2 | (boxes) Can be substituted with generic |
+| 10 ul Filter tips | TipOne Pipette Tips, 10 uL | TipOne | 2 | (boxes) Can be substituted with generic |
+| AmpliTaq Gold PCR Mix | AmpliTaq Gold DNA Polymerase 5 mL | ThermoFisher | 1.2 | (mL) |
+| Molecular water | Invitrogen RT-PCR Grade Water | Fisher Scientific | 0.912 | (mL) |
+| Forward Primer - 515 F | 16S 515F Fluidigm Primer | IDT | 105 | (ul (10uM)) Primer must be diluted from 100uM stocks to 10uM |
+| Reverse Primer - 926 R | 16S 926R Fluidigm Primer | IDT | 105 | (ul (10uM)) Primer must be diluted from 100uM stocks to 10uM |
+| TBE Buffer (10x) | TBE Buffer 10X Solution, Molecular Biology Grade, UltraPure | Thermo Scientific | 100 | (uL) |
+| Agarose | Agarose LE, Molecular Biology Grade, UltraPure | Thermo Scientific | 4 | (g) |
+| SYBR Safe | SYBR Safe DNA Gel Stain | Invitrogen | 20 | (uL) Light sensitive - do not expose to light |
+| Gel stain loading dye | DNA Gel Loading Dye (6x) | Thermo Scientific | 480 | (ul per plate) |
+| 100bp DNA Ladder | Generuler 100 bp DNA Ladder | Thermo Scientific | 6 | (ul per lane on gel) |
+| Parafilm | Parafilm M Lab Film | Generic | 1 | (roll) Can substitute with generic brand |
 | **Chemicals** |
-| RNase AWAY | RNase AWAY Surface Decontaminant | ThermoFisher Scientific | 1 bottle | Used to sterilize lab surfaces and equipment |
-| EtOH | Ethanol | Generic Brand | 1 wash bottle | Must be molecular grade ethanol |
-| DI water | Deionized water | Generic | 900 mL | |
+| RNase AWAY | RNase AWAY Surface Decontaminant | ThermoFisher Scientific | 1 | (bottle) Used to sterilize lab surfaces and equipment |
+| EtOH | Ethanol | Generic Brand | 1 | (wash bottle) Must be molecular grade ethanol |
+| DI water | Deionized water | Generic | 900 | (mL) |
 | **(OPTIONAL) Clean-Up Protocol** |
-| AMPure XP Beads | AMPure XP Bead-Based Reagent | Beckman Coulter | 1 kit | |
+| AMPure XP Beads | AMPure XP Bead-Based Reagent | Beckman Coulter | 1 | (kit) |
 | 96-well magnetic plate | MagDTR 96-Well Magnetic Separator | Edge Biosystems Inc | 1 | Can be substituted with generic brand |
 | **(OPTIONAL) Qubit** |
-| Qubit Reagents | Qubit dsDNA Quantification Assay Kit | Invitrogen | 1 kit | |
+| Qubit Reagents | Qubit dsDNA Quantification Assay Kit | Invitrogen | 1 | (kit) |
 | Clear Qubit Assay tubes | 0.5 mL thin-walled, polypropylene tubes | Invitrogen | 98 | Must be correct tubes to allow for fluorometer to read concentration |
 
 - Description: E.g., "filter".
@@ -283,11 +291,9 @@ Weak Amplification
 
 ## REFERENCES
 
-Furman Lab 515F-926R 16S rRNA Gene Sequencing Protocol V.2
-<https://www.protocols.io/view/fuhrman-lab-515f-926r-16s-and-18s-rrna-gene-sequen-j8nlkpd1g5r7/v2?step=9>
+1. [Fuhrman, J. et al. (2019) Fuhrman Lab 515F-926R 16s and 18S rrna gene sequencing protocol. protocols.io. Accessed 5 February 2025.](dx.doi.org/10.17504/protocols.io.vb7e2rn)
+2. [Beckman Coulter, Inc. AMPure Beads Protocol. Brea, CA: Beckman Coulter, Inc. Accessed 5 February 2025.](https://www.beckman.com/reagents/genomic/cleanup-and-size-selection/pcr/ampure-xp-protocol)
+3. [ThermoFisher. Qubit 1X dsDNA HS Assay Kits User Guide. Waltham, MA: ThermoFisher Scientific. Accessed 5 February 2025.](https://assets.thermofisher.com/TFS-Assets/LSG/manuals/MAN0017455_Qubit_1X_dsDNA_HS_Assay_Kit_UG.pdf)
 
-AMPure Beads Protocol (Beckman Coulter)
-<https://www.beckmancoulter.com/wsrportal/techdocs?docname=B37419>
-
-Qubit Protocol (Thermo Fisher)
-<https://tools.thermofisher.com/content/sfs/manuals/Qubit_dsDNA_HS_Assay_UG.pdf>
+## APPENDIX A: DATASHEETS
+Not applicable.

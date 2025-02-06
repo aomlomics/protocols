@@ -68,7 +68,12 @@ seq_method_additional: not applicable
 
 | EXTERNAL PROTOCOL NAME AND LINK  | ISSUER / AUTHOR  | ACCESS DATE |
 | ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | yyyy-mm-dd  |
+| [Low Volume Methodology for Nextera DNA Flex Library Prep Kit (96 Samples)](https://www.protocols.io/view/low-volume-methodology-for-nextera-dna-flex-librar-be6rjhd6)  | Adams, E. et al. | 2025-02-06  |
+
+External protocol used with minor modifications:
+- Step 8: We use 56ul IPB and 29ul of nuclease free water instead of 54 and 48.
+- Step 9: We think there is a mistake in the protocol; it is transfer at least 10ng of genomic DNA and not 100ng.
+- Step 50: We use 12uL of IPB (undiluted stock) instead of 14.4uL. This step is to get the good fragment size in your library. We chose 12uL based on the paper (Bruinsma et al. 2018). Bead-linked transposomes enable anormalization-free workflow for NGS librarypreparation). Claudia also used 12uL and it worked great for me with an average fragment size of 337bp.
 
 ### Protocol Revision Record
 
@@ -77,15 +82,6 @@ seq_method_additional: not applicable
 | 1.0.0 | 2024-09-05 | Initial release |
 | 1.0.1 | 2024-10-23 | Formatting edits |
 | 1.1.0 | 2024-11-16 | Addition of FAIR eDNA terms in YAML frontmatter |
-
-### Related External Protocols
-
-This protocol follows [Low Volume Methodology for Nextera DNA Flex Library Prep Kit (96 Samples)](https://www.protocols.io/view/low-volume-methodology-for-nextera-dna-flex-librar-be6rjhd6).
-with minor modifications:
-
-- Step 8: We use 56ul IPB and 29ul of nuclease free water instead of 54 and 48.
-- Step 9: We think there is a mistake in the protocol; it is transfer at least 10ng of genomic DNA and not 100ng.
-- Step 50: We use 12uL of IPB (undiluted stock) instead of 14.4uL. This step is to get the good fragment size in your library. We chose 12uL based on the paper (Bruinsma et al. 2018). Bead-linked transposomes enable anormalization-free workflow for NGS librarypreparation). Claudia also used 12uL and it worked great for me with an average fragment size of 337bp.
 
 ### Acronyms and Abbreviations
 
@@ -110,16 +106,16 @@ with minor modifications:
 
 ### Summary
 
-This protocol has been used by {{publisher}} Molecular and Computational Biodiversity group to library prep eDNA seawater samples from the Bio-GO-SHIP project for using the {{seq_kit}} (formerly Nextera DNA Flex Library Prep Kit). This is a low volume methodology that allows for the number of sequencing libraries that can be generated from each {{seq_kit}} to more than double from 384 samples (4 x 96-wells) to 864 samples (9 x 96-wells). The minimum required amount of DNA per sample is 25ng (5 ng/uL) - quality of concentration yield and sequence reads drops off if input DNA is lower than 25ng. This protocol closely follows along with the following protocol with minor changes: <https://www.protocols.io/view/low-volume-methodology-for-nextera-dna-flex-librar-dm6gpr2r8vzp/v1>.
+This protocol has been used by [NOAA's Atlantic Oceanographic and Meteorological Laboratory](publisher) Molecular and Computational Biodiversity group to library prep eDNA seawater samples from the Bio-GO-SHIP project for using the [Illumina DNA Prep Kit](seq_kit) (formerly Nextera DNA Flex Library Prep Kit). This is a low volume methodology that allows for the number of sequencing libraries that can be generated from each [Illumina DNA Prep Kit](seq_kit) to more than double from 384 samples (4 x 96-wells) to 864 samples (9 x 96-wells). The minimum required amount of DNA per sample is 25ng (5 ng/uL) - quality of concentration yield and sequence reads drops off if input DNA is lower than 25ng. This protocol closely follows along with the following protocol with minor changes: <https://www.protocols.io/view/low-volume-methodology-for-nextera-dna-flex-librar-dm6gpr2r8vzp/v1>.
 
 ### Method description and rationale
 
 Advantages to this protocol include enzymatic fragmentation instead of mechanical, compatibility with a wide range of DNA input quantities (25ng-500ng) and production of normalized library yields. This protocol's steps include: _thermal cycler and reagent preparation, DNA tagmentation_, _post tagmentation cleanup, tagmented DNA amplification_, _post-pcr library clean up_ and _quality control_. 
-Genomic DNA is fragmented and tagged at the same time using bead-linked transposomes (BLTs). After tagmentation, a tagment stop buffer (TSA) is added and two rounds of wash steps are performed using tagment wash buffer (TWB). Tagmented DNA is combined with a PCR master mix and dual index adapters and amplified. Amplified DNA library concentrations are quantified using Qubit or Quant-It and pooled according to DNA concentration. The final pool is cleaned up by binding DNA to illumina purification beads (SPB), washing the beads then eluting DNA back into the solution using resuspension buffer (RSB). The final pool is then sent off for sequencing on an {{instrument}}.
+Genomic DNA is fragmented and tagged at the same time using bead-linked transposomes (BLTs). After tagmentation, a tagment stop buffer (TSA) is added and two rounds of wash steps are performed using tagment wash buffer (TWB). Tagmented DNA is combined with a PCR master mix and dual index adapters and amplified. Amplified DNA library concentrations are quantified using Qubit or Quant-It and pooled according to DNA concentration. The final pool is cleaned up by binding DNA to illumina purification beads (SPB), washing the beads then eluting DNA back into the solution using resuspension buffer (RSB). The final pool is then sent off for sequencing on an [Illumina MiSeq System](instrument).
 
 ### Spatial coverage and environment(s) of relevance
 
-According to the {{seq_kit}} (formerly known as Nextera DNA Flex) manual, this kit can be used for {{target}} of a wide range of genome sizes; for example, entire human genomes, large or complex genomes and small genomes. 
+According to the [Illumina DNA Prep Kit](seq_kit) (formerly known as Nextera DNA Flex) manual, this kit can be used for [whole genome sequencing](target) of a wide range of genome sizes; for example, entire human genomes, large or complex genomes and small genomes. 
 
 ## PERSONNEL REQUIRED
 
@@ -168,7 +164,7 @@ This protocol takes about 4-5 hours to execute. There is a safe-stopping point a
 | 80% Ethanol | Molecular biology grade ethanol |
 | Proteinase K | Proteinase K, recombinant, PCR grade | ThermoFisher Scientific | 1 | (mL vial) |
 | Nuclease-free water | Nuclease-Free Water (not DEPC-Treated) | ThermoFisher Scientific | 1 | (mL vial) |
-| {{seq_kit}} | Illumina DNA Prep, (M) Tagmentation (24 samples, IPB) | Illumina | 1 | (kit) Kit includes Bead-Leaded Transposomes (BLT), Tagmentation Buffer (TB1), Tagmentation Stop Buffer (TSB), Tagmentation Wash Buffer (TWB), Illumina Purification Beads (IPB), Resuspension Buffer (RSB) - previously named Nextera DNA Flex Kit |
+| Illumina DNA Prep Kit | Illumina DNA Prep, (M) Tagmentation (24 samples, IPB) | Illumina | 1 | (kit) Kit includes Bead-Leaded Transposomes (BLT), Tagmentation Buffer (TB1), Tagmentation Stop Buffer (TSB), Tagmentation Wash Buffer (TWB), Illumina Purification Beads (IPB), Resuspension Buffer (RSB) - previously named Nextera DNA Flex Kit |
 | Kapa Hifi Hotstart Kit | KAPA Hifi Hotstart Library Amplification Kit with Primer Mix | Roche | 1 | (kit) Kit includes KAPA Amplification Primer Mix (KAPA-PCR-F / KAPA-PCR-R), KAPA Hifi Hotstart ReadyMix |
 | Dual Indexes - Set A, B, C | Illumina DNA/RNA UD Indexes Sets A-C (20091654, 20091656, 20091658) | Illumina | 1 | (set) |
 

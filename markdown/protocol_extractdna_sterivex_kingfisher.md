@@ -52,6 +52,7 @@ nucl_acid_ext_method_additional: not applicable
 
 - FAIRe terms are listed in the YAML frontmatter of this page.
 - See <https://fair-edna.github.io/download.html> for the FAIRe checklist and more information.
+- See <https://fair-edna.github.io/guidelines.html#missing-values> for guidelines on missing values that can be used for missing FAIRe or MIOP terms.
 
 ### Authors
 

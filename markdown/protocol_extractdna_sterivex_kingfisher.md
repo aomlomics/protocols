@@ -48,6 +48,11 @@ nucl_acid_ext_method_additional: not applicable
 - MIOP terms are listed in the YAML frontmatter of this page.
 - See <https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml> for list and definitions.
 
+### Making eDNA FAIR (FAIRe)
+
+- FAIRe terms are listed in the YAML frontmatter of this page.
+- See <https://fair-edna.github.io/download.html> for the FAIRe checklist and more information.
+
 ### Authors
 
 | PREPARED BY | AFFILIATION | ORCID | DATE |

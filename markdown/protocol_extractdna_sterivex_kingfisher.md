@@ -59,14 +59,14 @@ nucl_acid_ext_method_additional: not applicable
 ### Related Internal Protocols
 
 | PROTOCOL NAME | LINK | VERSION | RELEASE DATE |
-| ------------- | ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | yyyy-mm-dd  |
+| ------------- | ------------ | ------------ | ---------- |
+| Content Cell  | Content Cell | Content Cell | yyyy-mm-dd |
 
 ### Related External Protocols
 
-| EXTERNAL PROTOCOL NAME AND LINK  | ISSUER / AUTHOR | ACCESS DATE |
-| ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | yyyy-mm-dd  |
+| PROTOCOL NAME | LINK | ISSUER / AUTHOR | ACCESS DATE |
+| ------------ | ------------ | ------------ | ---------- |
+| Content Cell | Content Cell | Content Cell | yyyy-mm-dd |
 
 ### Protocol Revision Record
 

@@ -49,6 +49,12 @@ seq_method_additional: not applicable
 - MIOP terms are listed in the YAML frontmatter of this page.
 - See <https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml> for list and definitions.
 
+### Making eDNA FAIR (FAIRe)
+
+- FAIRe terms are listed in the YAML frontmatter of this page.
+- See <https://fair-edna.github.io/download.html> for the FAIRe checklist and more information.
+- See <https://fair-edna.github.io/guidelines.html#missing-values> for guidelines on missing values that can be used for missing FAIRe or MIOP terms.
+
 ### Authors
 
 | PREPARED BY | AFFILIATION | ORCID | DATE |
@@ -62,13 +68,17 @@ seq_method_additional: not applicable
 
 | PROTOCOL NAME | LINK  | VERSION | RELEASE DATE|
 | ------------- | ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | yyyy-mm-dd  |
+| NOAA/AOML Water Sampling Protocol using Sterivex with Zirconia Beads  | <https://github.com/aomlomics/protocols/blob/main/markdown/protocol_sampling_sterivex_beads.md> | 1.2.0 | 2025-01-08 |
+| NOAA/AOML DNA Extraction Protocol for Sterivex using KingFisher | <https://github.com/aomlomics/protocols/blob/main/markdown/protocol_extractdna_sterivex_kingfisher.md> | 1.1.0 | 2024-11-16 |
+| NOAA/AOML PCR Protocol 12S rRNA V5-V6 (MiFish) | <https://github.com/aomlomics/protocols/blob/main/markdown/protocol_pcr_ssu12sv5v6_mifish.md> | 1.1.0 | 2024-11-16 |
+| NOAA/AOML PCR Protocol 16S rRNA V4-V5 (EMP) | <https://github.com/aomlomics/protocols/blob/main/markdown/protocol_pcr_ssu16sv4v5_emp.md> | 1.1.0 | 2024-11-16 |
+| NOAA/AOML PCR Protocol 18S rRNA V9 (EMP) | <https://github.com/aomlomics/protocols/blob/main/markdown/protocol_pcr_ssu18sv9_emp.md> | 1.1.0 | 2024-11-16 |
 
 ## RELATED EXTERNAL PROTOCOLS
 
-| EXTERNAL PROTOCOL NAME AND LINK  | ISSUER / AUTHOR  | ACCESS DATE |
-| ------------- | ------------- | ------------- |
-| [Low Volume Methodology for Nextera DNA Flex Library Prep Kit (96 Samples)](https://www.protocols.io/view/low-volume-methodology-for-nextera-dna-flex-librar-be6rjhd6)  | Adams, E. et al. | 2025-02-06  |
+| PROTOCOL NAME | LINK | ISSUER / AUTHOR | ACCESS DATE |
+| ------------ | ------------ | ------------ | ---------- |
+| Low Volume Methodology for Nextera DNA Flex Library Prep Kit (96 Samples) | https://www.protocols.io/view/low-volume-methodology-for-nextera-dna-flex-librar-be6rjhd6 | Adams, E. et al. | 2025-02-06 |
 
 External protocol used with minor modifications:
 - Step 8: We use 56ul IPB and 29ul of nuclease free water instead of 54 and 48.
@@ -380,7 +390,7 @@ Low Final DNA Concentrations of Libraries
 - It is recommended that at least one normalization step is included to create a final pooled library of quality. One option is to SpeedVac samples of lower DNA concentrations (< 5 ng/uL) prior to beginning this protocol. Additionally, using 5 uL of initial template DNA (step #9) of all samples is ideal. Including the extra post-pcr normalization step (listed above) can also help increase final library DNA concentration yield.
 
 ## REFERENCES
-1. [Adams, E. et al. (2020). Low Volume Methodology for Nextera DNA Flex Library Prep Kit (96 Samples). protocols.io. Accessed 5 February 2025.](dx.doi.org/10.17504/protocols.io.be6rjhd6)
+1. Adams, E. et al. (2020) Comparing Fecal, Saliva, and Chicha Microbiomes Between Mothers and Children in an Indigenous Ecuadorian Cohort. bioRxiv 2020.10.02.323097. doi:10.1101/2020.10.02.323097.
 
 ## APPENDIX A: DATASHEETS
 Not applicable.

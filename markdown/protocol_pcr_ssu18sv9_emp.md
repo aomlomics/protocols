@@ -69,6 +69,12 @@ pcr_method_additional: not provided
 - MIOP terms are listed in the YAML frontmatter of this page.
 - See <https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml> for list and definitions.
 
+### Making eDNA FAIR (FAIRe)
+
+- FAIRe terms are listed in the YAML frontmatter of this page.
+- See <https://fair-edna.github.io/download.html> for the FAIRe checklist and more information.
+- See <https://fair-edna.github.io/guidelines.html#missing-values> for guidelines on missing values that can be used for missing FAIRe or MIOP terms.
+
 ### Authors
 
 | PREPARED BY | AFFILIATION | ORCID | DATE |
@@ -81,13 +87,18 @@ pcr_method_additional: not provided
 
 | PROTOCOL NAME | LINK  | VERSION | RELEASE DATE|
 | ------------- | ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | yyyy-mm-dd  |
+| NOAA/AOML Water Sampling Protocol using Sterivex with Zirconia Beads  | <https://github.com/aomlomics/protocols/blob/main/markdown/protocol_sampling_sterivex_beads.md> | 1.2.0 | 2025-01-08 |
+| NOAA/AOML DNA Extraction Protocol for Sterivex using KingFisher | <https://github.com/aomlomics/protocols/blob/main/markdown/protocol_extractdna_sterivex_kingfisher.md> | 1.1.0 | 2024-11-16 |
+| NOAA/AOML PCR Protocol 12S rRNA V5-V6 (MiFish) | <https://github.com/aomlomics/protocols/blob/main/markdown/protocol_pcr_ssu12sv5v6_mifish.md> | 1.1.0 | 2024-11-16 |
+| NOAA/AOML PCR Protocol 16S rRNA V4-V5 (EMP) | <https://github.com/aomlomics/protocols/blob/main/markdown/protocol_pcr_ssu16sv4v5_emp.md> | 1.1.0 | 2024-11-16 |
+| NOAA/AOML Metagenome Library Prep Protocol (Illumina DNA Prep) | <https://github.com/aomlomics/protocols/blob/main/markdown/protocol_libprep_metag_illumina.md> | 1.1.0 | 2024-11-16 |
 
 ## RELATED EXTERNAL PROTOCOLS
 
-| EXTERNAL PROTOCOL NAME AND LINK  | ISSUER / AUTHOR  | ACCESS DATE |
-| ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | yyyy-mm-dd  |
+| PROTOCOL NAME | LINK | ISSUER / AUTHOR | ACCESS DATE |
+| ------------ | ------------ | ------------ | ---------- |
+| AMPure XP Bead-Based Reagent Protocol for PCR Purification | https://www.beckman.com/reagents/genomic/cleanup-and-size-selection/pcr/ampure-xp-protocol | Beckman Coulter | 2025-02-05 |
+| Invitrogen Qubit 1X dsDNA HS Assay Kits User Guide | https://assets.thermofisher.com/TFS-Assets/LSG/manuals/MAN0017455_Qubit_1X_dsDNA_HS_Assay_Kit_UG.pdf | ThermoFisher Scientific | 2025-02-05 |
 
 ### Protocol Revision Record
 
@@ -121,15 +132,15 @@ pcr_method_additional: not provided
 
 ### Summary
 
-This protocol describes steps for performing PCR for {{target_gene}} {{target_subfragment}} marker gene regions using eDNA extracted from Sterivex at NOAA's AOML. There are several optional steps at the end of the protocol including using AMPure beads to clean up PCR products. Some steps (e.g. PCR plate preparation, AMPure bead cleanup, sequencing plate dilutions) have been or can be optimized for use with the Opentrons OT2 robot.
+This protocol describes steps for performing PCR for [18S rRNA](target_gene) [V9](target_subfragment) marker gene regions using eDNA extracted from Sterivex at NOAA's AOML. There are several optional steps at the end of the protocol including using AMPure beads to clean up PCR products. Some steps (e.g. PCR plate preparation, AMPure bead cleanup, sequencing plate dilutions) have been or can be optimized for use with the Opentrons OT2 robot.
 
 ### Method description and rationale
 
-This protocol is used for PCR amplifying the {{target_gene}} {{target_subfragment}} marker gene regions of environmental DNA. Fluidigm adapters are already present on the primers described in the following protocol. It is highly reproducible and can easily be adapted for any number of samples (i.e. a full 96-well plate or a few samples).
+This protocol is used for PCR amplifying the [18S rRNA](target_gene) [V9](target_subfragment) marker gene regions of environmental DNA. Fluidigm adapters are already present on the primers described in the following protocol. It is highly reproducible and can easily be adapted for any number of samples (i.e. a full 96-well plate or a few samples).
 
 ### Spatial coverage and environment(s) of relevance
 
-This protocol can be used to amplify the {{target_gene}} marker gene region of any eDNA sample.
+This protocol can be used to amplify the [18S rRNA](target_gene) marker gene region of any eDNA sample.
 
 ## PERSONNEL REQUIRED
 
@@ -145,7 +156,7 @@ Basic molecular biology training is sufficient for this protocol including steri
 
 ### Time needed to execute the procedure
 
-Protocol takes about 4 hours ({{time_required}} minutes) including thermal cycler run time.
+Protocol takes about 4 hours ([240](time_required) minutes) including thermal cycler run time.
 
 ## EQUIPMENT
 
@@ -214,17 +225,17 @@ For 96-well Plate:
 
 1. Make PCR master mix and add 24 ul to each well of PCR plate - possible use on Opentrons OT2 Pipetting Robot.
 
-- 12.5 ul {{commercial_mm}}
+- 12.5 ul [AmpliTaq Gold 360 Master Mix](commercial_mm)
 - 9.5 ul molecular water 
-- 1 ul Fwd primer (10 μM) - {{pcr_primer_name_forward}}
-- 1 ul Rev primer (10 μM) - {{pcr_primer_name_reverse}}
+- 1 ul Fwd primer (10 μM) - [GTACACACCGCCCGTC](pcr_primer_name_forward)
+- 1 ul Rev primer (10 μM) - [TGATCCTTCTGCAGGTTCACCTAC](pcr_primer_name_reverse)
 
 | PCR Primer Name | Direction | Sequence (5’ -> 3’) | Sequence (5’ -> 3’) with Fluidigm Adapters | Fluidigm Adapter |
 | ----- | ----- | ----- |
-| {{pcr_primer_name_forward}} | forward | {{pcr_primer_forward}} | ACACTGACGACATGGTTCTACA xxx {{pcr_primer_forward}} | CS1-TS-F |
-| {{pcr_primer_name_reverse}} | reverse | {{pcr_primer_reverse}} | TACGGTAGCAGAGACTTGGTCT xxx {{pcr_primer_reverse}} | CS2-TS-R |
+| [1391F](pcr_primer_name_forward) | forward | [GTACACACCGCCCGTC](pcr_primer_name_forward) | ACACTGACGACATGGTTCTACA xxx [GTACACACCGCCCGTC](pcr_primer_name_forward) | CS1-TS-F |
+| [EukBr](pcr_primer_name_reverse) | reverse | [TGATCCTTCTGCAGGTTCACCTAC](pcr_primer_name_reverse) | TACGGTAGCAGAGACTTGGTCT xxx [TGATCCTTCTGCAGGTTCACCTAC](pcr_primer_name_reverse) | CS2-TS-R |
 
-2. Add {{pcr_dna_vol}} ul of sample DNA (or molecular water for NTC) to respective wells for a total reaction volume of {{amplificationReactionVolume}} ul per well. Pipette up and down or vortex to fully distribute DNA into master mix.
+2. Add [1.0](pcr_dna_vol) ul of sample DNA (or molecular water for NTC) to respective wells for a total reaction volume of [25](amplificationReactionVolume) ul per well. Pipette up and down or vortex to fully distribute DNA into master mix.
 3. Seal plate with PCR plate seal or strip caps.
 4. Load plate onto thermal cycler and select program to run the following steps:
 
@@ -284,16 +295,14 @@ Low Volume Post-PCR
 
 Contamination
 
-- If there are contamination bands appearing on the gel, run another PCR ensuring full sterilization of work spaces and equipment under the hood and use new vials of {{commercial_mm}} and molecular water. If diluted primers are contaminated, use freshly-made aliquot of primers. 
+- If there are contamination bands appearing on the gel, run another PCR ensuring full sterilization of work spaces and equipment under the hood and use new vials of [AmpliTaq Gold 360 Master Mix](commercial_mm) and molecular water. If diluted primers are contaminated, use freshly-made aliquot of primers. 
 
 Weak Amplification
 
 - If you are seeing weak amplification bands on the gel, ensure the master mix and DNA is being fully mixed. You can also increase the concentration of primers or tweak the PCR process on the thermal cycler (increasing # of cycles of PCR or optimize annealing temperature). The addition of Bovine Serum Albumin (BSA) to master mix is also useful in some cases. 
 
 ## REFERENCES
-
-1. [Beckman Coulter, Inc. AMPure Beads Protocol. Brea, CA: Beckman Coulter, Inc. Accessed 5 February 2025.](https://www.beckman.com/reagents/genomic/cleanup-and-size-selection/pcr/ampure-xp-protocol)
-2. [ThermoFisher. Qubit 1X dsDNA HS Assay Kits User Guide. Waltham, MA: ThermoFisher Scientific. Accessed 5 February 2025.](https://assets.thermofisher.com/TFS-Assets/LSG/manuals/MAN0017455_Qubit_1X_dsDNA_HS_Assay_Kit_UG.pdf)
+Not applicable.
 
 ## APPENDIX A: DATASHEETS
 Not applicable.

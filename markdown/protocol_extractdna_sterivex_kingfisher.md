@@ -56,13 +56,13 @@ nucl_acid_ext_method_additional: not applicable
 | Sean Anderson | NOAA/AOML, MSU/NGI | <https://orcid.org/0000-0003-3096-1120> | 2021-09-13 |
 | Sammy Harding | NOAA/AOML, MSU/NGI | <https://orcid.org/0009-0008-8885-6140> | 2024-06-26 |
 
-## RELATED PROTOCOLS IN YOUR FOLDER
+### Related Internal Protocols
 
-| PROTOCOL NAME | LINK  | VERSION | RELEASE DATE|
+| PROTOCOL NAME | LINK | VERSION | RELEASE DATE |
 | ------------- | ------------- | ------------- | ------------- |
 | Content Cell  | Content Cell  | yyyy-mm-dd  |
 
-## RELATED EXTERNAL PROTOCOLS
+### Related External Protocols
 
 | EXTERNAL PROTOCOL NAME AND LINK  | ISSUER / AUTHOR | ACCESS DATE |
 | ------------- | ------------- | ------------- |

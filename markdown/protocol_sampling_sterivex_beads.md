@@ -43,6 +43,12 @@ samp_size_unit: mL
 - MIOP terms are listed in the YAML frontmatter of this page.
 - See <https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml> for list and definitions.
 
+### Making eDNA FAIR (FAIRe)
+
+- FAIRe terms are listed in the YAML frontmatter of this page.
+- See <https://fair-edna.github.io/download.html> for the FAIRe checklist and more information.
+- See <https://fair-edna.github.io/guidelines.html#missing-values> for guidelines on missing values that can be used for missing FAIRe or MIOP terms.
+
 ### Authors
 
 | PREPARED BY | AFFILIATION | ORCID | DATE |
@@ -57,13 +63,17 @@ samp_size_unit: mL
 
 | PROTOCOL NAME | LINK  | VERSION | RELEASE DATE|
 | ------------- | ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | yyyy-mm-dd  |
+| NOAA/AOML DNA Extraction Protocol for Sterivex using KingFisher | <https://github.com/aomlomics/protocols/blob/main/markdown/protocol_extractdna_sterivex_kingfisher.md> | 1.1.0 | 2024-11-16 |
+| NOAA/AOML PCR Protocol 12S rRNA V5-V6 (MiFish) | <https://github.com/aomlomics/protocols/blob/main/markdown/protocol_pcr_ssu12sv5v6_mifish.md> | 1.1.0 | 2024-11-16 |
+| NOAA/AOML PCR Protocol 16S rRNA V4-V5 (EMP) | <https://github.com/aomlomics/protocols/blob/main/markdown/protocol_pcr_ssu16sv4v5_emp.md> | 1.1.0 | 2024-11-16 |
+| NOAA/AOML PCR Protocol 18S rRNA V9 (EMP) | <https://github.com/aomlomics/protocols/blob/main/markdown/protocol_pcr_ssu18sv9_emp.md> | 1.1.0 | 2024-11-16 |
+| NOAA/AOML Metagenome Library Prep Protocol (Illumina DNA Prep) | <https://github.com/aomlomics/protocols/blob/main/markdown/protocol_libprep_metag_illumina.md> | 1.1.0 | 2024-11-16 |
 
 ## RELATED EXTERNAL PROTOCOLS
 
-| EXTERNAL PROTOCOL NAME AND LINK  | ISSUER / AUTHOR  | ACCESS DATE |
-| ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | yyyy-mm-dd  |
+| PROTOCOL NAME | LINK | ISSUER / AUTHOR | ACCESS DATE |
+| ------------ | ------------ | ------------ | ---------- |
+| Not applicable |
 
 ### Protocol Revision Record
 
@@ -100,11 +110,11 @@ samp_size_unit: mL
 
 ### Summary
 
-This protocol describes collection and filtration of marine {{target}} samples using Sterivex cartridge filters and can be adapted to collect water samples from individual {{samp_collect_device}}, {{samp_collect_method}}, or flow through systems. This protocol is used by {{publisher}} GO-SHIP collaborators.
+This protocol describes collection and filtration of marine [environmental DNA](target) samples using Sterivex cartridge filters and can be adapted to collect water samples from individual [Niskin bottle](samp_collect_device), [CTD rosette](samp_collect_method), or flow through systems. This protocol is used by [NOAA's Atlantic Oceanographic and Meteorological Laboratory](publisher) GO-SHIP collaborators.
 
 ### Method description and rationale
 
-This protocol is used to pump {{environmental_medium}} samples collected via {{samp_collect_device}}, {{samp_collect_method}} or flow through systems and pump it through a 0.22 uM Sterivex filter using a peristaltic pump. Sterivex filters are loaded with Zymo ZR BashingBeads prior to pumping and DNA/RNA preservative is immediately added post-pumping to better preserve {{target}} and expedite DNA extraction upon processing in the lab. The recommended filtration volume for GO-SHIP samples is ~8 liters, which takes ~2 hours. Precautions are taken to minimize contamination of samples by thoroughly sterilizing all equipment prior to use. 
+This protocol is used to pump [sea water](environmental_medium) samples collected via [Niskin bottle](samp_collect_device), [CTD rosette](samp_collect_method), or flow through systems and pump it through a 0.22 uM Sterivex filter using a peristaltic pump. Sterivex filters are loaded with Zymo ZR BashingBeads prior to pumping and DNA/RNA preservative is immediately added post-pumping to better preserve [environmental DNA](target) and expedite DNA extraction upon processing in the lab. The recommended filtration volume for GO-SHIP samples is ~8 liters, which takes ~2 hours. Precautions are taken to minimize contamination of samples by thoroughly sterilizing all equipment prior to use. 
 
 ### Spatial coverage and environment(s) of relevance
 
@@ -124,7 +134,7 @@ Standard moleculary biology training including sterile technique and pipetting t
 
 ### Time needed to execute the procedure
 
-The process of setting up sampling equipment and filtering seawater will take ~2 hours ({{time_required}} minutes) depending on number of samples.
+The process of setting up sampling equipment and filtering seawater will take ~2 hours ([120](time_required) minutes) depending on number of samples.
 
 ## EQUIPMENT
 

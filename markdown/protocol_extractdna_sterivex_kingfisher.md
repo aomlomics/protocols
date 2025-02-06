@@ -66,13 +66,17 @@ nucl_acid_ext_method_additional: not applicable
 
 | PROTOCOL NAME | LINK | VERSION | RELEASE DATE |
 | ------------- | ------------ | ------------ | ---------- |
-| Content Cell  | Content Cell | Content Cell | yyyy-mm-dd |
+| NOAA/AOML Water Sampling Protocol using Sterivex with Zirconia Beads  | <https://github.com/aomlomics/protocols/blob/main/markdown/protocol_sampling_sterivex_beads.md> | 1.2.0 | 2025-01-08 |
+| NOAA/AOML PCR Protocol 12S rRNA V5-V6 (MiFish) | <https://github.com/aomlomics/protocols/blob/main/markdown/protocol_pcr_ssu12sv5v6_mifish.md> | 1.1.0 | 2024-11-16 |
+| NOAA/AOML PCR Protocol 16S rRNA V4-V5 (EMP) | <https://github.com/aomlomics/protocols/blob/main/markdown/protocol_pcr_ssu16sv4v5_emp.md> | 1.1.0 | 2024-11-16 |
+| NOAA/AOML PCR Protocol 18S rRNA V9 (EMP) | <https://github.com/aomlomics/protocols/blob/main/markdown/protocol_pcr_ssu18sv9_emp.md> | 1.1.0 | 2024-11-16 |
+| NOAA/AOML Metagenome Library Prep Protocol (Illumina DNA Prep) | <https://github.com/aomlomics/protocols/blob/main/markdown/protocol_libprep_metag_illumina.md> | 1.1.0 | 2024-11-16 |
 
 ### Related External Protocols
 
 | PROTOCOL NAME | LINK | ISSUER / AUTHOR | ACCESS DATE |
 | ------------ | ------------ | ------------ | ---------- |
-| Content Cell | Content Cell | Content Cell | yyyy-mm-dd |
+| ZymoBIOMICS Manual 96 MagBead DNA Kit | https://files.zymoresearch.com/protocols/_d4302_d4306_d4308_zymobiomics-96_magbead_dna_kit.pdf?_gl=1*4ki6d4*_gcl_au*MTE2MzQ0NTYwMS4xNzM4Nzg5NDk4 | ZymoBIOMICS | 2025-02-05 |
 
 ### Protocol Revision Record
 
@@ -106,7 +110,7 @@ nucl_acid_ext_method_additional: not applicable
 
 ### Summary
 
-This protocol is used for {{analyses}} of {{environmental_medium}} eDNA samples from Sterivex filters using contents of a {{nucl_acid_ext_kit}} and a KingFisher Flex robot. Optional use of Opentrons OT-2 Robot to prepare plates for KingFisher. This protocol is used by the Molecular and Computational Biodiversity group of {{publisher}}.
+This protocol is used for [DNA extraction](analyses) of [sea water](environmental_medium) eDNA samples from Sterivex filters using contents of a [ZymoBIOMICS 96 Magbead DNA Kit](nucl_acid_ext_kit) and a KingFisher Flex robot. Optional use of Opentrons OT-2 Robot to prepare plates for KingFisher. This protocol is used by the Molecular and Computational Biodiversity group of [NOAA's Atlantic Oceanographic and Meteorological Laboratory](publisher).
 
 ### Method description and rationale
 
@@ -114,7 +118,7 @@ This protocol is optimized for high throughput DNA extractions of Sterivex filte
 
 ### Spatial coverage and environment(s) of relevance
 
-This protocol has been used to extract DNA from thousands of {{environmental_medium}} eDNA samples taken from stations off of South Florida coasts (Atlantic Ocean and Gulf of Mexico). Sample collection depths range from 1m to 200m in the epipelagic zone (marine photic zone [ENVO:00000209]).
+This protocol has been used to extract DNA from thousands of [sea water](environmental_medium) eDNA samples taken from stations off of South Florida coasts (Atlantic Ocean and Gulf of Mexico). Sample collection depths range from 1m to 200m in the epipelagic zone (marine photic zone [ENVO:00000209]).
 
 ## PERSONNEL REQUIRED
 
@@ -122,7 +126,7 @@ One person with molecular biology experience.
 
 ### Safety
 
-MagBinding Buffer from the {{nucl_acid_ext_kit}} is classified as category 4 for acute toxicity and causes severe skin burns and serious eye damage. It is also noted that the MagBinding Buffer is harmful to aquatic life with long lasting effects. MagWash 1 from the {{nucl_acid_ext_kit}} is classified as category 4 for acute toxicity, is highly flammable, causes skin and serious eye irritation and may cause drowsiness or dizziness. MagWash2 from the {{nucl_acid_ext_kit}} is flammable, causes serious eye irritation and may cause drowsiness or dizziness. Additional details available on SDS (<https://files.zymoresearch.com/sds/_d4302_d4308_zymobiomics-96_magbead_dna_kits.pdf>). For other reagents, standard precautions for handling chemicals including wearing PPE is recommended to avoid skin and eye exposure.
+MagBinding Buffer from the [ZymoBIOMICS 96 Magbead DNA Kit](nucl_acid_ext_kit) is classified as category 4 for acute toxicity and causes severe skin burns and serious eye damage. It is also noted that the MagBinding Buffer is harmful to aquatic life with long lasting effects. MagWash 1 from the [ZymoBIOMICS 96 Magbead DNA Kit](nucl_acid_ext_kit) is classified as category 4 for acute toxicity, is highly flammable, causes skin and serious eye irritation and may cause drowsiness or dizziness. MagWash2 from the [ZymoBIOMICS 96 Magbead DNA Kit](nucl_acid_ext_kit) is flammable, causes serious eye irritation and may cause drowsiness or dizziness. Additional details available on SDS (<https://files.zymoresearch.com/sds/_d4302_d4308_zymobiomics-96_magbead_dna_kits.pdf>). For other reagents, standard precautions for handling chemicals including wearing PPE is recommended to avoid skin and eye exposure.
 
 ### Training requirements
 
@@ -130,7 +134,7 @@ Basic molecular biology training (including sterile technique, pipetting) is req
 
 ### Time needed to execute the procedure
 
-Extracting DNA from 94 Sterivex samples takes about 5 hours ({{time_required}} minutes) including KingFisher run time.
+Extracting DNA from 94 Sterivex samples takes about 5 hours ([300](time_required) minutes) including KingFisher run time.
 
 ## EQUIPMENT
 
@@ -273,7 +277,7 @@ OR
    - Solution: Press the "Pause" button on the computer and replace the bubbly tip manually with gloved hands. Then unpause the run and watch to see if the tip correctly dispenses MagBinding buffer. If a sample plate has empty wells, use a pipette to manually add MagBinding buffer after the plate comes off the Opentrons.
 
 ## REFERENCES
-1. [Zymo Research. ZymoBIOMICS Manual. Irvine, CA: Zymo Research. Accessed 5 February 2025.](https://files.zymoresearch.com/protocols/_d4302_d4306_d4308_zymobiomics-96_magbead_dna_kit.pdf?_gl=1*4ki6d4*_gcl_au*MTE2MzQ0NTYwMS4xNzM4Nzg5NDk4)
+Not applicable.
 
 ## APPENDIX A: DATASHEETS
 Not applicable.

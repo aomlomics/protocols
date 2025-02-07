@@ -56,13 +56,25 @@ nucl_acid_ext_method_additional: not applicable
 
 ### Authors
 
+- All authors known to have contributed to the preparation of this protocol, including those who filled in the template.
+- Visit https://orcid.org/ to register for an ORCID.
+- Date is the date the author first worked on the protocol.
+
 | PREPARED BY | AFFILIATION | ORCID | DATE |
 | ------------- | ------------- | ------------- | ------------- |
 | Luke Thompson | NOAA/AOML, MSU/NGI | <https://orcid.org/0000-0002-3911-1280> | 2021-09-13 |
 | Sean Anderson | NOAA/AOML, MSU/NGI | <https://orcid.org/0000-0003-3096-1120> | 2021-09-13 |
 | Sammy Harding | NOAA/AOML, MSU/NGI | <https://orcid.org/0009-0008-8885-6140> | 2024-06-26 |
 
-### Related Internal Protocols
+### Related Protocols
+
+- This section contains protocols that should be known to users of this protocol.
+- Internal Protocols: Derivative or altered protocols, or other protocols in this workflow.
+- External Protocols: Protcols from manufacturers or other groups. 
+- Include the link to each protocol.
+- Include the version number (internal) or access date (external) of the protocol when it was accessed.
+- 
+#### Internal Protocols
 
 | PROTOCOL NAME | LINK | VERSION | RELEASE DATE |
 | ------------- | ------------ | ------------ | ---------- |
@@ -72,13 +84,17 @@ nucl_acid_ext_method_additional: not applicable
 | NOAA/AOML PCR Protocol 18S rRNA V9 (EMP) | <https://github.com/aomlomics/protocols/blob/main/markdown/protocol_pcr_ssu18sv9_emp.md> | 1.1.0 | 2024-11-16 |
 | NOAA/AOML Metagenome Library Prep Protocol (Illumina DNA Prep) | <https://github.com/aomlomics/protocols/blob/main/markdown/protocol_libprep_metag_illumina.md> | 1.1.0 | 2024-11-16 |
 
-### Related External Protocols
+#### External Protocols
 
 | PROTOCOL NAME | LINK | ISSUER / AUTHOR | ACCESS DATE |
 | ------------ | ------------ | ------------ | ---------- |
-| ZymoBIOMICS Manual 96 MagBead DNA Kit | https://files.zymoresearch.com/protocols/_d4302_d4306_d4308_zymobiomics-96_magbead_dna_kit.pdf?_gl=1*4ki6d4*_gcl_au*MTE2MzQ0NTYwMS4xNzM4Nzg5NDk4 | ZymoBIOMICS | 2025-02-05 |
+| ZymoBIOMICS Manual 96 MagBead DNA Kit | https://files.zymoresearch.com/protocols/_d4302_d4306_d4308_zymobiomics-96_magbead_dna_kit.pdf | ZymoBIOMICS | 2025-02-05 |
 
 ### Protocol Revision Record
+
+- Version numbers start at 1.0.0 when the protocol is first completed and will increase when changes that impact the outcome of the procedure are made (patches: 1.0.1; minor changes: 1.1.0; major changes: 2.0.0).
+- Release date is the date when a given protocol version was finalised.
+- Description of revisions includes a brief description of what was changed relative to the previous version.
 
 | VERSION | RELEASE DATE | DESCRIPTION OF REVISIONS |
 | ------------- | ------------- | ------------- |

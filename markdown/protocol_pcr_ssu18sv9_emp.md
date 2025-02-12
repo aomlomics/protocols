@@ -231,7 +231,7 @@ For 96-well Plate:
 - 1 ul Rev primer (10 μM) - [TGATCCTTCTGCAGGTTCACCTAC](pcr_primer_name_reverse)
 
 | PCR Primer Name | Direction | Sequence (5’ -> 3’) | Sequence (5’ -> 3’) with Fluidigm Adapters | Fluidigm Adapter |
-| ----- | ----- | ----- |
+| ----- | ----- | ----- | ----- | ----- |
 | [1391F](pcr_primer_name_forward) | forward | [GTACACACCGCCCGTC](pcr_primer_name_forward) | ACACTGACGACATGGTTCTACA xxx [GTACACACCGCCCGTC](pcr_primer_name_forward) | CS1-TS-F |
 | [EukBr](pcr_primer_name_reverse) | reverse | [TGATCCTTCTGCAGGTTCACCTAC](pcr_primer_name_reverse) | TACGGTAGCAGAGACTTGGTCT xxx [TGATCCTTCTGCAGGTTCACCTAC](pcr_primer_name_reverse) | CS2-TS-R |
 

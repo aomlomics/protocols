@@ -55,7 +55,7 @@ pip install -U pandoc-mustache
 
 #### Run
 
-From the `code` directory, run the command `./pandoc.sh ../markdown/*.md`. This script does the following for each Markdown file:
+From the `code` directory, run the command `./pandoc.sh path/to/markdown/*.md`, where "path/to/markdown" is a directory containing one or more Markdown protocols you want to convert. This script does the following for each Markdown file:
 
 * Create a file called `mustache.yaml` with all the YAML terms from the frontmatter.
 * Replace the YAML frontmatter with a single line `mustache: mustache.yaml` in the Markdown document `mustache.yaml`. Note: Only YAML terms in this separate YAML file will be readable. Other YAML frontmatter in the Markdown document is ignored by pandoc.

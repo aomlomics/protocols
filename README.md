@@ -1,10 +1,10 @@
-# AOML Omics Protocols
+# AOML 'Omics Protocols
 
-Protocols used by AOML Omics labs, made using the [BeBOP-OBON protocol templates](https://github.com/BeBOP-OBON/0_protocol_collection_template).
+Protocols used by AOML 'Omics labs, made using the [BeBOP-OBON protocol templates](https://github.com/BeBOP-OBON/0_protocol_collection_template).
 
 Each protocol has its own repository (listed below) and can be referenced using its own Zenodo DOI (with versioning).
 
-[![DOI](https://zenodo.org/badge/684207005.svg)](https://doi.org/10.5281/zenodo.14224754) Legacy references to this repository should be changed.
+[![DOI](https://zenodo.org/badge/684207005.svg)](https://doi.org/10.5281/zenodo.14224754) ***Legacy references to this repository should be changed.***
 
 ## Protocols by category
 
@@ -36,7 +36,7 @@ To cite the protocols here, go to the protocol's repository and copy the Zenodo 
 
 ### Markdown
 
-The native format of the protcols is Markdown. To download a protocol, go to that protocol's repsitory, click on the file name, and click on the "Download raw file" button on the right side of the tool bar above the document. To view and/or print the protocol, open the Markdown file in a Markdown editor such as [Typora](https://typora.io) or Visual Studio Code.
+The native format of the protcols is Markdown. To download a protocol, go to that protocol's repsitory, click on the file name, and click on the "Download raw file" button on the right side of the tool bar above the document. To view and/or print the protocol, open the Markdown file in a Markdown editor such as [Typora](https://typora.io) or [Visual Studio Code](https://code.visualstudio.com/).
 
 ### Other formats
 

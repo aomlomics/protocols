@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Usage: ./pandoc.sh ../markdown/*.md
+# Usage: ./pandoc.sh path/to/markdown/*.md
 
 # Check if at least one argument is provided
 if [ "$#" -lt 1 ]; then

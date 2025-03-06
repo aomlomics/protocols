@@ -6,27 +6,27 @@ Each protocol has its own repository (listed below) and can be referenced using 
 
 [![DOI](https://zenodo.org/badge/684207005.svg)](https://doi.org/10.5281/zenodo.14224754) ***Legacy references to this repository should be changed.***
 
-## Protocols by category
+## Protocol repositories by category
 
 ### Sample collection
 
-* <https://github.com/aomlomics/protocol_sampling_sterivex_beads>
-* <https://github.com/aomlomics/protocol_sampling_sterivex_dry>
+* [protocol_sampling_sterivex_beads](https://github.com/aomlomics/protocol_sampling_sterivex_beads)
+* [protocol_sampling_sterivex_dry](https://github.com/aomlomics/protocol_sampling_sterivex_dry)
 
 ### DNA extraction
 
-* <https://github.com/aomlomics/protocol_extract_dna_sterivex_kingfisher>
-* <https://github.com/aomlomics/protocol_extract_dna_sedtrap_powersoil>
+* [protocol_extract_dna_sterivex_kingfisher](https://github.com/aomlomics/protocol_extract_dna_sterivex_kingfisher)
+* [protocol_extract_dna_sedtrap_powersoil](https://github.com/aomlomics/protocol_extract_dna_sedtrap_powersoil)
 
 ### Metabarcoding (amplicon) library prep
 
-* <https://github.com/aomlomics/protocol_pcr_ssu16sv4v5_emp>
-* <https://github.com/aomlomics/protocol_pcr_ssu18sv9_emp>
-* <https://github.com/aomlomics/protocol_pcr_ssu12sv5v6_mifish>
+* [protocol_pcr_ssu16sv4v5_emp](https://github.com/aomlomics/protocol_pcr_ssu16sv4v5_emp)
+* [protocol_pcr_ssu18sv9_emp](https://github.com/aomlomics/protocol_pcr_ssu18sv9_emp)
+* [protocol_pcr_ssu12sv5v6_mifish](https://github.com/aomlomics/protocol_pcr_ssu12sv5v6_mifish)
 
 ### Metagenomic (shotgun) library prep
 
-* <https://github.com/aomlomics/protocol_libprep_metag_illumina>
+* [protocol_libprep_metag_illumina](https://github.com/aomlomics/protocol_libprep_metag_illumina)
 
 ## Citing protocols
 

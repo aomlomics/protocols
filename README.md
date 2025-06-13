@@ -4,7 +4,7 @@ Protocols used by AOML 'Omics labs, made using the [BeBOP-OBON protocol template
 
 Each protocol has its own repository (listed below) and can be referenced using its own Zenodo DOI (with versioning).
 
-[![DOI](https://zenodo.org/badge/684207005.svg)](https://doi.org/10.5281/zenodo.14224754) ***Legacy references to this repository should be changed.***
+[![DOI](https://zenodo.org/badge/684207005.svg)](https://doi.org/10.5281/zenodo.14224754) ***<- this is a blanket DOI for all protocols; please use DOIs to individual protocols linked below (in progress)***
 
 ## Protocol repositories by category
 

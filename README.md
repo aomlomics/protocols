@@ -17,6 +17,7 @@ Each protocol has its own repository (listed below) and can be referenced using 
 
 * [protocol-extract-dna-sterivex-kingfisher](https://github.com/aomlomics/protocol-extract-dna-sterivex-kingfisher)
 * [protocol-extract-dna-sedtrap-powersoil](https://github.com/aomlomics/protocol-extract-dna-sedtrap-powersoil)
+* [protocol-extract-dna-okex](https://github.com/aomlomics/protocol-extract-dna-okex)
 
 ### Metabarcoding (amplicon) library prep
 

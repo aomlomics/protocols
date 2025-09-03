@@ -45,9 +45,9 @@ min_reads_tool: qiime2-amplicon-2024.10;DADA2 1.30.0
 otu_db: 
 otu_db_custom: 
 tax_assign_cat: sequence composition
-otu_seq_comp_appr: qiime2-amplicon-2024.10;naive-bayes classifier; scikit-learn 1.4.2
-tax_class_id_cutoff: tax_class_id_cutoff
-tax_class_query_cutoff: tax_class_query_cutoff
+otu_seq_comp_appr: qiime2-amplicon-2024.10;naive-bayes classifier;scikit-learn 1.4.2
+tax_class_id_cutoff: 
+tax_class_query_cutoff: 
 tax_class_other: 
 tax_class_collapse: confidence threshold of 0.7
 screen_contam_method: 

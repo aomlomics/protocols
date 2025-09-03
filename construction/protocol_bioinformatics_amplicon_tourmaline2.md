@@ -1,15 +1,15 @@
 ---
 # MIOP terms
 meth_cat: bioinformatics
-project: NOAA Atlantic Oceanographic and Meteorological Laboratory Omics Program Protocols, https://github.com/aomlomics/protocols
+project: "NOAA Atlantic Oceanographic and Meteorological Laboratory Omics Program Protocols, https://github.com/aomlomics/protocols"
 purpose: taxonomic diversity assessment by targeted gene survey [OBI:0001960]
-analyses: bioinformatics analysis [MIOP:0000004] | amplicon sequencing assay [OBI:0002767]
-geographic location: not applicable # how often will protocols have a geographic location?
+analyses: "bioinformatics analysis [MIOP:0000004] | amplicon sequencing assay [OBI:0002767]"
+geographic location: not applicable
 broad-scale environmental context: not applicable (bioinformatics analysis)
 local environmental context: not applicable (bioinformatics analysis)
 environmental medium: not applicable (bioinformatics analysis)
 target: not applicable (bioinformatics analysis)
-creator: Clement Coclet, https://orcid.org/0000-0002-6672-148X | Katherine Silliman, https://orcid.org/0000-0001-5964-3965 | Luke Thompson, https://orcid.org/0000-0002-3911-1280
+creator: "Clement Coclet, https://orcid.org/0000-0002-6672-148X | Katherine Silliman, https://orcid.org/0000-0001-5964-3965 | Luke Thompson, https://orcid.org/0000-0002-3911-1280"
 materials required: Conda or Mamba, QIIME 2 version 2024.10 or later, Snakemake, Python packages biopython, yq, parallel, Muscle v.3.8, and Bowtie 2
 skills required: proficiency with UNIX command line and amplicon/metabarcoding data analysis
 time required: 120
@@ -488,7 +488,6 @@ $PATH/working-directory/
   │     ├── 00_config_01_qaqc_<RUN_NAME>.yaml
   │     ├── 00_config_02_repseqs_<RUN_NAME>.yaml
   │     ├── 00_config_03_taxonomy_<CLASSIFIER_METHOD>_<DATABASE_NAME>_<RUN_NAME>.yaml
-
 ```
 
 # 4-RUN TOURMALINE 2
@@ -1086,7 +1085,6 @@ python tourmaline/scripts/generate_ODE_analysis_inputs.py \
 - `--output-folder-path, -O`: Output folder for metadata files and ODE inputs (if not provided, files are saved in each analysis folder)
 - `--ode-inputs`: Whether to copy ODE input files (TRUE/FALSE, default: FALSE)
 
-
 ## Script outputs
 Both scripts generate a tab-separated values (TSV) file with two columns:
 - `term_name`: The metadata field name
@@ -1203,7 +1201,6 @@ This is a list of other protocols that are not in your folder which should be kn
 | Content Cell  | Content Cell  |
 
 # EQUIPMENT, SOFTWARE & PACKAGES
-
 
 | NAME | VERSION OR MODEL | MANUFACTURER OR CREATOR | REMARKS |
 | ------------- | ------------- | ------------- | ------------- |

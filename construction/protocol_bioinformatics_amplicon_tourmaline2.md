@@ -42,8 +42,8 @@ otu_clust_cutoff: 100
 min_reads_cutoff: 1
 min_reads_cutoff_unit: reads
 min_reads_tool: qiime2-amplicon-2024.10;DADA2 1.30.0
-otu_db: custom
-otu_db_custom: otu_db_custom
+otu_db: 
+otu_db_custom: 
 tax_assign_cat: sequence composition
 otu_seq_comp_appr: qiime2-amplicon-2024.10;naive-bayes classifier; scikit-learn 1.4.2
 tax_class_id_cutoff: tax_class_id_cutoff

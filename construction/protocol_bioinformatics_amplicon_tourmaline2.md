@@ -4,39 +4,52 @@ meth_cat: bioinformatics
 project: "NOAA Atlantic Oceanographic and Meteorological Laboratory Omics Program Protocols, https://github.com/aomlomics/protocols"
 purpose: taxonomic diversity assessment by targeted gene survey [OBI:0001960]
 analyses: "bioinformatics analysis [MIOP:0000004] | amplicon sequencing assay [OBI:0002767]"
-geographic location: not applicable
-broad-scale environmental context: not applicable (bioinformatics analysis)
-local environmental context: not applicable (bioinformatics analysis)
-environmental medium: not applicable (bioinformatics analysis)
+geographic_location: not applicable
+broad-scale_environmental_context: not applicable (bioinformatics analysis)
+local_environmental_context: not applicable (bioinformatics analysis)
+environmental_medium: not applicable (bioinformatics analysis)
 target: not applicable (bioinformatics analysis)
 creator: "Clement Coclet, https://orcid.org/0000-0002-6672-148X | Katherine Silliman, https://orcid.org/0000-0001-5964-3965 | Luke Thompson, https://orcid.org/0000-0002-3911-1280"
-materials required: Conda or Mamba, QIIME 2 version 2024.10 or later, Snakemake, Python packages biopython, yq, parallel, Muscle v.3.8, and Bowtie 2
-skills required: proficiency with UNIX command line and amplicon/metabarcoding data analysis
-time required: 120
-personnel required: 1
+materials_required: Conda or Mamba, QIIME 2 version 2024.10 or later, Snakemake, Python packages biopython, yq, parallel, Muscle v.3.8, and Bowtie 2
+skills_required: proficiency with UNIX command line and amplicon/metabarcoding data analysis
+time_required: 120 minutes
+personnel_required: 1 person
 language: en
 issued: 2025-09-30
 audience: metabarcoding data analysts
 publisher: NOAA Atlantic Oceanographic and Meteorological Laboratory
 hasVersion: 1.0.0
 license: CC0
-maturity level: Pilot or Demonstrated
+maturity_level: Pilot or Demonstrated
 
 # FAIRe terms
 sop_bioinformatics: "https://github.com/aomlomics/tourmaline/tree/develop"
-trim_method: qiime2-amplicon-2024.10; Cutadapt 4.9
-trim_param: Trim forward reads of reverse complement of reverse primer, and reverse reads of reverse complement of forward primer. Then trim forward reads of forward primer, and reverse reads of reverse primer. Minimum length of 50 bp.
+trim_method: qiime2-amplicon-2024.10;Cutadapt 4.9
+trim_param: Should be free text where we state what was done.
+
+
 demux_tool: 
-demux_max_mismatch: 
-merge_tool: qiime2-amplicon-2024.10;DADA2 1.30.0
+  default:
+  options:
+demux_max_mismatch:
+  default:
+  options:
+merge_tool:
+  source: analysisMetadata field XXX
+  default: qiime2-amplicon-2024.10;DADA2 1.30.0
 merge_min_overlap: 12
-min_len_cutoff: 50
+min_len_cutoff:
+  default: 50
+  source_file: config_01_qaqc.yaml
+  source_term: minimum_length
 min_len_tool: Cutadapt 4.9
 error_rate_tool: qiime2-amplicon-2024.10;DADA2 1.30.0
 error_rate_cutoff: 3
 error_rate_type: expected error rate
-chimera_check_method: denovo; qiime2-amplicon-2024.10;DADA2 1.30.0
-chimera_check_param: --chimera_method consensus --min_parental_fold 1
+chimera_check_method: denovo;qiime2-amplicon-2024.10;DADA2 1.30.0
+chimera_check_param:
+  source: 
+  default: --chimera_method consensus --min_parental_fold 1
 otu_clust_tool: qiime2-amplicon-2024.10;DADA2 1.30.0
 otu_clust_cutoff: 100
 min_reads_cutoff: 1
@@ -57,9 +70,21 @@ screen_other:
 otu_raw_description: 
 otu_final_description: 
 bioinfo_method_additional: 
+
+# Tourmaline terms
+discard_untrimmed:
+  default: False
+  options: False | True
+  source_file: config_01_qaqc.yaml
+  source_term: discard_untrimmed
+trimming_threads:
+  default: 5
+  source_file: config_01_qaqc.yaml
+  source_term: trimming_threads
+
 ---
 
-# NOAA/AOML Amplicon Analysis Protocol Using Tourmaline 2
+# NOAA/AOML Amplicon Analysis Protocol Using Tourmaline 2 - for a specific assay; add sections specific for assay; move general guidance to ReadTheDocs
 
 # 1-BACKGROUND
 
@@ -193,8 +218,8 @@ The first time you run [Tourmaline 2](https://github.com/aomlomics/tourmaline/tr
 Navigate to the directory where you want to clone and store the Tourmaline repository. If you are using the Docker container, a good location for your project directory is /data.
 
 ```bash
-$PATH = /absolute/path/to/user/directory
-cd $PATH # or your working directory
+WORKINGDIR = /absolute/path/to/user/directory
+cd $WORKINGDIR # or your working directory
 git clone --branch develop https://github.com/aomlomics/tourmaline.git
 ```
 
@@ -219,7 +244,9 @@ docker run -v $HOME:/data -it tourmaline2-dev-amd64
 
 # 3-SET UP TOURMALINE 2 INPUTS
 
-This section describes how to organize your data and use the `00_setup_tourmaline2_analyses.py` script in `tourmaline/scripts` to prepare your data and configuration files for Tourmaline2 analysis.
+This section describes one way to organize your data and use the `00_setup_tourmaline2_analyses.py` script in `tourmaline/scripts` to prepare your data and configuration files for a Tourmaline2 analysis. 
+
+Alternatively, users can create their own manifest and metadata files, which allows for more flexibility—for example, sample names that do not necessarily match the names of the raw FASTQ files.
 
 ## Raw data
 
@@ -229,9 +256,9 @@ This section describes how to organize your data and use the `00_setup_tourmalin
 **Directory structure example:**
 
 ```bash
-$PATH = /absolute/path/to/user/directory
+WORKINGDIR = /absolute/path/to/user/directory
 
-$PATH/raw_reads/
+$WORKINGDIR/raw_reads/
   ├── seq_run_name_1/
   │     ├── Sample1_R1.fastq.gz
   │     ├── Sample1_R2.fastq.gz
@@ -253,7 +280,7 @@ $PATH/raw_reads/
 The script automates the following steps:
 
 1. Organizes raw FASTQ files into output folders for each subfolder in the raw read folder.
-2. Generates manifest and metadata files (with options to force regeneration or use existing files).
+2. Generates manifest files (with options to force regeneration or use existing files).
 3. Copies and renames configuration files for each Tourmaline step.
 4. Updates config files with correct paths and parameters for each run.
 5. Prepares your data for reproducible, automated amplicon data processing with Tourmaline 2.
@@ -261,7 +288,7 @@ The script automates the following steps:
 ## Command-line usage and options
 
 ```bash
-python $PATH/tourmaline/scripts/00_setup_tourmaline2_analyses.py \
+python $WORKINGDIR/tourmaline/scripts/00_setup_tourmaline2_analyses.py \
   --read-folder <PATH_TO_RAW_READS> \
   --working-directory <PATH_TO_OUTPUT> \
   --data-type <DATA_TYPE> \
@@ -282,7 +309,7 @@ python $PATH/tourmaline/scripts/00_setup_tourmaline2_analyses.py \
 
 * `--working-directory <PATH_TO_OUTPUT>` (**required**): Path where output folders and files will be created.
 
-* `--data-type <DATA_TYPE>` (**required**): Data type (e.g., `COI`, `12S`, `18S`, `28S`, etc.).
+* `--data-type <DATA_TYPE>` (**required**): Data type (e.g., `COI`, `12S`, `18S`, `28S`, etc.). This should the be a subfolder of the [seq_run_name](#seq_run_name) folder.
 
 * `--tourmaline2-folder <PATH_TO_TOURMALINE2_GITHUB_REPOSITORY>` (**required**): Path to the folder containing original Tourmaline2 config files.
 
@@ -298,7 +325,6 @@ python $PATH/tourmaline/scripts/00_setup_tourmaline2_analyses.py \
 
 * `--database <PATH_TO_DB>` (**required**): Path to the reference database or classifier file. The script will extract the base name to rename `00_config_03_taxonomy.yaml`. *Notes: Provide a descriptive name for the reference database used, no spaces (e.g., original file name, source and version). Ex: database_name: silva-138-99-515-806_q2-2021.2*
 
-* `--metadata-folder <PATH_TO_METADATA>` (**optional**): Use your own metadata file. If not provided, metadata will be generated from the manifest. If provided, the script expects a file named `00_metadata.tsv` in this folder for each [seq_run_name](#seq_run_name) folder.
 
 * `--config-file <CONFIG_FILE>` (**optional**, default: `all`)
   - Specify which config file to update/copy:
@@ -316,17 +342,17 @@ python $PATH/tourmaline/scripts/00_setup_tourmaline2_analyses.py \
 ## Command-line example
 
 ```bash
-$PATH = /absolute/path/to/user/directory
+WORKINGDIR = /absolute/path/to/user/directory
 
-python $PATH/tourmaline/scripts/00_setup_tourmaline2_analyses.py \
-  --read-folder $PATH/raw_reads \
-  --working-directory $PATH/18Sv9_analyses \
+python $WORKINGDIR/tourmaline/scripts/00_setup_tourmaline2_analyses.py \
+  --read-folder $WORKINGDIR/raw_reads \
+  --working-directory $WORKINGDIR/18Sv9_analyses \
   --data-type 18S \
-  --tourmaline2-folder $PATH/tourmaline \
+  --tourmaline2-folder $WORKINGDIR/tourmaline \
   --run-name 18Sv9_20250728 \
   --primers GTACACACCGCCCGTC/TGATCCTTCTGCAGGTTCACCTAC \
   --classifier-method naive-bayes \
-  --database $PATH/Databases/silva-138-99-515-806_q2-2021.2-classifier.qza \
+  --database $WORKINGDIR/Databases/silva-138-99-515-806_q2-2021.2-classifier.qza \
   --threads 36
 ```
 ---
@@ -339,12 +365,12 @@ A manifest file (`00_manifest_pe.csv`) is created in the output folder, listing 
 
 | sample-id                                | absolute-filepath                        | direction                                                       |
 | ----------------------------------- | ------------------------------ | ------------------------------------------------------------ |
-| Sample1 | $PATH/raw_reads/seq_run_name_1/Sample1_R1.fastq.gz                       | forward
-| Sample1                         | $PATH/raw_reads/seq_run_name_1/Sample1_R2.fastq.gz   | reverse
-| Sample2                         | $PATH/raw_reads/seq_run_name_1/Sample2_R1.fastq.gz   | forward 
-| Sample2 | $PATH/raw_reads/seq_run_name_1/Sample2_R2.fastq.gz                      | reverse
-| Sample3                         | $PATH/raw_reads/seq_run_name_1/Sample3_R1.fastq.gz   | forward
-| Sample3                         | $PATH/raw_reads/seq_run_name_1/Sample3_R2.fastq.gz   | reverse
+| Sample1 | $WORKINGDIR/raw_reads/seq_run_name_1/Sample1_R1.fastq.gz                       | forward
+| Sample1                         | $WORKINGDIR/raw_reads/seq_run_name_1/Sample1_R2.fastq.gz   | reverse
+| Sample2                         | $WORKINGDIR/raw_reads/seq_run_name_1/Sample2_R1.fastq.gz   | forward 
+| Sample2 | $WORKINGDIR/raw_reads/seq_run_name_1/Sample2_R2.fastq.gz                      | reverse
+| Sample3                         | $WORKINGDIR/raw_reads/seq_run_name_1/Sample3_R1.fastq.gz   | forward
+| Sample3                         | $WORKINGDIR/raw_reads/seq_run_name_1/Sample3_R2.fastq.gz   | reverse
 
 *Notes: Tourmaline also accepts other manifest formats. If you need a different format (e.g., for single-end data or the QIIME2 tab-separated format), you must create the manifest file yourself and update the corresponding config files to point to it. **If you require a manifest format other than the default, you are responsible for creating it and updating the relevant config files to reference your custom manifest.***
 
@@ -375,17 +401,6 @@ Supported manifest formats (from Tourmaline documentation):
     ```
 - **No manifest file:**
   - If your FASTQ files are named using the conventions `{sample}_R1.fastq.gz` and `{sample}_R2.fastq.gz` (or `{sample}_R1_001.fastq.gz`), Tourmaline can sometimes infer sample names without a manifest.
-
-## Metadata file
-If `--metadata-folder` argument is provided and contains the expected file, it is used. Otherwise, a new metadata file (`00_metadata.tsv`) is generated from the manifest in the [seq_run_name](#seq_run_name) folder. If the file exists and `--force` is not set, it is reused.
-
-| sample_name                                | Variable1                        | Variable2                                                       |Variable3                                                       |
-| ----------------------------------- | ------------------------------ | ------------------------------------------------------------ |------------------------------------------------------------ |
-| Sample1 | Numeric variable 1                       | Categorical variable 1 | Boolean variable 1 |
-| Sample2                         | Numeric variable 2   | Categorical variable 2| Boolean variable 3 |
-| Sample3                         | Numeric variable 3   | Categorical variable 3 | Boolean variable 1     
-
-*Notes: Providing a metadata is optional. The plotting of taxa barplots will run either way, but if you provide a metadata file then you will have metadata associated with the plot.*
 
 ## Config files
 Config files `00_config_01_qaqc.yaml`, `00_config_02_repseqs.yaml`, `00_config_03_taxonomy.yaml`are copied from the Tourmaline 2 GitHub repository at `working_directory/seq_run_name` and renamed with run-specific identifiers. Naming patterns:
@@ -479,9 +494,9 @@ bowtie_database: <absolute_path_to_db>
 ### Directory structure example
 
 ```bash
-$PATH = /absolute/path/to/user/directory
+WORKINGDIR = /absolute/path/to/user/directory
 
-$PATH/working-directory/
+WORKINGDIR/
   ├── seq_run_name_1/
   │     ├── 00_manifest_pe.csv
   │     ├── 00_metadata.tsv
@@ -504,7 +519,7 @@ The QA/QC step is responsible for preparing your raw sequencing data for downstr
 - **Quality summarization:** The pipeline generates QIIME2 visualizations (`.qzv`) summarizing the quality of raw, trimmed, and merged reads.
 - **Manifest creation:** If needed, new manifest files are generated for downstream steps.
 
-### Runing Step 1 QA/QC
+### Running Step 1 QA/QC
 There are two main ways to execute Tourmaline.
 
 #### Command-Line Execution
@@ -596,9 +611,9 @@ The SLURM script will:
   - Archived config file for reproducibility
 
 ```bash
-$PATH = /absolute/path/to/user/directory
+WORKINGDIR = /absolute/path/to/user/directory
 
-$PATH/working_directory/
+WORKINGDIR/
   ├── seq_run_name_1/
   │   ├── seq_run_name_1_Output/
   │   │   ├── 01_seq_run_name_1_<RUN_NAME>-qaqc/
@@ -617,7 +632,7 @@ After completing the QA/QC step, you are ready to run the Tourmaline pipeline fo
 ### Step 2 (REPSEQS) overview
 The repseqs step is responsible for denoising your sequencing data and generating representative sequences for downstream analysis. The main actions performed in this step are:
 
-- **Denoising:** The pipeline asses error modeling and sample inference to identify true biological sequences, using [DADA2](https://github.com/benjjneb/dada2) (paired-end or single-end).
+- **Denoising:** The pipeline assesses error modeling and sample inference to identify true biological sequences, using [DADA2](https://github.com/benjjneb/dada2) (paired-end or single-end).
 - **Filtering (optional):** If enabled, sequences can be filtered by length, abundance, prevalence, and frequency thresholds
 - **Feature table generation:** Creates a feature table with ASV/OTU counts per sample
 - **Quality assessment:** Generates comprehensive statistics and visualizations including:
@@ -646,34 +661,99 @@ The `00_setup_tourmaline2_analyses.py` script automatically populates the `00_co
 - `asv_threads`: Number of threads for ASV processing (set via `--threads` argument)
 
 **ASV Method Selection:**
-- `asv_method`: Choose from:
-  - `dada2pe`: DADA2 paired-end (recommended for paired-end data)
-  - `dada2se`: DADA2 single-end (for single-end data)
-  - `deblur`: Deblur algorithm (alternative to DADA2)
+- `asv_method`
+  - Default: dada2pe
+  - Options: dada2pe | dada2se | deblur
+  - source_file: 00_config_02_repseqs_<RUN_NAME>.yaml
+  - source_term: asv_method
 
 **DADA2 Parameters (for paired-end data):**
-- `dada2_trunc_len_f`: Forward read truncation length (default: 245)
-- `dada2pe_trunc_len_r`: Reverse read truncation length (default: 190)
-- `dada2_trim_left_f`: Forward read trim from left (default: 0)
-- `dada2pe_trim_left_r`: Reverse read trim from left (default: 0)
-- `dada2_max_ee_f`: Forward read maximum expected errors (default: 2)
-- `dada2pe_max_ee_r`: Reverse read maximum expected errors (default: 2)
-- `dada2_trunc_q`: Quality score for truncation (default: 2)
-- `dada2_pooling_method`: Pooling method for error model (default: independent)
-- `dada2_chimera_method`: Chimeric sequence detection method (default: consensus)
-- `dada2_min_fold_parent_over_abundance`: Minimum fold parent over abundance (default: 1)
-- `dada2_n_reads_learn`: Number of reads to learn error model (default: 1000000)
+- `dada2_trunc_len_f`: Forward read truncation length
+  - Default: 245
+  - source_file: 00_config_02_repseqs_<RUN_NAME>.yaml
+  - source_term: dada2_trunc_len_f
+- `dada2pe_trunc_len_r`: Reverse read truncation length
+  - Default: 190
+  - source_file: 00_config_02_repseqs_<RUN_NAME>.yaml
+  - source_term: dada2pe_trunc_len_r
+- `dada2_trim_left_f`: Forward read trim from left
+  - Default: 0
+  - source_file: 00_config_02_repseqs_<RUN_NAME>.yaml
+  - source_term: dada2_trim_left_f
+- `dada2pe_trim_left_r`: Reverse read trim from left
+  - Default: 0
+  - source_file: 00_config_02_repseqs_<RUN_NAME>.yaml
+  - source_term: dada2pe_trim_left_r
+- `dada2_max_ee_f`: Forward read maximum expected errors
+  - Default: 2
+  - source_file: 00_config_02_repseqs_<RUN_NAME>.yaml
+  - source_term: dada2_max_ee_f
+- `dada2pe_max_ee_r`: Reverse read maximum expected errors
+  - Default: 2
+  - source_file: 00_config_02_repseqs_<RUN_NAME>.yaml
+  - source_term: dada2pe_max_ee_r
+- `dada2_trunc_q`: Quality score for truncation
+  - Default: 2
+  - source_file: 00_config_02_repseqs_<RUN_NAME>.yaml
+  - source_term: dada2_trunc_q
+- `dada2_pooling_method`: Pooling method for error model
+  - Default: independent
+  - Options: independent | pseudo | pooled
+  - source_file: 00_config_02_repseqs_<RUN_NAME>.yaml
+  - source_term: dada2_pooling_method
+- `dada2_chimera_method`: Chimeric sequence detection method
+  - Default: consensus
+  - Options: consensus | pooled
+  - source_file: 00_config_02_repseqs_<RUN_NAME>.yaml
+  - source_term: dada2_chimera_method
+- `dada2_min_fold_parent_over_abundance`: Minimum fold parent over abundance
+  - Default: 1
+  - source_file: 00_config_02_repseqs_<RUN_NAME>.yaml
+  - source_term: dada2_min_fold_parent_over_abundance
+- `dada2_n_reads_learn`: Number of reads to learn error model
+  - Default: 1000000
+  - source_file: 00_config_02_repseqs_<RUN_NAME>.yaml
+  - source_term: dada2_n_reads_learn
 
 **Diversity Analysis Settings:**
-- `plot_diversity`: Enable alpha diversity plots (default: True)
-- `alpha_max_depth`: Maximum depth for alpha diversity plots (default: 500)
-- `core_sampling_depth`: Sampling depth for core diversity metrics (default: 500)
+- `plot_diversity`: Enable alpha diversity plots
+  - Default: True
+  - Options: True | False
+  - source_file: 00_config_02_repseqs_<RUN_NAME>.yaml
+  - source_term: plot_diversity
+- `alpha_max_depth`: Maximum depth for alpha diversity plots
+  - Default: 500
+  - source_file: 00_config_02_repseqs_<RUN_NAME>.yaml
+  - source_term: alpha_max_depth
+- `core_sampling_depth`: Sampling depth for core diversity metrics
+  - Default: 500
+  - source_file: 00_config_02_repseqs_<RUN_NAME>.yaml
+  - source_term: core_sampling_depth
 
 **Optional Filtering:**
-- `to_filter`: Enable filtering (default: False)
-- `repseq_min_length`/`repseq_max_length`: Filter sequences by length (default: 0, 0 = no filtering)
-- `repseq_min_abundance`: Minimum abundance threshold (0-1, default: 0 = no filtering)
-- `repseq_min_prevalence`: Minimum prevalence threshold (0-1, default: 0 = no filtering)
+- `to_filter`: Enable filtering
+  - Default: False
+  - Options: True | False
+  - source_file: 00_config_02_repseqs_<RUN_NAME>.yaml
+  - source_term: to_filter
+- `repseq_min_length`: Filter sequences by minimum length
+  - Default: 0 (0 = no filtering)
+  - source_file: 00_config_02_repseqs_<RUN_NAME>.yaml
+  - source_term: repseq_min_length
+- `repseq_max_length`: Filter sequences by maximum length
+  - Default: 0 (0 = no filtering)
+  - source_file: 00_config_02_repseqs_<RUN_NAME>.yaml
+  - source_term: repseq_max_length
+- `repseq_min_abundance`: Minimum abundance threshold
+  - Default: 0 (0 = no filtering)
+  - Options: [0-1]
+  - source_file: 00_config_02_repseqs_<RUN_NAME>.yaml
+  - source_term: repseq_min_abundance
+- `repseq_min_prevalence`: Minimum prevalence threshold
+  - Default: 0 (0 = no filtering)
+  - Options: [0-1]
+  - source_file: 00_config_02_repseqs_<RUN_NAME>.yaml
+  - source_term: repseq_min_prevalence
 
 **Important Notes:**
 - Set length limits to extreme values (e.g., 0, 10000) to skip length filtering
@@ -732,9 +812,9 @@ For SLURM command details, see [Monitoring SLURM Jobs and Outputs](#monitoring-s
   - If the output folder already exists, the script will skip reprocessing that sample.
 
 ```bash
-$PATH = /absolute/path/to/user/directory
+WORKINGDIR = /absolute/path/to/user/directory
 
-$PATH/working_directory/
+WORKINGDIR/
   ├── seq_run_name_1/
   │   ├── seq_run_name_1_Output/
   │   │   ├── 01_seq_run_name_1_<RUN_NAME>-qaqc/
@@ -807,10 +887,10 @@ The `02_extract_dada2_stats.py` script:
 #### Usage
 
 ```bash
-$PATH = /absolute/path/to/user/directory
+WORKINGDIR = /absolute/path/to/user/directory
 
 python tourmaline/scripts/02_extract_dada2_stats.py \
---working-directory $PATH/working_directory
+--working-directory $WORKINGDIR
 ```
 
 #### Interpreting the results
@@ -972,9 +1052,9 @@ For SLURM command details, see [Monitoring SLURM Jobs and Outputs](#monitoring-s
   - If the output folder already exists, the script will skip reprocessing that sample.
 
 ```bash
-$PATH = /absolute/path/to/user/directory
+WORKINGDIR = /absolute/path/to/user/directory
 
-$PATH/working_directory/
+WORKINGDIR/
   ├── seq_run_name_1/
   │   ├── seq_run_name_1_Output/
   │   │   ├── 01_seq_run_name_1_<RUN_NAME>-qaqc/
@@ -1001,10 +1081,12 @@ $PATH/working_directory/
 The `figures/` folder contains interactive visualizations for exploring your taxonomic data:
 - `03_seq_run_name_1_<CLASSIFIER_METHOD>_<DATABASE_NAME>_<RUN_NAME>-taxa_barplot.qzv`: Interactive taxonomic barplot that can be viewed in the [QIIME 2 web browser](https://view.qiime2.org)
 
-# 5-PREPARING INPUTS FOR ANALYSES SUBMISSION TO ODE
+# 5-PREPARING INPUTS FOR ANALYSES SUBMISSION TO OCEAN DNA EXPLORER
+
 After completing all three Tourmaline steps, you may need to prepare your analysis metadata for submission to the [Ocean DNA Explorer (ODE)](https://www.oceandnaexplorer.org). The `format_analysisMetadata.py` script helps you generate standardized metadata files from your Tourmaline configuration files.
 
 ## Scripts overview
+
 ### Individual Analysis: `format_analysisMetadata.py`
 
 The `format_analysisMetadata.py` script:
@@ -1270,3 +1352,41 @@ Please insert full DOI address when available, e.g. http://doi.dx.org/10.1007/s1
 # APPENDIX A: DATASHEETS
 
 Link to any documents such as software guidelines, images, etc that support this protocol. Please include a short note describing the document's relevance.
+
+# UNDER CONSTRUCTION
+
+Example output directory structure:
+
+```
+OKEX
+  16S
+    SEQRUN1
+        okex-16Ssr1-dt-qaqc #discard untrimmed
+          fastq.qza
+          qaqc_config.yaml
+          raw_fastq.qza
+          stats/
+        okex-16Ssr1-dt-da2peTa-repseqs #discard untrimmed, dada2PE, trunc option a
+          repseqs_config.yaml
+          okex-sr1-dt-da2peTa-repseqs.fasta
+          okex-sr1-dt-da2peTa-repseqs.qza
+          okex-sr1-dt-da2peTa-table.biom
+          okex-sr1-dt-da2peTa-table.qza
+          okex-sr1-dt-da2peTa-table.tsv
+          stats/
+        okex-16Ssr1-dt-da2peTa-nbS2501-taxonomy #discard untrimmed, dada2PE, trunc option a, naive-bayes Silva 2501 database
+          okex-sr1-dt-da2peTa-nbS2501-asv_taxa_features.tsv
+          okex-sr1-dt-da2peTa-nbS2501-taxa_sample_table_l7.tsv
+          taxonomy_config.yaml
+          okex-sr1-dt-da2peTa-nbS2501-taxonomy.qza
+          okex-sr1-dt-da2peTa-nbS2501-taxonomy.tsv
+          classifier.qza
+          figures/
+        okex-16Ssr1-dt-da2peTa-cbS2501-taxonomy #discard untrimmed, dada2PE, trunc option a, consensus blast Silva 2501 database
+          ...
+      
+    SEQRUN2
+      ...
+  18S
+...
+```

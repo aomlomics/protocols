@@ -23,6 +23,7 @@ license: CC0
 maturity_level: Pilot or Demonstrated
 
 # FAIRe terms
+checkls_ver: 1.0.2
 sop_bioinformatics: "https://github.com/aomlomics/tourmaline/tree/develop"
 trim_method: qiime2-amplicon-2024.10;Cutadapt 4.9
 trim_param: Should be free text where we state what was done.

@@ -4,30 +4,28 @@ Protocols used by AOML 'Omics labs, made using the [BeBOP-OBON protocol template
 
 Each protocol has its own repository (listed below) and can be referenced using its own Zenodo DOI (with versioning).
 
-[![DOI](https://zenodo.org/badge/684207005.svg)](https://doi.org/10.5281/zenodo.14224754) ***<- this is a blanket DOI for all protocols; please use DOIs to individual protocols linked below (in progress)***
-
 ## Protocol repositories by category
 
 ### Sample collection
 
-* [protocol-sampling-sterivex-beads](https://github.com/aomlomics/protocol-sampling-sterivex-beads)
-* [protocol-sampling-sterivex-dry](https://github.com/aomlomics/protocol-sampling-sterivex-dry)
+* [protocol_sampling_sterivex_beads](https://github.com/aomlomics/protocol_sampling_sterivex_beads)
+* [protocol_sampling_sterivex_dry](https://github.com/aomlomics/protocol_sampling_sterivex_dry)
 
 ### DNA extraction
 
-* [protocol-extract-dna-sterivex-kingfisher](https://github.com/aomlomics/protocol-extract-dna-sterivex-kingfisher)
-* [protocol-extract-dna-sedtrap-powersoil](https://github.com/aomlomics/protocol-extract-dna-sedtrap-powersoil)
-* [protocol-extract-dna-okex](https://github.com/aomlomics/protocol-extract-dna-okex)
+* [protocol_extract_dna_sterivex_kingfisher](https://github.com/aomlomics/protocol_extract_dna_sterivex_kingfisher)
+* [protocol_extract_dna_sedtrap_powersoil](https://github.com/aomlomics/protocol_extract_dna_sedtrap_powersoil)
+* [protocol_extract_dna_okeanos](https://github.com/aomlomics/protocol_extract_dna_okeanos)
 
 ### Metabarcoding (amplicon) library prep
 
-* [protocol-pcr-ssu16sv4v5-parada](https://github.com/aomlomics/protocol-pcr-ssu16sv4v5-parada)
-* [protocol-pcr-ssu18sv9-amaralzettler](https://github.com/aomlomics/protocol-pcr-ssu18sv9-amaralzettler)
-* [protocol-pcr-ssu12sv5v6-mifish](https://github.com/aomlomics/protocol-pcr-ssu12sv5v6-mifish)
+* [protocol_pcr_Bacteria-16S-V4V5-Parada](https://github.com/aomlomics/protocol_pcr_Bacteria-16S-V4V5-Parada)
+* [protocol_pcr_Eukarya-18S-V9-Lane-Medlin](https://github.com/aomlomics/protocol_pcr_Eukarya-18S-V9-Lane-Medlin)
+* [protocol_pcr_Fish-12S-MiFish-Miya-Wangensteen](https://github.com/aomlomics/protocol_pcr_Fish-12S-MiFish-Miya-Wangensteen)
 
 ### Metagenomic (shotgun) library prep
 
-* [protocol-libprep-metag-illumina](https://github.com/aomlomics/protocol-libprep-metag-illumina)
+* [protocol_libprep_metag_illumina](https://github.com/aomlomics/protocol_libprep_metag_illumina)
 
 ## Citing protocols
 

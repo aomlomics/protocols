@@ -8,24 +8,30 @@ Each protocol has its own repository (listed below) and can be referenced using 
 
 ### Sample collection
 
-* [protocol_sampling_sterivex_beads](https://github.com/aomlomics/protocol_sampling_sterivex_beads)
-* [protocol_sampling_sterivex_dry](https://github.com/aomlomics/protocol_sampling_sterivex_dry)
+* [AOML_eDNA_Sampling_Protocol_Sterivex_Beads](https://github.com/aomlomics/AOML_eDNA_Sampling_Protocol_Sterivex_Beads)
+* [AOML_eDNA_Sampling_Protocol_Sterivex_Dry](https://github.com/aomlomics/AOML_eDNA_Sampling_Protocol_Sterivex_Dry)
 
 ### DNA extraction
 
-* [protocol_extract_dna_sterivex_kingfisher](https://github.com/aomlomics/protocol_extract_dna_sterivex_kingfisher)
-* [protocol_extract_dna_sedtrap_powersoil](https://github.com/aomlomics/protocol_extract_dna_sedtrap_powersoil)
-* [protocol_extract_dna_okeanos](https://github.com/aomlomics/protocol_extract_dna_okeanos)
+* [AOML_DNA_Extraction_Protocol_Sterivex_KingFisher](https://github.com/aomlomics/AOML_DNA_Extraction_Protocol_Sterivex_KingFisher)
+* [AOML_DNA_Extraction_Protocol_Sedtrap_PowerSoil](https://github.com/aomlomics/AOML_DNA_Extraction_Protocol_Sedtrap_PowerSoil)
+* [NMNH_DNA_Extraction_Protocol_Phenol-Chloroform](https://github.com/aomlomics/NMNH_DNA_Extraction_Protocol_Phenol-Chloroform)
 
-### Metabarcoding (amplicon) library prep
+### Amplicon (metabarcoding) library prep
 
-* [protocol_pcr_Bacteria-16S-V4V5-Parada](https://github.com/aomlomics/protocol_pcr_Bacteria-16S-V4V5-Parada)
-* [protocol_pcr_Eukarya-18S-V9-Lane-Medlin](https://github.com/aomlomics/protocol_pcr_Eukarya-18S-V9-Lane-Medlin)
-* [protocol_pcr_Fish-12S-MiFish-Miya-Wangensteen](https://github.com/aomlomics/protocol_pcr_Fish-12S-MiFish-Miya-Wangensteen)
+* [AOML_PCR_Protocol_Bacteria-16S-V4V5-Parada](https://github.com/aomlomics/AOML_PCR_Protocol_Bacteria-16S-V4V5-Parada)
+* [AOML_PCR_Protocol_Eukarya-18S-V9-Lane-Medlin](https://github.com/aomlomics/AOML_PCR_Protocol_Eukarya-18S-V9-Lane-Medlin)
+* [AOML_PCR_Protocol_Fish-12S-MiFish-Miya-Wangensteen](https://github.com/aomlomics/AOML_PCR_Protocol_Fish-12S-MiFish-Miya-Wangensteen)
+* [NMNH_PCR_Protocol_Eukarya-18S-V4-Stoeck-Piredda](https://github.com/aomlomics/NMNH_PCR_Protocol_Eukarya-18S-V4-Stoeck-Piredda)
+* [NMNH_PCR_Protocol_Metazoa-COI-Leray-Geller](https://github.com/aomlomics/NMNH_PCR_Protocol_Metazoa-COI-Leray-Geller)
 
 ### Metagenomic (shotgun) library prep
 
-* [protocol_libprep_metag_illumina](https://github.com/aomlomics/protocol_libprep_metag_illumina)
+* [AOML_MetaG_LibPrep_Protocol_Illumina](https://github.com/aomlomics/AOML_MetaG_LibPrep_Protocol_Illumina)
+
+### Amplicon sequence data processing
+
+* [AOML_Amplicon_Processing_Protocol_Tourmaline2_Eukarya-18S-V9-Lane-Medlin](https://github.com/aomlomics/AOML_Amplicon_Processing_Protocol_Tourmaline2_Eukarya-18S-V9-Lane-Medlin)
 
 ## Citing protocols
 

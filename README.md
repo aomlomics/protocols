@@ -9,7 +9,7 @@ Each protocol has its own repository (listed below) and can be referenced using 
 ### Sample collection
 
 * [AOML_eDNA_Sampling_Protocol_Sterivex_Beads](https://github.com/aomlomics/AOML_eDNA_Sampling_Protocol_Sterivex_Beads)
-* [AOML_eDNA_Sampling_Protocol_Sterivex_Dry](https://github.com/aomlomics/AOML_eDNA_Sampling_Protocol_Sterivex_Dry)
+* [AOML_eDNA_Sampling_Protocol_Sterivex_Dry](https://github.com/aomlomics/AOML_eDNA_Sampling_Protocol_Sterivex_Dry) (incomplete)
 
 ### DNA extraction
 

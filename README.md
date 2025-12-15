@@ -24,6 +24,7 @@ Each protocol has its own repository (listed below) and can be referenced using 
 * [AOML_PCR_Protocol_Fish-12S-MiFish-Miya-Wangensteen](https://github.com/aomlomics/AOML_PCR_Protocol_Fish-12S-MiFish-Miya-Wangensteen)
 * [NMNH_PCR_Protocol_Eukarya-18S-V4-Stoeck-Piredda](https://github.com/aomlomics/NMNH_PCR_Protocol_Eukarya-18S-V4-Stoeck-Piredda)
 * [NMNH_PCR_Protocol_Metazoa-COI-Leray-Geller](https://github.com/aomlomics/NMNH_PCR_Protocol_Metazoa-COI-Leray-Geller)
+* [USGS_PCR_Protocol_Eukarya-18S-V9-Lane-Medlin](https://github.com/aomlomics/USGS_PCR_Protocol_Eukarya-18S-V9-Lane-Medlin)
 
 ### Metagenomic (shotgun) library prep
 

@@ -1,119 +1,148 @@
-# Protocol Template
+---
+# MIOP terms
+methodology_category: omics analysis
+project: "NOAA Atlantic Oceanographic and Meteorological Laboratory Omics Program; https://github.com/aomlomics/protocols; https://zenodo.org/communities/aomlomics"
+purpose: amplicon sequencing assay [OBI:0002767] | polymerase chain reaction assay [OBI:0002692]
+analyses: amplicon sequencing assay [OBI:0002767] | polymerase chain reaction assay [OBI:0002692]
+geographic_location: Atlantic Ocean [GAZ:00000344], Gulf of Mexico [GAZ:00002853]
+broad_scale_environmental_context: marine biome [ENVO:00000447]
+local_environmental_context: marine pelagic zone [ENVO:00000208], marine benthic biome [ENVO:01000024]
+environmental_medium: seawater [ENVO:01001964]
+target: 16S [NCIT:C105370], 18S [NCIT:C48172], 12S mitochondrial ribosomal RNA  [NCIT:C128263]
+creator: Luke Thompson
+materials_required: vortexer [OBI:0400118], PCR instrument [OBI:0000989], agarose gel electrophoresis system [OBI:0001134]
+skills_required: sterile technique, pipetting skills, standard molecular technique
+time_required: 240
+personnel_required: 1
+language: en
+issued: 2025-12-19
+audience: scientists
+publisher: NOAA Atlantic Oceanographic and Meteorological Laboratory
+hasVersion: 1
+license: CC0 1.0 Universal
+maturity level: mature
 
-MIOP protocol template
+# FAIRe terms
+pcr2_thermocycler: not provided
+pcr2_amplificationReactionVolume: 15
+pcr2_commercial_mm: 2X Dream Taq Master Mix (K1920)
+pcr2_custom_mm: not applicable
+pcr2_dna_vol: 1
+pcr2_cond: initial denaturation:95_3;denaturation:95_0.25;annealing:60_0.5;elongation:72_1.5;final elongation:72_3;11
+pcr2_annealingTemp: 60
+pcr2_cycles: 11
+pcr2_analysis_software: not applicable
+pcr2_method_additional: not applicable
+sequencing_location: Michigan State University Research Technology Support Facility Genomics Core
+platform: ILLUMINA
+instrument: Illumina MiSeq [OBI:0002003]
+seq_kit: MiSeq Reagent Kit v2 (500 cycles)
+lib_layout: paired
+adapter_forward: ACACTGACGACATGGTTCTACA
+adapter_reverse: TACGGTAGCAGAGACTTGGTCT
+lib_screen: normalized using Invitrogen SequalPrep
+lib_conc_meth: quantified using Qubit dsDNA HS, Agilent 4200 TapeStation HS DNA1000 and Invitrogen Collibri Library Quantification qPCR
+seq_method_additional: not applicable
 
-## Minimum Information about an Omics Protocol (MIOP)
+---
 
-See https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml for list and definitions.
+# NOAA/AOML Sequencing Protocol
 
-| MIOP Term  | Value |
-| ------------- | ------------- | 
-| methodology category  |  |
-| project  |  |
-| purpose  |  |
-| analyses  |  |
-| geographic location  |  |
-| broad-scale environmental context  |  |
-| local environmental context  |  |
-| environmental medium  |  |
-| target  |  |
-| creator  |  |
-| materials required  |  |
-| skills required  |  |
-| time required  |  |
-| personnel required  |  |
-| language  |  |
-| issued  |  |
-| audience  |  |
-| publisher  |  |
-| hasVersion  |  |
-| license  |  |
-| maturity level  |  |
+## PROTOCOL INFORMATION
 
-## AUTHORS
+### Minimum Information about an Omics Protocol (MIOP)
 
-| PREPARED BY All authors known to have contributed to the preparation of this protocol, including those who filled in the template.  | AFFILIATION | ORCID (visit https://orcid.org/ to register) | DATE |
+- MIOP terms are listed in the YAML frontmatter of this page.
+- See <https://github.com/BeBOP-OBON/miop/blob/main/model/schema/terms.yaml> for list and definitions.
+
+### Making eDNA FAIR (FAIRe)
+
+- FAIRe terms are listed in the YAML frontmatter of this page.
+- See <https://fair-edna.github.io/download.html> for the FAIRe checklist and more information.
+- See <https://fair-edna.github.io/guidelines.html#missing-values> for guidelines on missing values that can be used for missing FAIRe or MIOP terms.
+
+### Authors
+
+| PREPARED BY | AFFILIATION | ORCID | DATE |
 | ------------- | ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | Content Cell | yyyy-mm-dd |
-| Content Cell  | Content Cell  | Content Cell | yyyy-mm-dd |
+| Luke Thompson | NOAA/AOML, MSU/NGI | <https://orcid.org/0000-0002-3911-1280> | 2025-12-19 |
+| Sammy Harding | NOAA/AOML, MSU/NGI | <https://orcid.org/0009-0008-8885-6140> | 2025-12-19 |
 
-## PROTOCOL REVISION RECORD
+## RELATED PROTOCOLS
 
-Version numbers start at "1.0.0" when the protocol is first completed and will increase when changes that impact the outcome of the procedure are made (patches: 1.0.1; minor changes: 1.1.0; major changes: 2.0.0). Please store all versions in the gDrive folder designated to your institute.
-
-| VERSION  | RELEASE DATE This is the date when a given protocol version was finalised | DESCRIPTION OF REVISIONS Please include a brief description of what was changed relative to the previous version |
-| ------------- | ------------- | ------------- |
-| 1.0.0  | yyyy-mm-dd  | Initial release  |
-| Content Cell  | Content Cell  | Content Cell  |
-
-## RELATED PROTOCOLS IN YOUR FOLDER
-
-This is a list of other protocols deposited in your folder which should be known to users of this protocol. For example, if you create a derivative or altered protocol, you would link to the original protocol in the section below. Please include the link to each related protocol. Also include the version number of that protocol when you linked to it.
-
-| PROTOCOL NAME AND LINK  | VERSION The version of the protocol you linked to | RELEASE DATE This is the date corresponding to the version listed to the left |
-| ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | yyyy-mm-dd  |
-| Content Cell  | Content Cell  | yyyy-mm-dd  |
+| PROTOCOL NAME | LINK  | VERSION | RELEASE DATE|
+| ------------- | ------------- | ------------- | ------------- |
+| NOAA/AOML PCR Protocol 16S rRNA V4-V5 (EMP) | <https://github.com/aomlomics/protocols/blob/main/markdown/protocol_pcr_ssu16sv4v5_emp.md> | 1.1.0 | 2024-11-16 |
+| NOAA/AOML PCR Protocol 12S rRNA V5-V6 (MiFish) | <https://github.com/aomlomics/protocols/blob/main/markdown/protocol_pcr_ssu12sv5v6_mifish.md> | 1.1.0 | 2024-11-16 |
+| NOAA/AOML PCR Protocol 18S rRNA V9 (EMP) | <https://github.com/aomlomics/protocols/blob/main/markdown/protocol_pcr_ssu18sv9_emp.md> | 1.1.0 | 2024-11-16 |
 
 ## RELATED EXTERNAL PROTOCOLS
 
-This is a list of other protocols that are not in your folder which should be known to users of this protocol. These include, e.g., kit manuals. Please upload all relevant external protocols to Appendix A and link to them here.
+| PROTOCOL NAME | LINK | ISSUER / AUTHOR | ACCESS DATE |
+| ------------ | ------------ | ------------ | ---------- |
+| Not applicable |  |  |  |
 
-| EXTERNAL PROTOCOL NAME AND LINK  | ISSUER / AUTHOR Please note who authored the protocol (this may also be a company name) | ACCESS DATE This is the date you downloaded or scanned the protocol and uploaded it. |
+### Protocol Revision Record
+
+| VERSION | RELEASE DATE | DESCRIPTION OF REVISIONS |
 | ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | yyyy-mm-dd  |
-| Content Cell  | Content Cell  | yyyy-mm-dd  |
+| 1.0.0 | 2021-02-28 | Initial release |
 
-## ACRONYMS AND ABBREVIATIONS
+### Acronyms and Abbreviations
 
 | ACRONYM / ABBREVIATION | DEFINITION |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
+| NOAA | National Oceanographic and Atmospheric Administration |
+| AOML | Atlantic Oceanographic and Meteorological Laboratory |
+| MSU | Mississippi State University |
+| NGI | Northern Gulf Institute |
+| PCR | Polymerase chain reaction |
+| eDNA | environmental DNA |
+| NTC | No template control |
+| EtOH | Ethanol |
 
-## GLOSSARY
+### Glossary
 
 | SPECIALISED TERM | DEFINITION |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| Extraction Blank | A type of negative control to confirm there is no contamination during DNA extractions. Normally an empty filter extracted and PCR amplified alongside other samples. |
+| No Template Control | A type of negative control during PCR to confirm there is no contamination during the PCR process. Normally nuclease-free water run in place of DNA on a PCR. |
 
-# BACKGROUND
+## BACKGROUND
 
-This document describes the required protocol to conduct insert name of the method/protocol.
+### Summary
 
-## Summary
+This protocol describes steps for preparing, sending and sequencing eDNA samples extracted from Sterivex and amplified using 16S V4-V45 rRNA, 18S V9 rRNA and 12S MiFish primers at NOAA's AOML. The second PCR and subsequent Illumina MiSeq sequencing steps are performed by Michigan State University's Research Technology Support Facility (RTSF) Genomics Core.
 
-Insert a short description of the background for the method/protocol (e.g. why and for which purpose do you perform water sampling).
-Please provide a brief summary of your method including, as appropriate, a brief description of what techniques your best practice is about, which ocean environments or regions it targets, the primary sensors covered, what type of data/measurements/observing platform it covers, limits to its applicability.
+### Method description and rationale
 
-## Method description and rationale
+This protocol is used for preparing and sending 16S V4-V45 rRNA, 18S V9 rRNA and 12S MiFish amplified eDNA samples to MSU's RTSF Genomics Core for Illumina MiSeq sequencing. It can be adapted for a full 96-well plate or a minimum of 24 samples to be submitted to the RTSF.
 
-Insert a short description of the functioning principal of the methodology used in the protocol (i.e. how does the method work?). Please note that this is different from the step-by-step description of the protocol procedure.
-Insert a short statement explaining why the specific methodology used in the protocol has been selected (e.g. it is highly reproducible, highly accurate, procedures are easy to execute etc….).
+### Spatial coverage and environment(s) of relevance
 
-## Spatial coverage and environment(s) of relevance
+This protocol can be used to prepare, send and sequence any target-specific amplified DNA samples at MSU's RTSF Genomics Core.
 
-If applicable, please specify the region where the protocol is applied. For regional term guidance see here. If applicable, please indicate here the environment(s) of relevance for the protocol, e.g. Abyssal plain. Select from the ENVO terminology.
+## PERSONNEL REQUIRED
 
-# PERSONNEL REQUIRED
+One person with molecular biology experience.
 
-Insert the number of technicians, data managers, and scientists required for the good execution of the procedure
+### Safety
 
-## Safety
+There are no hazardous chemicals or materials involved in this protocol. Standard lab safety techniques should still be used such as wearing PPE to avoid skin or eye contact.
 
-Identify hazards associated with the procedure and specify protective equipment and safety training required to safely execute the procedure
+### Training requirements
 
-## Training requirements
+Basic molecular biology training is sufficient for this protocol including sterile technique and pipetting small volumes.
 
-Specify technical training required for the good execution of the procedure.
+### Time needed to execute the procedure
 
-## Time needed to execute the procedure
+Protocol takes about 4 hours (240 minutes).
 
-Specify how much time is necessary to execute the procedure.
+## EQUIPMENT
 
-# EQUIPMENT
+For 96-well Plate:
 
-| DESCRIPTION e.g. filter | PRODUCT NAME AND MODEL Provide the official name of the product | MANUFACTURER Provide the name of the manufacturer of the product. | QUANTITY Provide quantities necessary for one application of the standard operating procedure (e.g. number of filters). | REMARK For example, some of the consumable may need to be sterilized, some commercial solution may need to be diluted or shielded from light during the operating procedure. |
+| DESCRIPTION | PRODUCT NAME AND MODEL | MANUFACTURER | QUANTITY | REMARK |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Durable equipment |
 | Content Cell | Content Cell | Content Cell | Content Cell | Content Cell |
@@ -125,53 +154,65 @@ Specify how much time is necessary to execute the procedure.
 | Content Cell | Content Cell | Content Cell | Content Cell | Content Cell |
 | Content Cell | Content Cell | Content Cell | Content Cell | Content Cell |
 
-# STANDARD OPERATING PROCEDURE
+- Description: E.g., "filter".
+- Product Name and Model: Provide the official name of the product.
+- Manufacturer: Provide the name of the manufacturer of the product.
+- Quantity: Provide quantities necessary for one application of the standard operating procedure (e.g., number of filters).
+- Remark: For example, some of the consumable may need to be sterilized, some commercial solution may need to be diluted or shielded from light during the operating procedure.
 
-In the following SOP, please use the exact names of equipment as noted in the table above.
+## STANDARD OPERATING PROCEDURE
 
-## Protocol
+### Protocol
 
-Provide a step-by-step description of the protocol. The identification of difficult steps in the protocol and the provision of recommendations for the execution of those steps are encouraged.
+#### Sequencing Preparation
 
-Preparation
+1. After performing a gel on the PCR products, pipette 10 uL of each sample into their respective wells of a new 96-well PCR plate.
+    - Leave well H12 empty for Michigan State's sequencing negative control
+3. Seal plate, label with ID and place in freezer till day of shipping.
+4. Fill out Illumina Sample Submission form with sample information and 96-well plate format.
+    - Can be found online at: [LIMS Project Submission](https://rtsf.natsci.msu.edu/genomics/lims-project-submission.aspx)
+5. Login to [LabLink](https://msu.claritylims.com/lablink/login) and create a project for the sequencing run.
+6. Upload project and run information, sample submission form and gel images (annotated) to the project.
+7. Prepare plates for shipping by obtaining dry ice (5-10lbs depending on quantity of plates), a styrofoam cooler and fitted cardboard box.
+8. Place 1-2 inches of dry ice on bottom of styrofoam cooler followed by sequencing plates then the remainder of dry ice.
+9. Place lid on cooler (do not tape shut) and place cooler into cardboard box.
+10. Tape the cardboard box shut and attach a shipping label.
 
-Please specify the preparatory actions you took before you collected the samples and note what equipment was needed to do so (e.g. disinfection of work surfaces, preparations to the equipment you intend to use later on).
+#### Sequencing Information
 
-1.  Step 1
-2.  Step 2
+Information on sequencing is provided by Michigan State University's Genomics Core Facility:
 
-### Sequencing
-
-Please specify the actions you took to sequence the DNA and note what equipment was needed to do so (loading of sequencing machine, details about the sequencing run, sequencing institution (if out of house), sequencing primers used).
-
-1. Step 1
+1. The Genomics Core performs a secondary PCR using dual-indexed, Illumina compatible primers which target the Fluidigm CS1/CS2 oligomers at the ends of the primary PCR products.
 
 | Sequencing Primer Name | Direction | Sequence (5’ -> 3’)|
 | ----- | ----- | ----- |
 | content | forward | content |
 | content | reverse | content |
 
+2. Amplicons are batch normalized using the Charm Biotech PCR Normalization and Purification kit and the recovered product is pooled.
 
-2. Step 2
+3. The pool is QC'd and quantified using a combination of Biotium AccuGreen High Sensitivity dsDNA, Agilent 4200 TapeStation HS DNA1000 and Invitrogen Collibri Library Quantification qPCR assays.
 
-    a. Sub-step a
+4. Each pool is loaded onto one (1) Illumina MiSeq v2 Standard flow cell. Sequencing is carried out in a 2x250bp paired end format using a MiSeq v2 500 cycle reagent cartridge. Custom sequencing and index primers complementary to the Fluidigm CS1 and CS2 oligomers are added to appropriate wells of the reagent cartridge.
 
-    b. Sub-step b
+5. Base calling is done by Illumina Real Time Analysis (RTA) v1.18.54 and output of RTA is demultiplexed and converted to FastQ format with Illumina Bcl2fastq v2.20.0. A summary of the run output is provided by MSU and basic QC information about sequence data is provided by the accompanying FastQC reports. For information regarding interpretation of these reports, please see the FastQC Tutorial and FAQ from [MSU's website](https://rtsf.natsci.msu.edu/genomics/technical-documents/fastqc-tutorial-and-faq.aspx).
+
+6. Data is downloaded using an account on the Genomics FTP server. See the [Genomics FAQ](https://rtsf.natsci.msu.edu/genomics/data-retrieval.aspx) for general instructions. Sequence data typically remains available on the FTP server for 60 days. It is the responsibility of the researcher to download and store data long term. The RTSF Genomics Core only guarantees retention of sequence data for one year from the date of availability.
 
 ## Quality control
 
-Describe and explain criteria used to validate results of the standard operating procedure.
+Samples being sent for sequencing at the RTSF are required to have a gel performed to confirm amplification. Upon arriving to the RTSF, amplicons are batch normalized using the Charm Biotech PCR Normalization and Purification kit and pooled. The pool is QC'd and quantified using a combination of Biotium AccuGreen High Sensitivity dsDNA, Agilent 4200 TapeStation HS DNA1000 and Invitrogen Collibri Library Quantification qPCR assays to ensure quality prior to sequencing. Summaries of all run outputs are provided to the user by MSU and QC information about sequence data is provided by FastQC reports.
 
 ## Basic troubleshooting guide
 
-Identify known issues associated with the procedure, if any.
-Provide troubleshooting guidelines when available.
+Not applicable.
 
 # REFERENCES
 
-Insert all references cited in the document.
-Please insert full DOI address when available, e.g. http://doi.dx.org/10.1007/s11258-014-0404-1
+Kozich, J. J. et al. Development of a dual-index sequencing strategy and curation pipeline for analyzing amplicon sequence data on the MiSeq Illumina sequencing platform. Applied and environmental microbiology 79, 5112–5120 (2013).
+
+Klindworth, A. et al. Evaluation of general 16S ribosomal RNA gene PCR primers for classical and next-generation sequencing-based diversity studies. Nucleic Acids Res 41, e1–e1 (2013).
 
 # APPENDIX A: DATASHEETS
 
-Link templates (e.g. preformatted spreadsheets) used to record measurements and report on the quality of the data as well as any documents such as manufacturer specifications, images, etc that support this protocol. Please include a short note describing the document's relevance.
+Not applicable.

@@ -23,16 +23,6 @@ license: CC0 1.0 Universal
 maturity level: mature
 
 # FAIRe terms
-pcr2_thermocycler: not provided
-pcr2_amplificationReactionVolume: 15
-pcr2_commercial_mm: 2X Dream Taq Master Mix (K1920)
-pcr2_custom_mm: not applicable
-pcr2_dna_vol: 1
-pcr2_cond: initial denaturation:95_3;denaturation:95_0.25;annealing:60_0.5;elongation:72_1.5;final elongation:72_3;11
-pcr2_annealingTemp: 60
-pcr2_cycles: 11
-pcr2_analysis_software: not applicable
-pcr2_method_additional: not applicable
 sequencing_location: Michigan State University Research Technology Support Facility Genomics Core
 platform: ILLUMINA
 instrument: Illumina MiSeq [OBI:0002003]

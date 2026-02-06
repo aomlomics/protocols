@@ -17,7 +17,7 @@ Protocols used by AOML 'Omics labs, made using the [BeBOP-OBON protocol template
 
 ### Amplicon (metabarcoding) library prep
 
-* [AOML_PCR_Protocol_Bacteria-16S-V4V5-Parada](https://github.com/aomlomics/AOML_PCR_Protocol_Bacteria-16S-V4V5-Parada)
+* [AOML_PCR_Protocol_Universal-SSU-V4V5-Parada](https://github.com/aomlomics/AOML_PCR_Protocol_Universal-SSU-V4V5-Parada)
 * [AOML_PCR_Protocol_Eukarya-18S-V9-Lane-Medlin](https://github.com/aomlomics/AOML_PCR_Protocol_Eukarya-18S-V9-Lane-Medlin)
 * [AOML_PCR_Protocol_Fish-12S-MiFish-Miya-Wangensteen](https://github.com/aomlomics/AOML_PCR_Protocol_Fish-12S-MiFish-Miya-Wangensteen)
 * [NMNH_PCR_Protocol_Eukarya-18S-V4-Stoeck-Piredda](https://github.com/aomlomics/NMNH_PCR_Protocol_Eukarya-18S-V4-Stoeck-Piredda)

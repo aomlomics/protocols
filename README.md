@@ -7,7 +7,7 @@ Protocols used by AOML 'Omics labs, made using the [BeBOP-OBON protocol template
 ### Sample collection
 
 * [AOML_eDNA_Sampling_Protocol_Sterivex_Beads](https://github.com/aomlomics/AOML_eDNA_Sampling_Protocol_Sterivex_Beads)
-* [AOML_eDNA_Sampling_Protocol_Sterivex_Dry](https://github.com/aomlomics/AOML_eDNA_Sampling_Protocol_Sterivex_Dry) (incomplete)
+* [AOML_eDNA_Sampling_Protocol_Sterivex_Dry](https://github.com/aomlomics/AOML_eDNA_Sampling_Protocol_Sterivex_Dry)
 
 ### DNA extraction
 

@@ -21,7 +21,7 @@ Protocols used by AOML 'Omics labs, made using the [BeBOP-OBON protocol template
 * [AOML_PCR_Protocol_Eukarya-18S-V9-Lane-Medlin](https://github.com/aomlomics/AOML_PCR_Protocol_Eukarya-18S-V9-Lane-Medlin)
 * [AOML_PCR_Protocol_Fish-12S-MiFish-U-Miya-Sales](https://github.com/aomlomics/AOML_PCR_Protocol_Fish-12S-MiFish-U-Miya-Sales)
 * [NMNH_PCR_Protocol_Eukarya-18S-V4-Stoeck-Piredda](https://github.com/aomlomics/NMNH_PCR_Protocol_Eukarya-18S-V4-Stoeck-Piredda)
-* [NMNH_PCR_Protocol_Fish-12S-MiFish-Miya](https://github.com/aomlomics/NMNH_PCR_Protocol_Fish-12S-MiFish-Miya)
+* [NMNH_PCR_Protocol_Fish-12S-MiFish-U-Miya](https://github.com/aomlomics/NMNH_PCR_Protocol_Fish-12S-MiFish-U-Miya)
 * [NMNH_PCR_Protocol_Metazoa-COI-Leray-Geller](https://github.com/aomlomics/NMNH_PCR_Protocol_Metazoa-COI-Leray-Geller)
 * [USGS_PCR_Protocol_Eukarya-18S-V9-Lane-Medlin](https://github.com/aomlomics/USGS_PCR_Protocol_Eukarya-18S-V9-Lane-Medlin)
 

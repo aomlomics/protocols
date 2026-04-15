@@ -19,7 +19,8 @@ Protocols used by AOML 'Omics labs, made using the [BeBOP-OBON protocol template
 
 * [AOML_PCR_Protocol_Universal-SSU-V4V5-Parada](https://github.com/aomlomics/AOML_PCR_Protocol_Universal-SSU-V4V5-Parada)
 * [AOML_PCR_Protocol_Eukarya-18S-V9-Lane-Medlin](https://github.com/aomlomics/AOML_PCR_Protocol_Eukarya-18S-V9-Lane-Medlin)
-* [AOML_PCR_Protocol_Fish-12S-MiFish-U-Miya-Sales](https://github.com/aomlomics/AOML_PCR_Protocol_Fish-12S-MiFish-U-Miya-Sales)
+* [AOML_PCR_Protocol_Fish-12S-MiFish-U-Miya-Sales_MBARI](https://github.com/aomlomics/AOML_PCR_Protocol_Fish-12S-MiFish-U-Miya-Sales_MBARI)
+* [AOML_PCR_Protocol_Fish-12S-MiFish-U-Miya-Sales_SEAMAP](https://github.com/aomlomics/AOML_PCR_Protocol_Fish-12S-MiFish-U-Miya-Sales_SEAMAP)
 * [NMNH_PCR_Protocol_Eukarya-18S-V4-Stoeck-Piredda](https://github.com/aomlomics/NMNH_PCR_Protocol_Eukarya-18S-V4-Stoeck-Piredda)
 * [NMNH_PCR_Protocol_Fish-12S-MiFish-U-Miya](https://github.com/aomlomics/NMNH_PCR_Protocol_Fish-12S-MiFish-U-Miya)
 * [NMNH_PCR_Protocol_Metazoa-COI-Leray-Geller](https://github.com/aomlomics/NMNH_PCR_Protocol_Metazoa-COI-Leray-Geller)
